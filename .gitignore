@@ -1,0 +1,15 @@
+# KiCAD auto-backups
+*-backups/
+
+# KiCAD cache
+fp-info-cache
+
+# Local project settings (window state, layer visibility)
+*.kicad_prl
+
+# Non-KiCAD files
+amp/
+*.et
+*.csv
+*.docx
+*.PDF
