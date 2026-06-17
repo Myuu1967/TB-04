@@ -13,3 +13,7 @@ amp/
 *.csv
 *.docx
 *.PDF
+
+# Gerber 出力
+*-garber/
+*-garber.zip
