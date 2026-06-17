@@ -1,61 +1,74 @@
-# TB-04
+# TB-04 (tanuki)
 
-自作4bitCPU **TB-04** のKiCADプロジェクトです。
+自作 4bit CPU **TB-04**（コード名: tanuki）のプロジェクトリポジトリです。
+TD4 ライクなアーキテクチャをベースに、ALU とデコーダを ROM 実装した独自設計の 4bit CPU です。
 
-## 概要
+回路図・PCB（KiCAD）から、アセンブラ・シミュレータ・テストプログラムまでを世代ごとにまとめています。
 
-TD4ライクなアーキテクチャをベースに独自設計した4bitCPUです。
-ALUとデコーダをROM実装し、汎用レジスタR0〜R3、フラグC/Zを持ちます。
+## バージョン構成
 
-## 現バージョン: 4bitアドレス版
+| 世代 | アドレス幅 | 状態 | ディレクトリ |
+|---|---|---|---|
+| **ver1** | 4bit（16命令） | 実機完成・全命令動作 | [`ver1/`](ver1/) |
+| ver2 | （8bit 化予定） | 構想中 | 追加予定 |
+| ver3 | （12bit 化予定） | 構想中 | 追加予定 |
+
+> ver2 以降は、本リポジトリの `ver1/` と並べて追加していきます。
+
+## ver1 の中身
+
+```
+ver1/
+  hardware/   KiCAD プロジェクト（回路図・PCB・カスタムシンボル/フットプリント）
+  sim/        Python による CPU コアシミュレータ・アセンブラ・対話シミュレータ
+  tools/      ROM データ生成ツール（ALU / デコーダ / プログラム）・tanuki アセンブラ
+  codes/      テストプログラム（.ASM / .bin / .hex）
+  DEVLOG.md   開発ログ
+```
+
+ハードウェアの詳細・KiCAD ライブラリの登録方法は [`ver1/hardware/README.md`](ver1/hardware/README.md) を参照してください。
+
+## アーキテクチャ（ver1）
 
 | 項目 | 仕様 |
-|------|------|
+|---|---|
 | データ幅 | 4bit |
-| アドレス幅 | 4bit（16命令） |
+| アドレス幅 | 4bit |
 | 汎用レジスタ | R0〜R3 |
 | フラグ | C（キャリー）、Z（ゼロ） |
-| ALU | ROM実装（8演算） |
-| デコーダ | ROM実装（2個並列） |
-| プログラムROM | 28C256（ZIFソケット） |
-| 制御タイミング | 4フェーズ（FCH/DCR/EXE/WB） |
+| 命令数 | 16命令（OPC 4bit） |
+| ALU | ROM 実装（3bit opcode、8演算） |
+| デコーダ | ROM 実装（28C256 × 2 並列） |
+| プログラム ROM | 28C256 |
+| 制御タイミング | 4フェーズ（WB → FCH → DCR → EXE、WB 始まり） |
+| スタック | なし |
 
-## 将来の拡張予定
+### 制御タイミングの要点
 
-- 8bitアドレス版
-- 12bitアドレス版
+- 通常命令は開始から2クロック目でフェッチ、4クロック目で実行（全命令ディレイスロットなしの4クロック動作）
+- ジャンプ命令のアドレス切り替えは EXE フェーズで実施（ディレイスロット回避）
+- フラグは EXE で無条件ラッチ。`MOV`/`MOVI`/`OUT`/`OUTI` は C,Z を 0 クリアするため、**フラグを立てる演算命令の直後に分岐命令（JNC/JZ）を置く**運用とする
 
-## ライブラリの登録
+## シミュレータの起動
 
-このリポジトリにはカスタムシンボル・フットプリントが含まれています。
-回路図・PCBを正しく開くには、KiCADのライブラリパスに以下を登録してください。
+```
+cd ver1/sim
+python sim.py                        # デフォルト（counter）
+python sim.py --prog counter         # 0〜F カウンタ
+python sim.py --prog adder           # 加算デモ
+python sim.py --prog counter --step  # 1ステップ実行
+python sim.py --in 5                 # IN ポートを 5 に設定
+```
 
-### シンボルライブラリ
+## ROM データの生成
 
-`環境設定 → シンボルライブラリを管理` で以下を追加:
+```
+cd ver1/tools
+python gen_alu_rom.py        # ALU ROM（alu_rom.bin / .hex）
+python gen_decoder_rom.py    # デコーダ ROM（decoder_u22 / u23）
+python gen_prog_rom.py       # プログラム ROM
+```
 
-| ライブラリ名 | ファイル |
-|---|---|
-| `New_Library` | `symbols/New_Library.kicad_sym` |
-| `originalCPU` | `symbols/originalCPU.kicad_sym` |
-| `74HC161` | `symbols/74HC161N.kicad_sym` |
+## 関連記事
 
-### フットプリントライブラリ
-
-`環境設定 → フットプリントライブラリを管理` で以下を追加:
-
-| ライブラリ名 | フォルダ |
-|---|---|
-| `Library` | `footprints/Library.pretty` |
-
-## KiCADプロジェクト構成
-
-| シート | 内容 |
-|--------|------|
-| TB04addr4bitVer3.kicad_sch | トップシート（電源・WEデコード） |
-| RS.kicad_sch | レジスタR0〜R3（74HC161 × 4 + 74HC253 × 3） |
-| RS01.kicad_sch | 追加レジスタ・プログラム入力 |
-| ROM_ALU_Decoder.kicad_sch | 28C256 × 4 + PC + フラグ |
-| ALU.kicad_sch | LEDモニターインターフェース |
-| clk_rst.kicad_sch | クロック・リセット |
-| TB04addr4bitVer3.kicad_pcb | PCBレイアウト |
+- 設計編: <https://tanuki-bayashin.hatenablog.com/entry/2026/05/27/140048>

@@ -13,3 +13,11 @@ amp/
 *.csv
 *.docx
 *.PDF
+
+# Python
+__pycache__/
+*.pyc
+
+# 個人写真（誤コミット防止）
+PXL_*.jpg
+*.jpeg
