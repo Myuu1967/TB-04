@@ -21,8 +21,9 @@ TD4 ライクなアーキテクチャをベースに、ALU とデコーダを RO
 ver1/
   hardware/   KiCAD プロジェクト（回路図・PCB・カスタムシンボル/フットプリント）
   sim/        Python による CPU コアシミュレータ・アセンブラ・対話シミュレータ
-  tools/      ROM データ生成ツール（ALU / デコーダ / プログラム）・tanuki アセンブラ
+  tools/      ROM データ生成ツール（ALU / デコーダ / プログラム）・tanuki アセンブラ・ロジアナ表示ツール
   codes/      テストプログラム（.ASM / .bin / .hex）
+  pico_codes/ デバッグ用 簡易ロジックアナライザの Pico 側ファームウェア（MicroPython）
   DEVLOG.md   開発ログ
 ```
 
