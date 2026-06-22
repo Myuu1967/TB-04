@@ -1,0 +1,29 @@
+	OUTI 1
+
+L0:
+	ADDI R0, 1
+	JNC  L0
+
+L1:
+	ADDI R0, 1
+	JNC  L1
+
+	OUTI 3
+L2:
+	ADDI R0, 1
+	JNC  L2
+
+L3:
+	ADDI R0, 1
+	JNC  L3
+
+L4:
+	OUTI 0
+	OUTI 7
+	ADDI R0, 1
+	JNC  L4
+
+
+	OUTI 15
+L5:
+	JMP  L5
