@@ -2,7 +2,7 @@ import serial
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
-COM_PORT = 'COM13'
+COM_PORT = 'COM16'
 BAUD     = 115200
 WINDOW   = 100
 
