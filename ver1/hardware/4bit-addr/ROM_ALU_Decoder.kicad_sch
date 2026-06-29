@@ -3530,6 +3530,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "rev.1    １命令めでフェッチを確実にするために入れ替えた"
+		(exclude_from_sim no)
+		(at 162.052 141.478 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2d57043e-c109-4e5e-8541-5e0db0545760")
+	)
 	(text "フェーズ発生器"
 		(exclude_from_sim no)
 		(at 61.468 176.53 0)
@@ -7863,7 +7873,7 @@
 	)
 	(global_label "Decord"
 		(shape output)
-		(at 153.67 147.32 0)
+		(at 153.67 149.86 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7873,7 +7883,7 @@
 		)
 		(uuid "240355a3-a6c7-458d-9bb2-025c26c0f201")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 163.1866 147.32 0)
+			(at 163.1866 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8633,7 +8643,7 @@
 	)
 	(global_label "Execute"
 		(shape output)
-		(at 153.67 149.86 0)
+		(at 153.67 152.4 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8643,7 +8653,7 @@
 		)
 		(uuid "90a9a5c6-21f7-4a3a-ae0e-c0ddb91d8af1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 163.9728 149.86 0)
+			(at 163.9728 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9535,7 +9545,7 @@
 	)
 	(global_label "Fetch"
 		(shape output)
-		(at 153.67 144.78 0)
+		(at 153.67 147.32 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9545,7 +9555,7 @@
 		)
 		(uuid "ddfa6355-b1a1-4e7e-b215-0b383b404f85")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 161.7957 144.78 0)
+			(at 161.7957 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9667,7 +9677,7 @@
 	)
 	(global_label "WB"
 		(shape output)
-		(at 153.67 152.4 0)
+		(at 153.67 144.78 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9677,7 +9687,7 @@
 		)
 		(uuid "f095b4d5-66c4-49c7-86e3-f005485a2a63")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 159.3766 152.4 0)
+			(at 159.3766 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10926,7 +10936,7 @@
 	(symbol
 		(lib_name "LED_1")
 		(lib_id "Device:LED")
-		(at 124.46 157.48 90)
+		(at 133.35 163.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10935,7 +10945,7 @@
 		(fields_autoplaced yes)
 		(uuid "409b94e0-1e45-40b1-8218-0c642c92ebbe")
 		(property "Reference" "D41"
-			(at 128.27 157.7974 90)
+			(at 137.16 164.1474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10944,7 +10954,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 128.27 160.3374 90)
+			(at 137.16 166.6874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10953,7 +10963,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D3.0mm_Clear"
-			(at 124.46 157.48 0)
+			(at 133.35 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10962,7 +10972,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 124.46 157.48 0)
+			(at 133.35 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10971,7 +10981,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 124.46 157.48 0)
+			(at 133.35 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10980,7 +10990,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 124.46 157.48 0)
+			(at 133.35 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11138,7 +11148,7 @@
 	(symbol
 		(lib_name "LED_1")
 		(lib_id "Device:LED")
-		(at 133.35 163.83 90)
+		(at 140.97 157.48 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11147,7 +11157,7 @@
 		(fields_autoplaced yes)
 		(uuid "453c0a0e-2590-4c1a-a654-18f94de0c11b")
 		(property "Reference" "D40"
-			(at 137.16 164.1474 90)
+			(at 144.78 157.7974 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11156,7 +11166,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 137.16 166.6874 90)
+			(at 144.78 160.3374 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11165,7 +11175,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D3.0mm_Clear"
-			(at 133.35 163.83 0)
+			(at 140.97 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11174,7 +11184,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 133.35 163.83 0)
+			(at 140.97 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11183,7 +11193,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 133.35 163.83 0)
+			(at 140.97 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11192,7 +11202,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 133.35 163.83 0)
+			(at 140.97 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12317,7 +12327,7 @@
 	(symbol
 		(lib_name "LED_1")
 		(lib_id "Device:LED")
-		(at 149.86 163.83 90)
+		(at 124.46 157.48 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12326,7 +12336,7 @@
 		(fields_autoplaced yes)
 		(uuid "79b9f177-efdc-4b00-b7d8-36f994721fee")
 		(property "Reference" "D38"
-			(at 153.67 164.1474 90)
+			(at 128.27 157.7974 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12335,7 +12345,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 153.67 166.6874 90)
+			(at 128.27 160.3374 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12344,7 +12354,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D3.0mm_Clear"
-			(at 149.86 163.83 0)
+			(at 124.46 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12353,7 +12363,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 149.86 163.83 0)
+			(at 124.46 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12362,7 +12372,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 149.86 163.83 0)
+			(at 124.46 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12371,7 +12381,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 149.86 163.83 0)
+			(at 124.46 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13886,7 +13896,7 @@
 	(symbol
 		(lib_name "LED_1")
 		(lib_id "Device:LED")
-		(at 140.97 157.48 90)
+		(at 149.86 163.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13895,7 +13905,7 @@
 		(fields_autoplaced yes)
 		(uuid "d6cb0223-2568-40ff-9617-a1fc8b061cb6")
 		(property "Reference" "D39"
-			(at 144.78 157.7974 90)
+			(at 153.67 164.1474 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13904,7 +13914,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 144.78 160.3374 90)
+			(at 153.67 166.6874 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13913,7 +13923,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D3.0mm_Clear"
-			(at 140.97 157.48 0)
+			(at 149.86 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13922,7 +13932,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 140.97 157.48 0)
+			(at 149.86 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13931,7 +13941,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 140.97 157.48 0)
+			(at 149.86 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13940,7 +13950,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 140.97 157.48 0)
+			(at 149.86 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)

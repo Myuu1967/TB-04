@@ -2855,6 +2855,26 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "rev.1    タイミングを考慮した結果変更"
+		(exclude_from_sim no)
+		(at 170.942 193.294 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "20f63ab0-ffff-4eee-8983-a8e8e7ab265d")
+	)
+	(text "rev.1    タイミングを考慮した結果変更"
+		(exclude_from_sim no)
+		(at 264.922 154.686 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "85bf2947-4bea-4e29-bdc3-00e2f7f3ed6a")
+	)
 	(junction
 		(at 320.04 205.74)
 		(diameter 0)
@@ -5263,9 +5283,9 @@
 			)
 		)
 	)
-	(global_label "WB"
+	(global_label "Execute"
 		(shape input)
-		(at 274.32 157.48 180)
+		(at 184.15 189.23 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5273,9 +5293,9 @@
 			)
 			(justify right)
 		)
-		(uuid "5a117d34-87e1-443e-adcd-496f270a06c2")
+		(uuid "4cc5fb66-d8f2-4564-8b3d-1a46b190d896")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 268.6134 157.48 0)
+			(at 173.8472 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5637,28 +5657,6 @@
 			)
 		)
 	)
-	(global_label "WB"
-		(shape input)
-		(at 184.15 189.23 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9782cacf-9f4a-455d-8786-e1f9c5f78732")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 178.4434 189.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "Reg_RD_SEL1a"
 		(shape input)
 		(at 139.7 99.06 0)
@@ -5892,6 +5890,28 @@
 		(uuid "d3064032-b6d7-4abe-859b-5bb01e816bc0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 263.0496 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Decord"
+		(shape input)
+		(at 274.32 157.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d3639a0c-e60c-4392-b169-fc90bd0f84c2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 264.8034 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9897,7 +9917,7 @@
 			)
 		)
 		(pin "SEL0b" input
-			(at 128.27 99.06 0)
+			(at 128.27 116.84 0)
 			(uuid "4700e5ea-002d-4f06-855c-ed1b0fa0200d")
 			(effects
 				(font
@@ -9907,7 +9927,7 @@
 			)
 		)
 		(pin "SEL1a" input
-			(at 128.27 116.84 0)
+			(at 128.27 99.06 0)
 			(uuid "50ca29c2-4ed5-46f4-b6f8-7f646afef8ac")
 			(effects
 				(font
