@@ -18,6 +18,9 @@ amp/
 *-garber/
 *-garber.zip
 
+# Office 一時ロックファイル
+~$*
+
 # Python
 __pycache__/
 *.pyc
@@ -29,6 +32,7 @@ PXL_*.jpg
 # ローカル限定（GitHub非公開）
 ver1/CLAUDE.md
 ver1/必要最小限命令セット.xlsx
+ver2/addr8bitCPU仕様.xlsx
 
 # ブログ用デモ素材・動画（容量が大きいためローカル管理）
 ver1/ブログ記事用/
