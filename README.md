@@ -74,3 +74,5 @@ python gen_prog_rom.py       # プログラム ROM
 
 - 設計編 「【TB-04】4bitCPUの設計」: <https://tanuki-bayashin.hatenablog.com/entry/2026/05/27/140048>
 - 完成編 「【TB-04】4bitCPUの完成（アドレス4bitバージョン）」: <https://tanuki-bayashin.hatenablog.com/entry/2026/06/20/164917>
+- ソースコード編 「【TB-04】4bitCPUのソースコード編（シリーズ完結）」: <https://tanuki-bayashin.hatenablog.com/entry/2026/06/25/220134>
+- ロジックアナライザー編 「ラズベリーパイPicoによる簡易ロジックアナライザー」: <https://tanuki-bayashin.hatenablog.com/entry/2026/06/28/074330>
