@@ -35,8 +35,12 @@ ver1/必要最小限命令セット.xlsx
 ver2/addr8bitCPU仕様.xlsx
 ver1/DEVLOG.md
 ver2/DEVLOG.md
+ver3/DEVLOG.md
 ver2/ver2設計仕様ドラフト.md
 ver2/ver2_ISA.csv
+# ver2 実装成果物（sim・生成ツール・生成ROM）は設計凍結まで非公開。公開時に解除
+ver2/sim/
+ver2/tools/
 
 # ブログ用デモ素材・動画（容量が大きいためローカル管理）
 ver1/ブログ記事用/
