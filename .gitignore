@@ -1,6 +1,9 @@
 # KiCAD auto-backups
 *-backups/
 
+# KiCADローカル履歴（VS Code Local History等・ユーザー領分の埋め込みgitリポジトリ）
+.history/
+
 # KiCAD cache
 fp-info-cache
 
