@@ -416,7 +416,7 @@
         "uuid": "d176c79b-dced-4d01-bcec-7dfd676fcfc2"
       }
     ],
-    "used_designators": "U10,U12,Y1,C21,C29-30,R1,#PWR72,#PWR76,#PWR122",
+    "used_designators": "J2,R2,D22-25,#PWR5,#PWR41-42,#PWR64-65,RN4-5,SW2,U13,C35",
     "variants": []
   },
   "sheets": [
@@ -434,7 +434,7 @@
     ],
     [
       "6e2ac36a-6f35-40e2-a6bf-b7b65f0ed4e4",
-      "RS02"
+      "PC_mAddr"
     ],
     [
       "9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31",
