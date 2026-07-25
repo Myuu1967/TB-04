@@ -39,6 +39,7 @@ ver2/addr8bitCPU仕様.xlsx
 ver1/DEVLOG.md
 ver2/DEVLOG.md
 ver3/DEVLOG.md
+peripherals/7segIF/DEVLOG.md
 ver2/ver2設計仕様ドラフト.md
 ver2/ver2_ISA.csv
 # ver2 実装成果物（sim・生成ツール・生成ROM）は設計凍結まで非公開。公開時に解除
