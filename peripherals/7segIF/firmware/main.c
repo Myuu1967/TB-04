@@ -56,8 +56,18 @@ int main(void)
 
     SystemCoreClockUpdate();
 
-    /* GPIO ポート C / D のクロック供給 */
-    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC | RCC_APB2Periph_GPIOD, ENABLE);
+    /* GPIO ポート C / D ＋ AFIO のクロック供給 */
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC | RCC_APB2Periph_GPIOD
+                         | RCC_APB2Periph_AFIO, ENABLE);
+
+    /*
+     * PD1(seg b) は既定で SDI(単線デバッグ)。SDI を無効化して PD1 を GPIO に開放する。
+     *   これをしないと GPIO_Init しても SDI がピンを握り続け、PD1 は駆動されない
+     *   （seg b が常に消灯・PD1 が H 固定になる）。
+     * 代償：以後ライブデバッグ不可。再書込は WCH-Link の power-off unlock、
+     *   または PD1 を GND に落として電源投入し SWIO に戻してから行う。
+     */
+    GPIO_PinRemapConfig(GPIO_Remap_SDI_Disable, ENABLE);
 
     /*
      * PORTC PC0..PC3 = 入力フローティング

@@ -42,7 +42,11 @@ int main(void)
     SystemCoreClockUpdate();
     Delay_Init();
 
-    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC | RCC_APB2Periph_GPIOD, ENABLE);
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC | RCC_APB2Periph_GPIOD
+                         | RCC_APB2Periph_AFIO, ENABLE);
+
+    /* PD1(seg b) の SDI(単線デバッグ)を無効化して GPIO に開放（詳細は main.c 参照） */
+    GPIO_PinRemapConfig(GPIO_Remap_SDI_Disable, ENABLE);
 
     /* PC0..PC3 = 入力フローティング（TB-04 の 74HC 出力が常時ドライブ） */
     GPIO_InitStructure.GPIO_Pin   = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3;
