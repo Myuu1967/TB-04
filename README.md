@@ -22,12 +22,28 @@ ver1/
   hardware/   KiCAD プロジェクト（回路図・PCB・カスタムシンボル/フットプリント）
   sim/        Python による CPU コアシミュレータ・アセンブラ・対話シミュレータ
   tools/      ROM データ生成ツール（ALU / デコーダ / プログラム）・アセンブラ・ロジアナ表示ツール
-  codes/      テストプログラム（.ASM / .bin / .hex）
+  codes/      サンプルプログラム・命令テスト（.ASM / .bin / .hex）
   pico_codes/ デバッグ用 簡易ロジックアナライザの Pico 側ファームウェア（MicroPython）
-  DEVLOG.md   開発ログ
 ```
 
 ハードウェアの詳細・KiCAD ライブラリの登録方法は [`ver1/hardware/README.md`](ver1/hardware/README.md) を参照してください。
+
+### サンプルプログラム
+
+実機で動かしたデモです。いずれも **16語ROM・4bit・16命令**という制約の中に収めています。
+
+| プログラム | 内容 |
+|---|---|
+| [`LED_FLOW`](ver1/codes/LED_FLOW.ASM) | 流れるLED（シフト命令なしで実現） |
+| [`counter`](ver1/codes/counter.asm) | カウントアップ／ダウン（IN で切替） |
+| [`FIBONACCI`](ver1/codes/FIBONACCI.ASM) | フィボナッチ数列 mod 16（ピサノ周期 π(16)=24 で循環） |
+| [`RAMEN_TIMER`](ver1/codes/RAMEN_TIMER.ASM) | ラーメンタイマー（TD4 オマージュ） |
+| [`KAKEZAN_44`](ver1/codes/KAKEZAN_44.ASM) | かけ算 四四。4×4=16 が4bitで 0 になるのを停止条件に転用 |
+| [`LIFE_CA`](ver1/codes/LIFE_CA.ASM) | 1次元セルオートマトン。あふれビットを帰還させ周期15で消えない |
+| [`PRED_PREY`](ver1/codes/PRED_PREY.ASM) | 捕食者と被食者の個体数振動（周期6・足し算と引き算だけ） |
+| [`MIXED_CORD`](ver1/codes/MIXED_CORD.ASM) | 上記7デモを1個の256語ROMに同梱。ROM上位ニブルの手動セレクタで切替 |
+
+このほかに命令・ポートの動作確認用が17本あります。各プログラムの解説・出力列・アセンブル方法は [`ver1/codes/README.md`](ver1/codes/README.md) を参照してください。
 
 ## アーキテクチャ（ver1）
 
