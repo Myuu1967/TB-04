@@ -7589,7 +7589,7 @@
 	)
 	(global_label "OPR6"
 		(shape input)
-		(at 208.28 71.12 0)
+		(at 212.09 71.12 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7599,7 +7599,7 @@
 		)
 		(uuid "fae4b5a4-fec3-4944-8920-01f9c23c9c21")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 216.3452 71.12 0)
+			(at 220.1552 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
