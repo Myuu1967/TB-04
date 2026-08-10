@@ -1,0 +1,64 @@
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+=======================================================================
+
+This work — the hardware design of the TB-04 "7segIF" unit
+(schematics, PCB layout, and related design files under
+peripherals/7segIF/hardware/) — is licensed under the
+Creative Commons Attribution-ShareAlike 4.0 International License.
+
+  - License deed (human-readable summary):
+      https://creativecommons.org/licenses/by-sa/4.0/
+  - Full legal code (authoritative text):
+      https://creativecommons.org/licenses/by-sa/4.0/legalcode
+      (plain text: https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt)
+
+Under CC 4.0, referring to this Public License by the URI above is a
+recognized way to satisfy its terms. You may replace this file with the
+full legal code downloaded from the URL above if you prefer to ship it
+verbatim.
+
+
+Summary of the license (not a substitute for the full legal code)
+-----------------------------------------------------------------
+You are free to:
+
+  - Share  — copy and redistribute the material in any medium or format.
+  - Adapt  — remix, transform, and build upon the material for any
+             purpose, even commercially.
+
+Under the following terms:
+
+  - Attribution (BY) — You must give appropriate credit, provide a link
+    to the license, and indicate if changes were made. You may do so in
+    any reasonable manner, but not in any way that suggests the licensor
+    endorses you or your use.
+  - ShareAlike (SA) — If you remix, transform, or build upon the
+    material, you must distribute your contributions under the same
+    license as the original.
+  - No additional restrictions — You may not apply legal terms or
+    technological measures that legally restrict others from doing
+    anything the license permits.
+
+
+Attribution / Credit
+--------------------
+This circuit is based in part on, and adapted from, work by
+cherry-takuan (ちぇりーたくあん):
+
+  - Source : https://github.com/cherry-takuan/nlp
+             (referenced portion: nlp-16a/Hardware/debug)
+  - License: CC BY-SA 4.0
+
+Changes were made. Portions reused are limited to functional/standard
+practice (power-supply decoupling placement near the VDD/VSS pins, and
+the WCH-Link programming-header arrangement and its comments). In keeping
+with the ShareAlike spirit of the original, this 7segIF hardware is also
+released under CC BY-SA 4.0.
+
+
+Scope note
+----------
+This CC BY-SA 4.0 license applies to the HARDWARE design files
+(peripherals/7segIF/hardware/). The firmware under
+peripherals/7segIF/firmware/ is original work, not derived from the
+above source, and is not covered by this license.

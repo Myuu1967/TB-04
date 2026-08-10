@@ -17,9 +17,13 @@ amp/
 *.docx
 *.PDF
 
-# Gerber 出力
-*-garber/
-*-garber.zip
+# Gerber・ドリル出力（製造用の生成物。回路図/基板ファイルから再生成可）
+*-gerber/
+*-gerber.zip
+*.gbr
+*.gbrjob
+*.drl
+peripherals/7segIF/hardware/7segIF.zip
 
 # Office 一時ロックファイル
 ~$*
@@ -28,9 +32,11 @@ amp/
 __pycache__/
 *.pyc
 
-# 個人写真（誤コミット防止）
+# 個人写真・実機撮影動画（誤コミット防止・容量が大きいためローカル管理）
 PXL_*.jpg
 *.jpeg
+PXL_*.mp4
+*.mp4
 
 # ローカル限定（GitHub非公開）
 ver1/CLAUDE.md
