@@ -25,6 +25,13 @@ amp/
 *.drl
 peripherals/7segIF/hardware/7segIF.zip
 
+# AIレビュー用の生成物（ネットリスト＋ERCの自動出力。回路図から再生成可）
+ai-review/
+**/hardware/**/*.xml
+
+# KiCAD ロックファイル（編集中のみ生成される一時ファイル）
+*.lck
+
 # Office 一時ロックファイル
 ~$*
 
