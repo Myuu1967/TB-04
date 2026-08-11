@@ -4099,10 +4099,10 @@
 		(uuid "165ba6c6-aa5a-4830-a158-4a0d468760b9")
 	)
 	(junction
-		(at 123.19 71.12)
+		(at 229.87 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "18816945-1848-4580-abf0-999c9a6d9dfc")
+		(uuid "334b9693-d1ec-4516-9bbc-491493d94e91")
 	)
 	(junction
 		(at 107.95 40.64)
@@ -4111,16 +4111,58 @@
 		(uuid "575c68b4-a957-4f76-836a-61febe7296e2")
 	)
 	(junction
+		(at 241.3 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "604f49c8-585d-431d-ba4d-510ed66ea590")
+	)
+	(junction
+		(at 252.73 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "64fa3d6c-6044-4688-aa45-9301336ad600")
+	)
+	(junction
 		(at 107.95 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6cefd07c-f040-4062-855b-69f4622f3a03")
 	)
 	(junction
+		(at 200.66 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c81ee36-8cfc-4e19-bd2e-5ea2af6afea2")
+	)
+	(junction
+		(at 241.3 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7f3b9f4a-785c-49a1-a229-ae4e6fe49e9a")
+	)
+	(junction
+		(at 252.73 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "83f92da9-d76b-4bb8-8134-55763727a720")
+	)
+	(junction
+		(at 241.3 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "84f95e2b-e012-4648-a0bc-956f44ee3bf6")
+	)
+	(junction
 		(at 92.71 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "980642d9-aa19-4fad-b84a-90be6847578b")
+	)
+	(junction
+		(at 220.98 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0e3e4e1-c87f-41be-8482-f77a97827cab")
 	)
 	(junction
 		(at 85.09 81.28)
@@ -4134,9 +4176,33 @@
 		(color 0 0 0 0)
 		(uuid "e19cfc02-2596-4a31-9552-efe88002a6d0")
 	)
+	(junction
+		(at 229.87 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e61ee435-3bbd-4136-a2bd-7c84c7a06cf6")
+	)
+	(no_connect
+		(at 120.65 71.12)
+		(uuid "182c09db-8a76-492a-985c-960c307a4113")
+	)
+	(no_connect
+		(at 120.65 76.2)
+		(uuid "b9cd6bd8-846d-4853-970e-6f58ca09d13d")
+	)
 	(no_connect
 		(at 120.65 66.04)
 		(uuid "fe0c3976-a5d3-4eaa-90ff-ed1e7054fc5c")
+	)
+	(wire
+		(pts
+			(xy 224.79 129.54) (xy 229.87 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00db7239-1015-4c96-83b9-3857dabc65c9")
 	)
 	(wire
 		(pts
@@ -4220,6 +4286,36 @@
 	)
 	(wire
 		(pts
+			(xy 264.16 129.54) (xy 264.16 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "219a18c4-81f7-4f6a-99bc-40f8a13b16b1")
+	)
+	(wire
+		(pts
+			(xy 252.73 129.54) (xy 252.73 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22ddf5b2-1903-4e18-b546-1792cff98017")
+	)
+	(wire
+		(pts
+			(xy 241.3 129.54) (xy 241.3 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27f6380e-f1ed-4359-b8d5-ded015d62a5c")
+	)
+	(wire
+		(pts
 			(xy 107.95 40.64) (xy 111.76 40.64)
 		)
 		(stroke
@@ -4230,6 +4326,26 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 82.55) (xy 241.3 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30c9bbad-3902-457b-86b6-02fc1d6140aa")
+	)
+	(wire
+		(pts
+			(xy 264.16 144.78) (xy 252.73 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32b69bf4-abd3-422a-9c57-2e7a8b7b137d")
+	)
+	(wire
+		(pts
 			(xy 78.74 71.12) (xy 95.25 71.12)
 		)
 		(stroke
@@ -4237,6 +4353,16 @@
 			(type default)
 		)
 		(uuid "340c7928-f3c3-4387-801c-47be803a1dcd")
+	)
+	(wire
+		(pts
+			(xy 264.16 142.24) (xy 264.16 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "378423df-7f3e-4b21-9c77-118f884a44af")
 	)
 	(wire
 		(pts
@@ -4270,16 +4396,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 71.12) (xy 123.19 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43770c08-ee81-45a9-b1cf-2c1607850d8f")
-	)
-	(wire
-		(pts
 			(xy 92.71 58.42) (xy 95.25 58.42)
 		)
 		(stroke
@@ -4300,6 +4416,26 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 129.54) (xy 229.87 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a4a6aaf-c571-41d9-964b-5dafe22737df")
+	)
+	(wire
+		(pts
+			(xy 220.98 110.49) (xy 220.98 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60221938-5f61-42b1-9a7c-5bf305b77440")
+	)
+	(wire
+		(pts
 			(xy 91.44 78.74) (xy 95.25 78.74)
 		)
 		(stroke
@@ -4307,6 +4443,16 @@
 			(type default)
 		)
 		(uuid "6206f0fa-6509-4b25-8233-b10c4f244e30")
+	)
+	(wire
+		(pts
+			(xy 229.87 142.24) (xy 229.87 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62938f4f-87c9-4a7a-838e-339d9ea099a5")
 	)
 	(wire
 		(pts
@@ -4320,13 +4466,13 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 71.12) (xy 124.46 71.12)
+			(xy 241.3 129.54) (xy 252.73 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6defda4b-bcc1-4e6e-92fb-00c598b55b40")
+		(uuid "72c27677-9ce6-4f79-ba3c-405bd4f2be6c")
 	)
 	(wire
 		(pts
@@ -4350,13 +4496,13 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 76.2) (xy 123.19 76.2)
+			(xy 229.87 144.78) (xy 229.87 146.05)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7abf1ae1-22a2-437d-b8ad-2e65a6af8277")
+		(uuid "7ff38594-f7ab-4263-aa2a-c1ac29080124")
 	)
 	(wire
 		(pts
@@ -4380,6 +4526,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 82.55) (xy 200.66 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "832082ed-0780-4ca8-84c8-2339fa7b0f17")
+	)
+	(wire
+		(pts
 			(xy 128.27 138.43) (xy 132.08 138.43)
 		)
 		(stroke
@@ -4387,6 +4543,26 @@
 			(type default)
 		)
 		(uuid "8a9790a1-d28d-4fc0-8f0a-55693618b84b")
+	)
+	(wire
+		(pts
+			(xy 200.66 110.49) (xy 200.66 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bd92976-1b62-44ed-8e60-36f170e7e55a")
+	)
+	(wire
+		(pts
+			(xy 262.89 82.55) (xy 262.89 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cb93e77-6fad-4176-b562-0768cf6e6717")
 	)
 	(wire
 		(pts
@@ -4460,6 +4636,26 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 82.55) (xy 220.98 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b14d8c98-c3ee-4351-9e3a-be330c3253ce")
+	)
+	(wire
+		(pts
+			(xy 252.73 142.24) (xy 252.73 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b25dac36-d200-4d67-954b-c8ca43cb283d")
+	)
+	(wire
+		(pts
 			(xy 59.69 135.89) (xy 63.5 135.89)
 		)
 		(stroke
@@ -4467,6 +4663,36 @@
 			(type default)
 		)
 		(uuid "ba3c12c3-99d9-4b01-9b56-9fd5c2c0ea5c")
+	)
+	(wire
+		(pts
+			(xy 200.66 82.55) (xy 200.66 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc022780-4c41-44e8-b90a-db9d86adee14")
+	)
+	(wire
+		(pts
+			(xy 241.3 82.55) (xy 262.89 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd07fa1c-b8e2-44f4-acd6-f49a5c93b970")
+	)
+	(wire
+		(pts
+			(xy 229.87 129.54) (xy 241.3 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be79774c-f471-4962-8015-a248a3ec984b")
 	)
 	(wire
 		(pts
@@ -4510,6 +4736,16 @@
 	)
 	(wire
 		(pts
+			(xy 252.73 129.54) (xy 264.16 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d52096c8-bfe1-47d8-a122-443bfd6c2443")
+	)
+	(wire
+		(pts
 			(xy 92.71 60.96) (xy 95.25 60.96)
 		)
 		(stroke
@@ -4517,6 +4753,26 @@
 			(type default)
 		)
 		(uuid "d92b755c-8257-4526-9df0-2a36c4b9b00c")
+	)
+	(wire
+		(pts
+			(xy 220.98 82.55) (xy 220.98 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9ed133f-5531-4b38-b63d-476e93c6bf92")
+	)
+	(wire
+		(pts
+			(xy 252.73 144.78) (xy 241.3 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfbe43f9-51ac-4d02-be92-9512ac5127de")
 	)
 	(wire
 		(pts
@@ -4560,6 +4816,36 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 142.24) (xy 241.3 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed27a91d-1923-41b1-b988-6981767628e5")
+	)
+	(wire
+		(pts
+			(xy 241.3 110.49) (xy 241.3 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f038a224-6954-4145-83a6-0753c0f50b04")
+	)
+	(wire
+		(pts
+			(xy 220.98 82.55) (xy 241.3 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f24252cd-6f7d-4f7c-ad38-feffd2c9fb33")
+	)
+	(wire
+		(pts
 			(xy 92.71 46.99) (xy 107.95 46.99)
 		)
 		(stroke
@@ -4570,13 +4856,23 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 76.2) (xy 123.19 71.12)
+			(xy 241.3 144.78) (xy 229.87 144.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fffd3c21-ee33-45f6-971e-a539dc5de428")
+		(uuid "fc56fc1a-aacc-4f56-871b-8c84a9be688a")
+	)
+	(wire
+		(pts
+			(xy 262.89 110.49) (xy 262.89 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcadf103-74d4-4323-ae3f-e4d1ba91b49a")
 	)
 	(global_label "SP_CD"
 		(shape input)
@@ -4621,6 +4917,29 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "VDD"
+		(shape input)
+		(at 194.31 82.55 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3c2341a4-0833-4114-95af-0993b405f52a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.6962 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -4902,24 +5221,24 @@
 	)
 	(global_label "VDD"
 		(shape input)
-		(at 124.46 71.12 0)
+		(at 224.79 129.54 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "cf8d2540-da6e-4d74-b5e3-af3e7cf1dda9")
+		(uuid "da40f0e2-2d99-485d-a4ee-e7cc1f108f76")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 131.0738 71.12 0)
+			(at 218.1762 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 	)
@@ -4994,7 +5313,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS32")
-		(at 226.06 49.53 0)
+		(at 228.6 54.61 0)
 		(unit 4)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5004,8 +5323,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0bf02bd9-91a2-40a7-965a-2dd72fcdc23b")
-		(property "Reference" "U41"
-			(at 226.06 40.64 0)
+		(property "Reference" "U37"
+			(at 228.6 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5015,7 +5334,7 @@
 			)
 		)
 		(property "Value" "74LS32"
-			(at 226.06 43.18 0)
+			(at 228.6 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5025,7 +5344,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 226.06 49.53 0)
+			(at 228.6 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5036,7 +5355,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
-			(at 226.06 49.53 0)
+			(at 228.6 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5047,7 +5366,7 @@
 			)
 		)
 		(property "Description" "Quad 2-input OR"
-			(at 226.06 49.53 0)
+			(at 228.6 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5102,7 +5421,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U41")
+					(reference "U37")
 					(unit 4)
 				)
 			)
@@ -5120,7 +5439,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0cb24eb5-23a4-4254-9dea-67c776ada4ce")
-		(property "Reference" "U43"
+		(property "Reference" "U35"
 			(at 71.1117 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5218,7 +5537,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U43")
+					(reference "U35")
 					(unit 1)
 				)
 			)
@@ -5226,7 +5545,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC00")
-		(at 224.79 85.09 0)
+		(at 200.66 97.79 0)
 		(unit 5)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5236,8 +5555,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a962777-c205-4f10-aff9-96382fe32946")
-		(property "Reference" "U40"
-			(at 231.14 83.8199 0)
+		(property "Reference" "U36"
+			(at 207.01 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5248,7 +5567,7 @@
 			)
 		)
 		(property "Value" "74HC00"
-			(at 231.14 86.3599 0)
+			(at 207.01 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5259,7 +5578,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 224.79 85.09 0)
+			(at 200.66 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5270,7 +5589,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
-			(at 224.79 85.09 0)
+			(at 200.66 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5281,7 +5600,7 @@
 			)
 		)
 		(property "Description" "quad 2-input NAND gate"
-			(at 224.79 85.09 0)
+			(at 200.66 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5336,7 +5655,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U40")
+					(reference "U36")
 					(unit 5)
 				)
 			)
@@ -5344,8 +5663,8 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC00")
-		(at 205.74 147.32 0)
-		(mirror y)
+		(at 187.96 54.61 0)
+		(mirror x)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5354,8 +5673,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "235ec6be-e392-484c-bfc4-047cc6e48fff")
-		(property "Reference" "U16"
-			(at 205.7483 138.43 0)
+		(property "Reference" "U5"
+			(at 187.9517 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5365,7 +5684,7 @@
 			)
 		)
 		(property "Value" "74HC00"
-			(at 205.7483 140.97 0)
+			(at 187.9517 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5375,7 +5694,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
-			(at 205.74 147.32 0)
+			(at 187.96 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5386,7 +5705,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
-			(at 205.74 147.32 0)
+			(at 187.96 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5397,7 +5716,7 @@
 			)
 		)
 		(property "Description" "quad 2-input NAND gate"
-			(at 205.74 147.32 0)
+			(at 187.96 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5452,7 +5771,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U16")
+					(reference "U5")
 					(unit 2)
 				)
 			)
@@ -5460,7 +5779,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74AHC04")
-		(at 276.86 34.29 0)
+		(at 269.24 24.13 0)
 		(unit 4)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5470,8 +5789,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "25724f7b-bffd-41da-a89c-b662495da11e")
-		(property "Reference" "U42"
-			(at 276.86 25.4 0)
+		(property "Reference" "U2"
+			(at 269.24 15.24 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5481,7 +5800,7 @@
 			)
 		)
 		(property "Value" "74AHC04"
-			(at 276.86 27.94 0)
+			(at 269.24 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5491,7 +5810,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 276.86 34.29 0)
+			(at 269.24 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5502,7 +5821,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf"
-			(at 276.86 34.29 0)
+			(at 269.24 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5513,7 +5832,7 @@
 			)
 		)
 		(property "Description" "Hex Inverter"
-			(at 276.86 34.29 0)
+			(at 269.24 24.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5568,7 +5887,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U42")
+					(reference "U2")
 					(unit 4)
 				)
 			)
@@ -5576,8 +5895,8 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC00")
-		(at 182.88 147.32 0)
-		(mirror y)
+		(at 187.96 39.37 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5586,8 +5905,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3ac9e3f7-0850-43e9-a12f-eb06a7c720e9")
-		(property "Reference" "U16"
-			(at 182.8883 138.43 0)
+		(property "Reference" "U5"
+			(at 187.9517 48.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5597,7 +5916,7 @@
 			)
 		)
 		(property "Value" "74HC00"
-			(at 182.8883 140.97 0)
+			(at 187.9517 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5607,7 +5926,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
-			(at 182.88 147.32 0)
+			(at 187.96 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5618,7 +5937,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
-			(at 182.88 147.32 0)
+			(at 187.96 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5629,7 +5948,7 @@
 			)
 		)
 		(property "Description" "quad 2-input NAND gate"
-			(at 182.88 147.32 0)
+			(at 187.96 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5684,16 +6003,16 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U16")
+					(reference "U5")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "74xx:74AHC04")
-		(at 276.86 63.5 0)
-		(unit 6)
+		(lib_id "power:GND")
+		(at 220.98 113.03 0)
+		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5701,9 +6020,10 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "470241e7-026b-4569-b2b8-71e1658ba7ba")
-		(property "Reference" "U42"
-			(at 276.86 54.61 0)
+		(uuid "3e988bcb-c334-4c42-8665-4619ec0c93a0")
+		(property "Reference" "#PWR0128"
+			(at 220.98 119.38 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5712,8 +6032,8 @@
 				)
 			)
 		)
-		(property "Value" "74AHC04"
-			(at 276.86 57.15 0)
+		(property "Value" "GND"
+			(at 220.98 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5723,7 +6043,162 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 276.86 63.5 0)
+			(at 220.98 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 220.98 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7257dfc6-6741-4a46-bae5-1f5ec5582f84")
+		)
+		(instances
+			(project "TB04addr8bit"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
+					(reference "#PWR0128")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 229.87 146.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41f1e7f2-0a4e-4f7a-9a2c-b587f23932e2")
+		(property "Reference" "#PWR0131"
+			(at 229.87 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 229.87 151.13 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 229.87 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fb3fbde8-7e96-4230-b32b-0d040072bf75")
+		)
+		(instances
+			(project "TB04addr8bit"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
+					(reference "#PWR0131")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74AHC04")
+		(at 269.24 53.34 0)
+		(unit 6)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "470241e7-026b-4569-b2b8-71e1658ba7ba")
+		(property "Reference" "U2"
+			(at 269.24 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74AHC04"
+			(at 269.24 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 269.24 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5734,7 +6209,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf"
-			(at 276.86 63.5 0)
+			(at 269.24 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5745,7 +6220,7 @@
 			)
 		)
 		(property "Description" "Hex Inverter"
-			(at 276.86 63.5 0)
+			(at 269.24 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5800,7 +6275,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U42")
+					(reference "U2")
 					(unit 6)
 				)
 			)
@@ -5808,7 +6283,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74AHC04")
-		(at 276.86 49.53 0)
+		(at 269.24 39.37 0)
 		(unit 5)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5818,8 +6293,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47944b8f-4816-4abb-9269-24af96c5d8ef")
-		(property "Reference" "U42"
-			(at 276.86 40.64 0)
+		(property "Reference" "U2"
+			(at 269.24 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5829,7 +6304,7 @@
 			)
 		)
 		(property "Value" "74AHC04"
-			(at 276.86 43.18 0)
+			(at 269.24 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5839,7 +6314,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 276.86 49.53 0)
+			(at 269.24 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5850,7 +6325,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf"
-			(at 276.86 49.53 0)
+			(at 269.24 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5861,7 +6336,7 @@
 			)
 		)
 		(property "Description" "Hex Inverter"
-			(at 276.86 49.53 0)
+			(at 269.24 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5916,7 +6391,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U42")
+					(reference "U2")
 					(unit 5)
 				)
 			)
@@ -5924,7 +6399,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 195.58 86.36 0)
+		(at 262.89 97.79 0)
 		(unit 5)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5934,8 +6409,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4a95be29-ae32-4796-8c92-2f09591539f3")
-		(property "Reference" "U43"
-			(at 201.93 85.0899 0)
+		(property "Reference" "U35"
+			(at 269.24 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5946,7 +6421,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 201.93 87.6299 0)
+			(at 269.24 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5957,7 +6432,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 195.58 86.36 0)
+			(at 262.89 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5968,7 +6443,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 195.58 86.36 0)
+			(at 262.89 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5979,7 +6454,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 195.58 86.36 0)
+			(at 262.89 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6034,7 +6509,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U43")
+					(reference "U35")
 					(unit 5)
 				)
 			)
@@ -6052,7 +6527,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4fed89ea-ec26-459a-8037-840aace3a84e")
-		(property "Reference" "U41"
+		(property "Reference" "U37"
 			(at 69.85 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6150,7 +6625,89 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U41")
+					(reference "U37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 241.3 138.43 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50744938-4d07-40e8-b721-6a1fcc2b617f")
+		(property "Reference" "C54"
+			(at 245.11 137.1599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 245.11 139.6999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.3348 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 241.3 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c38a7cb3-70f0-451d-9a12-48e4df747d35")
+		)
+		(pin "2"
+			(uuid "9e575774-031e-4635-a2af-ecc2ab676817")
+		)
+		(instances
+			(project "TB04addr8bit"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
+					(reference "C54")
 					(unit 1)
 				)
 			)
@@ -6168,7 +6725,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "661d8d47-30dc-4229-a02c-1039712c5826")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR0125"
 			(at 124.46 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -6228,7 +6785,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "#PWR035")
+					(reference "#PWR0125")
 					(unit 1)
 				)
 			)
@@ -6246,7 +6803,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "67856b65-37b0-42ba-9208-04973c6b08f9")
-		(property "Reference" "U41"
+		(property "Reference" "U37"
 			(at 87.63 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6344,7 +6901,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U41")
+					(reference "U37")
 					(unit 2)
 				)
 			)
@@ -6362,7 +6919,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "72b27b56-f869-43e5-bf57-bff623a1bda5")
-		(property "Reference" "U40"
+		(property "Reference" "U36"
 			(at 88.8917 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6460,7 +7017,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U40")
+					(reference "U36")
 					(unit 4)
 				)
 			)
@@ -6468,7 +7025,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS32")
-		(at 226.06 34.29 0)
+		(at 228.6 39.37 0)
 		(unit 3)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6478,8 +7035,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "76eaa8ba-5436-4188-a982-a5ada73aa0ff")
-		(property "Reference" "U41"
-			(at 226.06 25.4 0)
+		(property "Reference" "U37"
+			(at 228.6 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6489,7 +7046,7 @@
 			)
 		)
 		(property "Value" "74LS32"
-			(at 226.06 27.94 0)
+			(at 228.6 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6499,7 +7056,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 226.06 34.29 0)
+			(at 228.6 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6510,7 +7067,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
-			(at 226.06 34.29 0)
+			(at 228.6 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6521,7 +7078,7 @@
 			)
 		)
 		(property "Description" "Quad 2-input OR"
-			(at 226.06 34.29 0)
+			(at 228.6 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6576,15 +7133,97 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U41")
+					(reference "U37")
 					(unit 3)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 264.16 138.43 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "90517122-c6bd-48a3-807c-2cb4f62001fc")
+		(property "Reference" "C56"
+			(at 267.97 137.1599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 267.97 139.6999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 263.1948 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 264.16 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 264.16 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4542f6df-2ed3-4bcb-9fc0-ced955f27103")
+		)
+		(pin "2"
+			(uuid "b565c1e1-8751-462f-93e1-3d37a31d05b9")
+		)
+		(instances
+			(project "TB04addr8bit"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
+					(reference "C56")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74HC00")
-		(at 204.47 120.65 0)
+		(at 208.28 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6594,8 +7233,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c12178d-09a2-4b4b-a585-a5b5df1a878f")
-		(property "Reference" "U40"
-			(at 204.4617 111.76 0)
+		(property "Reference" "U36"
+			(at 208.2717 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6605,7 +7244,7 @@
 			)
 		)
 		(property "Value" "74HC00"
-			(at 204.4617 114.3 0)
+			(at 208.2717 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6615,7 +7254,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 204.47 120.65 0)
+			(at 208.28 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6626,7 +7265,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
-			(at 204.47 120.65 0)
+			(at 208.28 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6637,7 +7276,7 @@
 			)
 		)
 		(property "Description" "quad 2-input NAND gate"
-			(at 204.47 120.65 0)
+			(at 208.28 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6692,7 +7331,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U40")
+					(reference "U36")
 					(unit 1)
 				)
 			)
@@ -6700,7 +7339,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74AHC04")
-		(at 255.27 49.53 0)
+		(at 248.92 39.37 0)
 		(unit 2)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6710,8 +7349,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a74fc47e-42ca-4a2a-93a4-e8af12800ca0")
-		(property "Reference" "U42"
-			(at 255.27 40.64 0)
+		(property "Reference" "U2"
+			(at 248.92 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6721,7 +7360,7 @@
 			)
 		)
 		(property "Value" "74AHC04"
-			(at 255.27 43.18 0)
+			(at 248.92 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6731,7 +7370,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 49.53 0)
+			(at 248.92 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6742,7 +7381,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf"
-			(at 255.27 49.53 0)
+			(at 248.92 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6753,7 +7392,7 @@
 			)
 		)
 		(property "Description" "Hex Inverter"
-			(at 255.27 49.53 0)
+			(at 248.92 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6808,15 +7447,93 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U42")
+					(reference "U2")
 					(unit 2)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 200.66 113.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b021fd13-167d-447d-9c44-dff0d2b23c91")
+		(property "Reference" "#PWR0127"
+			(at 200.66 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 200.66 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 200.66 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0d47e806-0c70-4eb1-9c0f-6ab3338062d3")
+		)
+		(instances
+			(project "TB04addr8bit"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
+					(reference "#PWR0127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74AHC04")
-		(at 265.43 85.09 0)
+		(at 241.3 97.79 0)
 		(unit 7)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6826,8 +7543,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6e2eaf5-2ed3-45bf-9a99-cff49f350a1f")
-		(property "Reference" "U42"
-			(at 271.78 83.8199 0)
+		(property "Reference" "U2"
+			(at 247.65 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6838,7 +7555,7 @@
 			)
 		)
 		(property "Value" "74AHC04"
-			(at 271.78 86.3599 0)
+			(at 247.65 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6849,7 +7566,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 265.43 85.09 0)
+			(at 241.3 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6860,7 +7577,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf"
-			(at 265.43 85.09 0)
+			(at 241.3 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6871,7 +7588,7 @@
 			)
 		)
 		(property "Description" "Hex Inverter"
-			(at 265.43 85.09 0)
+			(at 241.3 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6926,7 +7643,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U42")
+					(reference "U2")
 					(unit 7)
 				)
 			)
@@ -6944,7 +7661,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bad980ed-3c89-472e-901c-e2483c6eefce")
-		(property "Reference" "U43"
+		(property "Reference" "U35"
 			(at 120.6417 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7042,7 +7759,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U43")
+					(reference "U35")
 					(unit 2)
 				)
 			)
@@ -7060,7 +7777,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bc5cf7a8-a2d0-49a4-978a-2d87d1d2ed99")
-		(property "Reference" "U39"
+		(property "Reference" "U38"
 			(at 110.0933 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7166,16 +7883,16 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U39")
+					(reference "U38")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "74xx:74AHC04")
-		(at 255.27 63.5 0)
-		(unit 3)
+		(lib_id "Device:C")
+		(at 252.73 138.43 180)
+		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7183,9 +7900,32 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c8347010-79b7-4a56-ac2c-734c8c8ba2a1")
-		(property "Reference" "U42"
-			(at 255.27 54.61 0)
+		(uuid "bc95d313-f2a1-4497-b52f-cd2173f3f691")
+		(property "Reference" "C55"
+			(at 256.54 137.1599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 256.54 139.6999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.7648 134.62 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7194,8 +7934,68 @@
 				)
 			)
 		)
-		(property "Value" "74AHC04"
-			(at 255.27 57.15 0)
+		(property "Datasheet" ""
+			(at 252.73 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 252.73 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "603bca72-56f6-495f-83fc-a8b0393a83dd")
+		)
+		(pin "2"
+			(uuid "505a825c-0d19-44bc-a483-fcb456562e6f")
+		)
+		(instances
+			(project "TB04addr8bit"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
+					(reference "C55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 262.89 113.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c7b0e0a9-3713-486b-9192-712872319361")
+		(property "Reference" "#PWR0130"
+			(at 262.89 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 262.89 118.11 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7205,7 +8005,84 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 255.27 63.5 0)
+			(at 262.89 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 262.89 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 262.89 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "84fd9659-b4e1-4d11-b101-4ac884796a6c")
+		)
+		(instances
+			(project "TB04addr8bit"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
+					(reference "#PWR0130")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74AHC04")
+		(at 248.92 53.34 0)
+		(unit 3)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8347010-79b7-4a56-ac2c-734c8c8ba2a1")
+		(property "Reference" "U2"
+			(at 248.92 44.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74AHC04"
+			(at 248.92 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 248.92 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7216,7 +8093,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf"
-			(at 255.27 63.5 0)
+			(at 248.92 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7227,7 +8104,7 @@
 			)
 		)
 		(property "Description" "Hex Inverter"
-			(at 255.27 63.5 0)
+			(at 248.92 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7282,8 +8159,90 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U42")
+					(reference "U2")
 					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 229.87 138.43 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4ad0439-50c2-459c-a9c5-f53a8a9ebd4b")
+		(property "Reference" "C53"
+			(at 233.68 137.1599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 233.68 139.6999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.9048 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 229.87 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e54cff41-cf2c-43da-bf78-ac9d967156d3")
+		)
+		(pin "2"
+			(uuid "996bf8cd-9bc5-4ac1-95cf-a42cbd538674")
+		)
+		(instances
+			(project "TB04addr8bit"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
+					(reference "C53")
+					(unit 1)
 				)
 			)
 		)
@@ -7300,7 +8259,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7a8f868-2182-4d5a-bc06-8191e98c2b0a")
-		(property "Reference" "U43"
+		(property "Reference" "U35"
 			(at 120.6417 129.54 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7398,7 +8357,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U43")
+					(reference "U35")
 					(unit 3)
 				)
 			)
@@ -7406,7 +8365,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS32")
-		(at 245.11 85.09 0)
+		(at 220.98 97.79 0)
 		(unit 5)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7416,8 +8375,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de528d6a-1d1c-4fcf-9f5e-2eec3c85e691")
-		(property "Reference" "U41"
-			(at 251.46 83.8199 0)
+		(property "Reference" "U37"
+			(at 227.33 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7428,7 +8387,7 @@
 			)
 		)
 		(property "Value" "74LS32"
-			(at 251.46 86.3599 0)
+			(at 227.33 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7439,7 +8398,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 245.11 85.09 0)
+			(at 220.98 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7450,7 +8409,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
-			(at 245.11 85.09 0)
+			(at 220.98 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7461,7 +8420,7 @@
 			)
 		)
 		(property "Description" "Quad 2-input OR"
-			(at 245.11 85.09 0)
+			(at 220.98 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7516,7 +8475,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U41")
+					(reference "U37")
 					(unit 5)
 				)
 			)
@@ -7534,7 +8493,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e4b426ee-e19b-4dfc-90b3-c4ac00519c30")
-		(property "Reference" "C49"
+		(property "Reference" "C52"
 			(at 115.57 33.02 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7596,7 +8555,85 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "C49")
+					(reference "C52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 241.3 113.03 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea9e22c3-237c-45fc-99ea-2f5b4f0c5c9b")
+		(property "Reference" "#PWR0129"
+			(at 241.3 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 241.3 118.11 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 241.3 113.03 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3e88c9ab-d6e2-4a0b-aa6b-acf7bc07dc87")
+		)
+		(instances
+			(project "TB04addr8bit"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
+					(reference "#PWR0129")
 					(unit 1)
 				)
 			)
@@ -7614,7 +8651,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fdfd4259-70bf-4473-bcaf-c30b91e77bf4")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR0126"
 			(at 107.95 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -7674,7 +8711,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "#PWR030")
+					(reference "#PWR0126")
 					(unit 1)
 				)
 			)

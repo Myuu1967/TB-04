@@ -2004,7 +2004,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1affa2d2-06fe-4779-b8b8-2189f1ddce98")
-		(property "Reference" "SW2"
+		(property "Reference" "SW6"
 			(at 138.43 52.0699 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2086,7 +2086,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/b94da786-8338-40c3-8c17-e9858e8674bf"
-					(reference "SW2")
+					(reference "SW6")
 					(unit 1)
 				)
 			)
@@ -2105,7 +2105,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47e49de6-375c-43cd-afe9-b26ab20e0a75")
-		(property "Reference" "D24"
+		(property "Reference" "D64"
 			(at 99.06 77.7874 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2180,7 +2180,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/b94da786-8338-40c3-8c17-e9858e8674bf"
-					(reference "D24")
+					(reference "D64")
 					(unit 1)
 				)
 			)
@@ -2292,7 +2292,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85ec9af2-fa1d-4ed8-bd3d-ccb5de2c0f7d")
-		(property "Reference" "#PWR041"
+		(property "Reference" "#PWR0122"
 			(at 93.98 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -2352,7 +2352,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/b94da786-8338-40c3-8c17-e9858e8674bf"
-					(reference "#PWR041")
+					(reference "#PWR0122")
 					(unit 1)
 				)
 			)
@@ -2369,7 +2369,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9f30809e-4844-4b01-92b8-b9f75d7c7752")
-		(property "Reference" "#PWR042"
+		(property "Reference" "#PWR0121"
 			(at 127 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -2429,7 +2429,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/b94da786-8338-40c3-8c17-e9858e8674bf"
-					(reference "#PWR042")
+					(reference "#PWR0121")
 					(unit 1)
 				)
 			)
@@ -2448,7 +2448,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a0eee2ee-54ce-4a5f-befe-2452827549f9")
-		(property "Reference" "D22"
+		(property "Reference" "D65"
 			(at 115.57 77.7874 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2523,7 +2523,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/b94da786-8338-40c3-8c17-e9858e8674bf"
-					(reference "D22")
+					(reference "D65")
 					(unit 1)
 				)
 			)
@@ -2541,7 +2541,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b59911a6-4162-43b1-8b53-4381d7eb4235")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR0120"
 			(at 81.28 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -2601,7 +2601,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/b94da786-8338-40c3-8c17-e9858e8674bf"
-					(reference "#PWR05")
+					(reference "#PWR0120")
 					(unit 1)
 				)
 			)
@@ -2619,7 +2619,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b626338e-422d-4ad5-9391-b4f453970879")
-		(property "Reference" "RN4"
+		(property "Reference" "RN9"
 			(at 124.46 74.6759 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2692,7 +2692,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/b94da786-8338-40c3-8c17-e9858e8674bf"
-					(reference "RN4")
+					(reference "RN9")
 					(unit 1)
 				)
 			)
@@ -2711,7 +2711,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8b90d72-13d6-43ed-a3ba-92c6c7bee462")
-		(property "Reference" "D23"
+		(property "Reference" "D63"
 			(at 106.68 71.4374 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2786,7 +2786,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/b94da786-8338-40c3-8c17-e9858e8674bf"
-					(reference "D23")
+					(reference "D63")
 					(unit 1)
 				)
 			)
@@ -2803,7 +2803,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "edf6212f-c28d-439a-a0a6-d7be7fb2d37e")
-		(property "Reference" "RN5"
+		(property "Reference" "RN10"
 			(at 96.52 96.2659 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2876,7 +2876,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/b94da786-8338-40c3-8c17-e9858e8674bf"
-					(reference "RN5")
+					(reference "RN10")
 					(unit 1)
 				)
 			)
@@ -2895,7 +2895,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f86c11cc-cad5-4d9f-b36e-9704b73cf054")
-		(property "Reference" "D25"
+		(property "Reference" "D62"
 			(at 90.17 71.4374 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2970,7 +2970,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/b94da786-8338-40c3-8c17-e9858e8674bf"
-					(reference "D25")
+					(reference "D62")
 					(unit 1)
 				)
 			)

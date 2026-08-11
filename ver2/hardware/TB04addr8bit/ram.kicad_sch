@@ -4225,7 +4225,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "219f9b45-97b7-450e-895f-4b4378b77ce6")
-		(property "Reference" "#PWR0121"
+		(property "Reference" "#PWR0124"
 			(at 77.47 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -4285,7 +4285,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/d4d6bce3-987f-46b3-a9b7-788703d534f1"
-					(reference "#PWR0121")
+					(reference "#PWR0124")
 					(unit 1)
 				)
 			)
@@ -4303,7 +4303,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a408e19-b126-4be2-8653-26719b468acd")
-		(property "Reference" "U40"
+		(property "Reference" "U36"
 			(at 81.2717 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4401,7 +4401,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/d4d6bce3-987f-46b3-a9b7-788703d534f1"
-					(reference "U40")
+					(reference "U36")
 					(unit 2)
 				)
 			)
@@ -4419,7 +4419,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f1bf682-cfe9-4958-a8ba-b67b63d327c1")
-		(property "Reference" "U43"
+		(property "Reference" "U35"
 			(at 60.9517 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4517,7 +4517,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/d4d6bce3-987f-46b3-a9b7-788703d534f1"
-					(reference "U43")
+					(reference "U35")
 					(unit 4)
 				)
 			)
@@ -4535,7 +4535,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "959eb188-1162-4ccd-9090-887d97011e7d")
-		(property "Reference" "C55"
+		(property "Reference" "C51"
 			(at 85.09 22.86 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4597,7 +4597,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/d4d6bce3-987f-46b3-a9b7-788703d534f1"
-					(reference "C55")
+					(reference "C51")
 					(unit 1)
 				)
 			)
@@ -4615,7 +4615,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b3f66e15-7753-4829-a2a9-75ceb1451a23")
-		(property "Reference" "U29"
+		(property "Reference" "U34"
 			(at 79.6133 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4745,7 +4745,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/d4d6bce3-987f-46b3-a9b7-788703d534f1"
-					(reference "U29")
+					(reference "U34")
 					(unit 1)
 				)
 			)
@@ -4763,7 +4763,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c39eb8a7-275f-49b0-94a3-e0305497fabb")
-		(property "Reference" "#PWR040"
+		(property "Reference" "#PWR0123"
 			(at 93.98 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -4823,7 +4823,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/d4d6bce3-987f-46b3-a9b7-788703d534f1"
-					(reference "#PWR040")
+					(reference "#PWR0123")
 					(unit 1)
 				)
 			)
@@ -4840,7 +4840,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cd16b0e6-2cb6-4049-a4f0-dff81d9d68c8")
-		(property "Reference" "U32"
+		(property "Reference" "U1"
 			(at 68.072 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4938,7 +4938,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/d4d6bce3-987f-46b3-a9b7-788703d534f1"
-					(reference "U32")
+					(reference "U1")
 					(unit 6)
 				)
 			)
@@ -4956,7 +4956,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dbccc323-abcd-47ba-b015-61add0d57f11")
-		(property "Reference" "U40"
+		(property "Reference" "U36"
 			(at 81.2717 109.22 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5054,7 +5054,7 @@
 		(instances
 			(project "TB04addr8bit"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/d4d6bce3-987f-46b3-a9b7-788703d534f1"
-					(reference "U40")
+					(reference "U36")
 					(unit 3)
 				)
 			)
