@@ -5919,122 +5919,6 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HC00")
-		(at 154.94 140.97 0)
-		(mirror x)
-		(unit 2)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "235ec6be-e392-484c-bfc4-047cc6e48fff")
-		(property "Reference" "U5"
-			(at 154.9317 149.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74HC00"
-			(at 154.9317 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
-			(at 154.94 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
-			(at 154.94 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "quad 2-input NAND gate"
-			(at 154.94 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9e06cf27-7383-4a1e-962d-1692a6d21a9b")
-		)
-		(pin "2"
-			(uuid "ee19ac89-3bb8-4a40-9460-7370879d9339")
-		)
-		(pin "3"
-			(uuid "da64dcbd-ddab-4e31-887e-5082abc63efa")
-		)
-		(pin "9"
-			(uuid "ecd1a21e-5b98-4be8-a32c-729241f42c3a")
-		)
-		(pin "12"
-			(uuid "d10377b2-0d99-4f85-b93d-caeb1fb45258")
-		)
-		(pin "4"
-			(uuid "91c66b3f-11d1-4f40-b323-6e002919f14d")
-		)
-		(pin "5"
-			(uuid "80dddfc4-9f4f-46e8-80cc-823b01f9ba7f")
-		)
-		(pin "6"
-			(uuid "08851f25-ac16-4e2e-98af-744b26b798f2")
-		)
-		(pin "10"
-			(uuid "122d44d5-3e22-45cd-a4f0-6579e48cb267")
-		)
-		(pin "8"
-			(uuid "3f98500d-dd7f-4758-b64a-a0d17e3093ff")
-		)
-		(pin "14"
-			(uuid "b9b4b012-c3ea-42d3-be83-dfaf1e44a5fc")
-		)
-		(pin "7"
-			(uuid "99080e49-16fd-4dd8-950c-273db8987f04")
-		)
-		(pin "11"
-			(uuid "6587ab63-99a5-4035-9ae7-555c8cbf596f")
-		)
-		(pin "13"
-			(uuid "f157699f-9daa-45af-a01e-286cbbb5a259")
-		)
-		(instances
-			(project "TB04addr8bit"
-				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U5")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "74xx:74AHC04")
 		(at 269.24 24.13 0)
 		(unit 4)
@@ -6146,122 +6030,6 @@
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
 					(reference "U2")
 					(unit 4)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xx:74HC00")
-		(at 154.94 119.38 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3ac9e3f7-0850-43e9-a12f-eb06a7c720e9")
-		(property "Reference" "U5"
-			(at 154.9317 128.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74HC00"
-			(at 154.9317 125.73 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
-			(at 154.94 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
-			(at 154.94 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "quad 2-input NAND gate"
-			(at 154.94 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b33f8aaf-7d24-425c-b292-b4e9f26b8a87")
-		)
-		(pin "2"
-			(uuid "8f0dc535-cb76-4e23-b736-2d7fbe7bd845")
-		)
-		(pin "3"
-			(uuid "a3b88694-14b4-4089-bfd9-6c4243ec78f4")
-		)
-		(pin "9"
-			(uuid "ecd1a21e-5b98-4be8-a32c-729241f42c3b")
-		)
-		(pin "12"
-			(uuid "d10377b2-0d99-4f85-b93d-caeb1fb45259")
-		)
-		(pin "4"
-			(uuid "df6b0dcf-ef1e-4d07-8e02-2b3634aa3df6")
-		)
-		(pin "5"
-			(uuid "aa4e8ad5-9302-4c3c-9e70-5f7a1d1b56f4")
-		)
-		(pin "6"
-			(uuid "441f62e7-7916-4eee-9b1a-bef536536dc5")
-		)
-		(pin "10"
-			(uuid "122d44d5-3e22-45cd-a4f0-6579e48cb268")
-		)
-		(pin "8"
-			(uuid "3f98500d-dd7f-4758-b64a-a0d17e309400")
-		)
-		(pin "14"
-			(uuid "b9b4b012-c3ea-42d3-be83-dfaf1e44a5fd")
-		)
-		(pin "7"
-			(uuid "99080e49-16fd-4dd8-950c-273db8987f05")
-		)
-		(pin "11"
-			(uuid "6587ab63-99a5-4035-9ae7-555c8cbf5970")
-		)
-		(pin "13"
-			(uuid "f157699f-9daa-45af-a01e-286cbbb5a25a")
-		)
-		(instances
-			(project "TB04addr8bit"
-				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U5")
-					(unit 1)
 				)
 			)
 		)
@@ -6971,124 +6739,6 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74HC00")
-		(at 196.85 83.82 0)
-		(unit 5)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "540b59e7-6261-4169-bfbd-60503ed20188")
-		(property "Reference" "U5"
-			(at 203.2 82.5499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "74HC00"
-			(at 203.2 85.0899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
-			(at 196.85 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
-			(at 196.85 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "quad 2-input NAND gate"
-			(at 196.85 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9e06cf27-7383-4a1e-962d-1692a6d21a98")
-		)
-		(pin "2"
-			(uuid "ee19ac89-3bb8-4a40-9460-7370879d9336")
-		)
-		(pin "3"
-			(uuid "da64dcbd-ddab-4e31-887e-5082abc63ef7")
-		)
-		(pin "9"
-			(uuid "ecd1a21e-5b98-4be8-a32c-729241f42c38")
-		)
-		(pin "12"
-			(uuid "d10377b2-0d99-4f85-b93d-caeb1fb45256")
-		)
-		(pin "4"
-			(uuid "df6b0dcf-ef1e-4d07-8e02-2b3634aa3df2")
-		)
-		(pin "5"
-			(uuid "aa4e8ad5-9302-4c3c-9e70-5f7a1d1b56f0")
-		)
-		(pin "6"
-			(uuid "441f62e7-7916-4eee-9b1a-bef536536dc1")
-		)
-		(pin "10"
-			(uuid "122d44d5-3e22-45cd-a4f0-6579e48cb265")
-		)
-		(pin "8"
-			(uuid "3f98500d-dd7f-4758-b64a-a0d17e3093fd")
-		)
-		(pin "14"
-			(uuid "eb267661-462e-4199-9892-5c1aaa0ad966")
-		)
-		(pin "7"
-			(uuid "399b2b41-3257-4a91-bc48-cc7dfea87ced")
-		)
-		(pin "11"
-			(uuid "6587ab63-99a5-4035-9ae7-555c8cbf596d")
-		)
-		(pin "13"
-			(uuid "f157699f-9daa-45af-a01e-286cbbb5a257")
-		)
-		(instances
-			(project "TB04addr8bit"
-				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U5")
-					(unit 5)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 124.46 43.18 0)
 		(unit 1)
@@ -7399,122 +7049,6 @@
 		)
 	)
 	(symbol
-		(lib_id "74xx:74LS32")
-		(at 228.6 39.37 0)
-		(unit 3)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "76eaa8ba-5436-4188-a982-a5ada73aa0ff")
-		(property "Reference" "U37"
-			(at 228.6 30.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74LS32"
-			(at 228.6 33.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 228.6 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS32"
-			(at 228.6 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Quad 2-input OR"
-			(at 228.6 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "2a790e70-b895-48a3-86d4-d1f0be861028")
-		)
-		(pin "6"
-			(uuid "22bb4b4c-1359-4014-be4b-172d96555f3f")
-		)
-		(pin "1"
-			(uuid "4379d81f-3c48-4b52-8a45-8a6276ef3a2d")
-		)
-		(pin "3"
-			(uuid "f3913d48-d2df-43a0-8248-76678d141ac3")
-		)
-		(pin "4"
-			(uuid "0e7f1829-ae39-4a62-8d47-0a01f26809cd")
-		)
-		(pin "5"
-			(uuid "50b997d6-14a5-4223-93d4-035508bdeb51")
-		)
-		(pin "8"
-			(uuid "ac4ab134-f381-46cb-8794-d04a0664cad8")
-		)
-		(pin "10"
-			(uuid "ea17e5e6-59e3-42da-9534-7593c088b83b")
-		)
-		(pin "11"
-			(uuid "0a9cf82c-d413-466a-98e8-3d579d986f02")
-		)
-		(pin "13"
-			(uuid "3c2c22d1-f9c0-4709-9a0a-f95fc02ac30f")
-		)
-		(pin "9"
-			(uuid "250f842b-c7f3-4b7d-94b4-17a142dcfac5")
-		)
-		(pin "7"
-			(uuid "b2d0bb6c-9085-488d-a0f0-6803bd5d3703")
-		)
-		(pin "12"
-			(uuid "e17b00a3-f253-4ef5-8058-5c7d5937e5d9")
-		)
-		(pin "14"
-			(uuid "02157260-4d59-4e1f-ba7b-08447c8e12e2")
-		)
-		(instances
-			(project "TB04addr8bit"
-				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U37")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 196.85 99.06 0)
 		(unit 1)
@@ -7786,122 +7320,6 @@
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
 					(reference "U36")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "74xx:74AHC04")
-		(at 248.92 39.37 0)
-		(unit 2)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a74fc47e-42ca-4a2a-93a4-e8af12800ca0")
-		(property "Reference" "U2"
-			(at 248.92 30.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "74AHC04"
-			(at 248.92 33.02 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 248.92 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf"
-			(at 248.92 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Hex Inverter"
-			(at 248.92 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "6"
-			(uuid "6b58b552-c982-4f2b-af0e-b2a8d951060d")
-		)
-		(pin "10"
-			(uuid "64e87c05-d501-4f61-8407-e660af0f2a96")
-		)
-		(pin "9"
-			(uuid "cb6e00cd-68ca-44f8-8fc4-7f7e7be11257")
-		)
-		(pin "12"
-			(uuid "f355f8e5-2982-4e24-9310-43df025c938f")
-		)
-		(pin "13"
-			(uuid "f9da4d79-5248-48ef-9859-f339d35837bc")
-		)
-		(pin "11"
-			(uuid "35050bda-28a0-4f56-9430-6bce3e43f192")
-		)
-		(pin "1"
-			(uuid "f1c68c79-5749-49c4-ac85-927e5dfb9fa7")
-		)
-		(pin "3"
-			(uuid "9321e831-b4fa-4ccd-b8e9-1d64439d617a")
-		)
-		(pin "7"
-			(uuid "05835ae0-aed4-4eee-96a6-6ae3e9167ebe")
-		)
-		(pin "2"
-			(uuid "87abe367-6b0a-4d4d-a477-88cb1d14ef01")
-		)
-		(pin "14"
-			(uuid "962ef1a5-f23d-4bf2-9387-410243dbdcea")
-		)
-		(pin "5"
-			(uuid "e013e5eb-a807-45a4-ad69-fd9ac392cc17")
-		)
-		(pin "4"
-			(uuid "c02c82a9-629d-4ab1-ac51-df11eb8dff96")
-		)
-		(pin "8"
-			(uuid "151917c3-dbd0-4c4f-9b8c-df1bbdc9c722")
-		)
-		(instances
-			(project "TB04addr8bit"
-				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
-					(reference "U2")
-					(unit 2)
 				)
 			)
 		)
@@ -8619,6 +8037,122 @@
 		)
 	)
 	(symbol
+		(lib_id "74xx:74HC00")
+		(at 154.94 140.97 0)
+		(unit 2)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf08e9c1-ec0f-445a-9bdb-62056b6434ba")
+		(property "Reference" "U5"
+			(at 154.9317 132.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HC00"
+			(at 154.9317 134.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
+			(at 154.94 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "quad 2-input NAND gate"
+			(at 154.94 140.97 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "11"
+			(uuid "304617e7-5951-4bc7-82c1-50a78a910a42")
+		)
+		(pin "13"
+			(uuid "657923a6-58be-4320-a877-1f78fe42339f")
+		)
+		(pin "7"
+			(uuid "dea148a0-3552-4090-bfd8-3fd44090ee4e")
+		)
+		(pin "2"
+			(uuid "4345847f-4c2e-4c2e-ba0f-cc8c8d28838e")
+		)
+		(pin "4"
+			(uuid "7e7716f4-4813-4e87-9620-40308d374488")
+		)
+		(pin "10"
+			(uuid "28026168-2ff5-4928-8af4-5acbf8cffc12")
+		)
+		(pin "6"
+			(uuid "e6fe90e7-b73d-407e-a32b-07b1531e1e6b")
+		)
+		(pin "5"
+			(uuid "4c61f73b-5282-42ca-ac72-f709ea3fbf3f")
+		)
+		(pin "3"
+			(uuid "abd823fa-3257-4880-afaf-f13759f50f64")
+		)
+		(pin "1"
+			(uuid "37ad64b4-de64-420a-b350-e03c0b594dde")
+		)
+		(pin "8"
+			(uuid "10ccea2e-26cd-4ae5-af35-ab19bab4ab31")
+		)
+		(pin "9"
+			(uuid "a5394761-efac-4688-9a6f-8255aa4a2bed")
+		)
+		(pin "12"
+			(uuid "3a41693e-0a0f-4f98-8882-6101fa3296a1")
+		)
+		(pin "14"
+			(uuid "0320bd39-0f47-43f2-9be7-3fd3b825e85b")
+		)
+		(instances
+			(project "TB04addr8bit"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
+					(reference "U5")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 229.87 138.43 180)
 		(unit 1)
@@ -9088,6 +8622,240 @@
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
 					(reference "#PWR0129")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74HC00")
+		(at 154.94 119.38 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3d64a2c-5095-4989-bbcb-4fdf40ddc032")
+		(property "Reference" "U5"
+			(at 154.9317 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "74HC00"
+			(at 154.9317 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
+			(at 154.94 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "quad 2-input NAND gate"
+			(at 154.94 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "11"
+			(uuid "304617e7-5951-4bc7-82c1-50a78a910a42")
+		)
+		(pin "13"
+			(uuid "657923a6-58be-4320-a877-1f78fe42339f")
+		)
+		(pin "7"
+			(uuid "dea148a0-3552-4090-bfd8-3fd44090ee4e")
+		)
+		(pin "2"
+			(uuid "4345847f-4c2e-4c2e-ba0f-cc8c8d28838e")
+		)
+		(pin "4"
+			(uuid "7e7716f4-4813-4e87-9620-40308d374488")
+		)
+		(pin "10"
+			(uuid "28026168-2ff5-4928-8af4-5acbf8cffc12")
+		)
+		(pin "6"
+			(uuid "e6fe90e7-b73d-407e-a32b-07b1531e1e6b")
+		)
+		(pin "5"
+			(uuid "4c61f73b-5282-42ca-ac72-f709ea3fbf3f")
+		)
+		(pin "3"
+			(uuid "abd823fa-3257-4880-afaf-f13759f50f64")
+		)
+		(pin "1"
+			(uuid "37ad64b4-de64-420a-b350-e03c0b594dde")
+		)
+		(pin "8"
+			(uuid "10ccea2e-26cd-4ae5-af35-ab19bab4ab31")
+		)
+		(pin "9"
+			(uuid "a5394761-efac-4688-9a6f-8255aa4a2bed")
+		)
+		(pin "12"
+			(uuid "3a41693e-0a0f-4f98-8882-6101fa3296a1")
+		)
+		(pin "14"
+			(uuid "0320bd39-0f47-43f2-9be7-3fd3b825e85b")
+		)
+		(instances
+			(project "TB04addr8bit"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
+					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xx:74HC00")
+		(at 196.85 83.82 0)
+		(unit 5)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd7dd217-97f1-4cfa-8f55-0133bd721f66")
+		(property "Reference" "U5"
+			(at 203.2 82.5499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "74HC00"
+			(at 203.2 85.0899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 196.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74hc00"
+			(at 196.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "quad 2-input NAND gate"
+			(at 196.85 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "11"
+			(uuid "304617e7-5951-4bc7-82c1-50a78a910a42")
+		)
+		(pin "13"
+			(uuid "657923a6-58be-4320-a877-1f78fe42339f")
+		)
+		(pin "7"
+			(uuid "dea148a0-3552-4090-bfd8-3fd44090ee4e")
+		)
+		(pin "2"
+			(uuid "4345847f-4c2e-4c2e-ba0f-cc8c8d28838e")
+		)
+		(pin "4"
+			(uuid "7e7716f4-4813-4e87-9620-40308d374488")
+		)
+		(pin "10"
+			(uuid "28026168-2ff5-4928-8af4-5acbf8cffc12")
+		)
+		(pin "6"
+			(uuid "e6fe90e7-b73d-407e-a32b-07b1531e1e6b")
+		)
+		(pin "5"
+			(uuid "4c61f73b-5282-42ca-ac72-f709ea3fbf3f")
+		)
+		(pin "3"
+			(uuid "abd823fa-3257-4880-afaf-f13759f50f64")
+		)
+		(pin "1"
+			(uuid "37ad64b4-de64-420a-b350-e03c0b594dde")
+		)
+		(pin "8"
+			(uuid "10ccea2e-26cd-4ae5-af35-ab19bab4ab31")
+		)
+		(pin "9"
+			(uuid "a5394761-efac-4688-9a6f-8255aa4a2bed")
+		)
+		(pin "12"
+			(uuid "3a41693e-0a0f-4f98-8882-6101fa3296a1")
+		)
+		(pin "14"
+			(uuid "0320bd39-0f47-43f2-9be7-3fd3b825e85b")
+		)
+		(instances
+			(project "TB04addr8bit"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/49a9e3a4-2acb-465c-a9e5-4345d5d7643a"
+					(reference "U5")
+					(unit 5)
 				)
 			)
 		)
