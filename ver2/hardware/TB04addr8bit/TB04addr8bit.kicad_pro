@@ -430,7 +430,7 @@
         "uuid": "d176c79b-dced-4d01-bcec-7dfd676fcfc2"
       }
     ],
-    "used_designators": "C1-65,D1-65,#PWR1-142,#PWR151,#FLG1-2,R1-17,J1-2,IC1-13,H1-4,RN1-10,SW1-7,U1-46,Y1",
+    "used_designators": "U14-17,U45-47,D66-69,#PWR51,#PWR142-144,C23-24,RN11",
     "variants": []
   },
   "sheets": [
@@ -448,7 +448,7 @@
     ],
     [
       "6e2ac36a-6f35-40e2-a6bf-b7b65f0ed4e4",
-      "PC_mAddr"
+      "PC"
     ],
     [
       "9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31",
