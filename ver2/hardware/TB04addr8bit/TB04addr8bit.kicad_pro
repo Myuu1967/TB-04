@@ -430,7 +430,7 @@
         "uuid": "d176c79b-dced-4d01-bcec-7dfd676fcfc2"
       }
     ],
-    "used_designators": "U14-17,U45-47,D66-69,#PWR51,#PWR142-144,C23-24,RN11",
+    "used_designators": "#PWR156",
     "variants": []
   },
   "sheets": [
