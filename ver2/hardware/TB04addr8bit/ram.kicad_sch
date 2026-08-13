@@ -2034,7 +2034,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 66.04) (xy 116.84 66.04)
+			(xy 86.36 66.04) (xy 95.25 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2505,7 +2505,7 @@
 	)
 	(global_label "~{CS_RAM}"
 		(shape input)
-		(at 116.84 66.04 0)
+		(at 95.25 66.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2515,7 +2515,7 @@
 		)
 		(uuid "48d616ed-35b3-47b6-b86f-aeef0dfbfc9c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 127.0823 66.04 0)
+			(at 105.4923 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
