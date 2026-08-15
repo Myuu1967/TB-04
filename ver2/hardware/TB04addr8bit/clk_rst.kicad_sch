@@ -3082,12 +3082,6 @@
 		(uuid "b3f8e8d4-c92e-4294-90b0-7c3cb6f7d6db")
 	)
 	(junction
-		(at 99.06 189.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0a8b1466-22db-43c0-8f3d-b08b5e988d33")
-	)
-	(junction
 		(at 62.23 167.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3154,6 +3148,12 @@
 		(uuid "64bc72da-42c5-454a-944e-d0b4cf586c8f")
 	)
 	(junction
+		(at 374.65 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "85d5032c-605b-491c-98c2-145eab9b1dc5")
+	)
+	(junction
 		(at 354.33 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3208,10 +3208,6 @@
 	(no_connect
 		(at 284.48 191.77)
 		(uuid "403e5e03-fa6b-4177-a787-521fed74d30f")
-	)
-	(no_connect
-		(at 116.84 173.99)
-		(uuid "66b8556b-ab5f-4d1f-aa82-197e6f595914")
 	)
 	(no_connect
 		(at 259.08 166.37)
@@ -3393,7 +3389,7 @@
 	)
 	(wire
 		(pts
-			(xy 372.11 114.3) (xy 378.46 114.3)
+			(xy 372.11 114.3) (xy 374.65 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3563,6 +3559,16 @@
 	)
 	(wire
 		(pts
+			(xy 374.65 114.3) (xy 378.46 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4530966f-8e60-4d49-8425-5f3368da41cc")
+	)
+	(wire
+		(pts
 			(xy 60.96 107.95) (xy 60.96 111.76)
 		)
 		(stroke
@@ -3580,6 +3586,16 @@
 			(type default)
 		)
 		(uuid "49acea46-0cfa-4d41-a1fa-44b3818eb322")
+	)
+	(wire
+		(pts
+			(xy 374.65 104.14) (xy 374.65 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bc0b775-6a86-4127-8e3d-18fa8b08dd80")
 	)
 	(wire
 		(pts
@@ -4043,16 +4059,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 173.99) (xy 99.06 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e3d82f7-510d-403e-934d-f4c74f5283e5")
-	)
-	(wire
-		(pts
 			(xy 304.8 181.61) (xy 304.8 111.76)
 		)
 		(stroke
@@ -4090,16 +4096,6 @@
 			(type default)
 		)
 		(uuid "a9c1ff46-c5f3-4778-88bb-9363b285c512")
-	)
-	(wire
-		(pts
-			(xy 99.06 173.99) (xy 99.06 189.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab94d46c-5295-4f68-abaf-b3a0f9f9938b")
 	)
 	(wire
 		(pts
@@ -4160,6 +4156,16 @@
 			(type default)
 		)
 		(uuid "c278d3b6-80d4-415b-9f07-6d23c20afc08")
+	)
+	(wire
+		(pts
+			(xy 375.92 104.14) (xy 374.65 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c812b8ea-2db7-48bf-a3bb-78f0d17af486")
 	)
 	(wire
 		(pts
@@ -4457,7 +4463,7 @@
 		)
 	)
 	(global_label "CLK_CPU"
-		(shape input)
+		(shape output)
 		(at 378.46 114.3 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4499,6 +4505,29 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+	)
+	(global_label "~{CLK_CPU}"
+		(shape output)
+		(at 391.16 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d1c7f499-d481-4830-a5a8-97707c5c30d9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 402.5514 104.14 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 	)
@@ -6359,7 +6388,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74HC14")
-		(at 109.22 173.99 0)
+		(at 383.54 104.14 0)
 		(unit 5)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6369,7 +6398,7 @@
 		(dnp no)
 		(uuid "4ea0c120-276b-480d-b13e-cf17ce0f975d")
 		(property "Reference" "U501"
-			(at 109.22 165.1 0)
+			(at 383.54 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6379,7 +6408,7 @@
 			)
 		)
 		(property "Value" "74HC14"
-			(at 109.22 167.64 0)
+			(at 383.54 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6389,7 +6418,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
-			(at 109.22 173.99 0)
+			(at 383.54 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6400,7 +6429,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74HC14"
-			(at 109.22 173.99 0)
+			(at 383.54 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6411,7 +6440,7 @@
 			)
 		)
 		(property "Description" "Hex inverter schmitt trigger"
-			(at 109.22 173.99 0)
+			(at 383.54 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
