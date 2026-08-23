@@ -430,7 +430,7 @@
         "uuid": "d176c79b-dced-4d01-bcec-7dfd676fcfc2"
       }
     ],
-    "used_designators": "J201-204,J301-304,J601,J801-808,R1201-1203,#PWR209,#PWR216,#PWR219-220,#PWR309,#PWR316,#PWR319-320,#PWR620,#PWR801-808,#PWR1203,D1201-1203,SW601",
+    "used_designators": "R603-606,#PWR621",
     "variants": []
   },
   "sheets": [
