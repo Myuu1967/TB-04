@@ -1500,14 +1500,6 @@
 		(uuid "ee77995d-454b-435d-84ae-89cc1d0b4818")
 	)
 	(no_connect
-		(at 160.02 172.72)
-		(uuid "357e1e3a-0a03-4b06-98e6-7729a919ad5d")
-	)
-	(no_connect
-		(at 160.02 170.18)
-		(uuid "95457b2a-778e-445b-a735-6f1f58aa1456")
-	)
-	(no_connect
 		(at 160.02 177.8)
 		(uuid "b3e9f5c0-598e-4b0e-bea7-38f5235d0889")
 	)
@@ -1854,6 +1846,16 @@
 			(type default)
 		)
 		(uuid "2d641270-462e-4b58-b1fb-58eae56e502d")
+	)
+	(wire
+		(pts
+			(xy 160.02 170.18) (xy 167.64 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dcba1fa-24c3-49ef-b61f-41f38d75072b")
 	)
 	(wire
 		(pts
@@ -3237,6 +3239,16 @@
 	)
 	(wire
 		(pts
+			(xy 160.02 172.72) (xy 167.64 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbed058a-ab19-4a33-963f-00eaac9f7ecf")
+	)
+	(wire
+		(pts
 			(xy 72.39 95.25) (xy 72.39 97.79)
 		)
 		(stroke
@@ -4139,6 +4151,29 @@
 			)
 		)
 	)
+	(global_label "WR"
+		(shape output)
+		(at 167.64 170.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "99e159dd-0293-4cd0-b467-215a95abf05f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 173.3466 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "alu_code0"
 		(shape output)
 		(at 166.37 62.23 0)
@@ -4336,6 +4371,29 @@
 		(uuid "ba928144-8dda-46b4-9009-f2f8b98b6aab")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 175.4632 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "~{SEL_Y}"
+		(shape output)
+		(at 167.64 172.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c32dc081-4254-4549-b2df-fd007be7900b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.068 172.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
