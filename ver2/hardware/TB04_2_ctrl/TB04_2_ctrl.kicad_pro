@@ -258,7 +258,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "TB04addr8bit.kicad_pro",
+    "filename": "TB04_2_ctrl.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -425,30 +425,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "TB04addr8bit.kicad_sch",
-        "name": "ルート",
+        "filename": "TB04_2_ctrl.kicad_sch",
+        "name": "TB04_2_ctrl",
         "uuid": "d176c79b-dced-4d01-bcec-7dfd676fcfc2"
       }
     ],
-    "used_designators": "U1509,#PWR1502,RN1009-1010,R1001-1016",
+    "used_designators": "#PWR101-102",
     "variants": []
   },
   "sheets": [
     [
       "d176c79b-dced-4d01-bcec-7dfd676fcfc2",
-      "ルート"
-    ],
-    [
-      "a1fb1557-9779-47a0-87e0-44b80b522f7b",
-      "RS00"
-    ],
-    [
-      "87662b34-7613-4342-918c-9ae2f7d081f7",
-      "RS01"
-    ],
-    [
-      "6e2ac36a-6f35-40e2-a6bf-b7b65f0ed4e4",
-      "PC_aluMux (4 ページ)"
+      "TB04_2_ctrl"
     ],
     [
       "9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31",
@@ -467,28 +455,8 @@
       "InterFace"
     ],
     [
-      "0fcb6af9-236e-4ccd-af48-2dd0360a8279",
-      "outPort"
-    ],
-    [
-      "b94da786-8338-40c3-8c17-e9858e8674bf",
-      "inPort"
-    ],
-    [
-      "d4d6bce3-987f-46b3-a9b7-788703d534f1",
-      "ram"
-    ],
-    [
-      "49a9e3a4-2acb-465c-a9e5-4345d5d7643a",
-      "sp"
-    ],
-    [
       "5966379b-e25d-4be9-810c-b95428770124",
       "addrDecord"
-    ],
-    [
-      "f34626c3-9aeb-4951-9d9d-6791a1e15fce",
-      "addrMUX"
     ],
     [
       "5f2ddf07-9846-470a-9333-ad8d658dfcaf",

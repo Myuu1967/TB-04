@@ -5609,12 +5609,6 @@
 		(uuid "0f393b63-905e-4dbd-899a-8fa5b18f746a")
 	)
 	(junction
-		(at 153.67 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2412a16f-9ba4-4f1d-8cde-61965c959b75")
-	)
-	(junction
 		(at 73.66 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5697,6 +5691,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b796d9c4-ac4d-4b90-a649-e2393433e20e")
+	)
+	(junction
+		(at 153.67 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be066083-15ae-460b-9471-de5316ee687b")
 	)
 	(junction
 		(at 73.66 144.78)
@@ -5868,16 +5868,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 102.87) (xy 153.67 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ea025c8-2640-44d5-a7db-d0ce9c14b483")
-	)
-	(wire
-		(pts
 			(xy 243.84 100.33) (xy 247.65 100.33)
 		)
 		(stroke
@@ -5928,7 +5918,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 97.79) (xy 156.21 97.79)
+			(xy 153.67 97.79) (xy 154.94 97.79)
 		)
 		(stroke
 			(width 0)
@@ -6098,7 +6088,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 95.25) (xy 135.89 95.25)
+			(xy 128.27 100.33) (xy 134.62 100.33)
 		)
 		(stroke
 			(width 0)
@@ -6818,7 +6808,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 97.79) (xy 153.67 97.79)
+			(xy 149.86 102.87) (xy 153.67 102.87)
 		)
 		(stroke
 			(width 0)
@@ -6948,7 +6938,17 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 100.33) (xy 135.89 100.33)
+			(xy 153.67 97.79) (xy 153.67 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfe57690-bc73-40d9-91b7-4794d0f65f21")
+	)
+	(wire
+		(pts
+			(xy 128.27 105.41) (xy 134.62 105.41)
 		)
 		(stroke
 			(width 0)
@@ -7263,7 +7263,7 @@
 	)
 	(global_label "CS_RAM"
 		(shape output)
-		(at 156.21 97.79 0)
+		(at 154.94 97.79 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7273,7 +7273,7 @@
 		)
 		(uuid "1c763a54-08c5-46da-9659-1427614c96b6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 166.4523 97.79 0)
+			(at 165.1823 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8413,7 +8413,7 @@
 	)
 	(global_label "EXE"
 		(shape input)
-		(at 129.54 100.33 180)
+		(at 128.27 105.41 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8423,7 +8423,7 @@
 		)
 		(uuid "c350979b-a091-4780-b658-dd6c3bc7191f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 123.0473 100.33 0)
+			(at 121.7773 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8804,7 +8804,7 @@
 	)
 	(global_label "RAM_STK_SEL"
 		(shape input)
-		(at 129.54 95.25 180)
+		(at 128.27 100.33 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8814,7 +8814,7 @@
 		)
 		(uuid "fb89e23d-e050-4933-8ca5-6f42d3466a17")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.9759 95.25 0)
+			(at 112.7059 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8956,7 +8956,7 @@
 			(uuid "02157260-4d59-4e1f-ba7b-08447c8e12e2")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1506")
 					(unit 3)
@@ -9074,7 +9074,7 @@
 			(uuid "84ec64fb-6ace-4441-b26e-6a03c8e70f72")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1509")
 					(unit 4)
@@ -9190,7 +9190,7 @@
 			(uuid "4e9f39cd-b555-476f-87a4-a7406fbbe26a")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1507")
 					(unit 3)
@@ -9306,7 +9306,7 @@
 			(uuid "02157260-4d59-4e1f-ba7b-08447c8e12df")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1506")
 					(unit 4)
@@ -9384,7 +9384,7 @@
 			(uuid "21dd61c7-c81d-4889-bcfc-3debfac870b7")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "#PWR01512")
 					(unit 1)
@@ -9500,7 +9500,7 @@
 			(uuid "0320bd39-0f47-43f2-9be7-3fd3b825e85c")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1504")
 					(unit 1)
@@ -9578,7 +9578,7 @@
 			(uuid "d6a5b8c5-83b7-48b6-91ae-e558f3cb92fd")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "#PWR01514")
 					(unit 1)
@@ -9694,7 +9694,7 @@
 			(uuid "4e9f39cd-b555-476f-87a4-a7406fbbe269")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1507")
 					(unit 2)
@@ -9810,7 +9810,7 @@
 			(uuid "c77083a9-3a7b-4a77-b591-be7d5c139112")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1501")
 					(unit 3)
@@ -9888,7 +9888,7 @@
 			(uuid "84a0842c-52fb-4454-a46a-faf9a66fc4ff")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "#PWR01505")
 					(unit 1)
@@ -9962,49 +9962,49 @@
 			)
 		)
 		(pin "8"
-			(uuid "c4e51448-7f57-4edc-aa9b-f35f65f3c757")
+			(uuid "c4e51448-7f57-4edc-aa9b-f35f65f3c758")
 		)
 		(pin "10"
-			(uuid "3bcc010c-ffed-41db-96d5-bedbd6f91fed")
+			(uuid "3bcc010c-ffed-41db-96d5-bedbd6f91fee")
 		)
 		(pin "9"
-			(uuid "22564024-6afb-4635-92d4-85d5801a4dcf")
+			(uuid "22564024-6afb-4635-92d4-85d5801a4dd0")
 		)
 		(pin "7"
-			(uuid "12752b3f-b7e6-4dd4-adbe-4698291c8770")
+			(uuid "12752b3f-b7e6-4dd4-adbe-4698291c8771")
 		)
 		(pin "11"
-			(uuid "260c1e8a-8b21-4868-a8ab-99f1df37667d")
+			(uuid "260c1e8a-8b21-4868-a8ab-99f1df37667e")
 		)
 		(pin "14"
-			(uuid "baa90553-5a06-4bd1-b356-a5ed0969d051")
+			(uuid "baa90553-5a06-4bd1-b356-a5ed0969d052")
 		)
 		(pin "12"
-			(uuid "3fecea0b-7854-4c74-885e-a92177377b54")
+			(uuid "3fecea0b-7854-4c74-885e-a92177377b55")
 		)
 		(pin "1"
-			(uuid "135f7686-f8bc-41fe-8c95-cedff8a0e416")
+			(uuid "135f7686-f8bc-41fe-8c95-cedff8a0e417")
 		)
 		(pin "2"
-			(uuid "cb8442f9-01b4-4ee0-a6e1-872e5a540d25")
+			(uuid "cb8442f9-01b4-4ee0-a6e1-872e5a540d26")
 		)
 		(pin "6"
-			(uuid "cd4ceea4-2b11-491e-b5fc-1ccb8dbeb22f")
+			(uuid "cd4ceea4-2b11-491e-b5fc-1ccb8dbeb230")
 		)
 		(pin "13"
-			(uuid "3e275dd9-cfe7-4c21-a083-74dbf6e19b61")
+			(uuid "3e275dd9-cfe7-4c21-a083-74dbf6e19b62")
 		)
 		(pin "3"
-			(uuid "a9f7f6e3-a0c9-458a-afc3-2c928e3f12a4")
+			(uuid "a9f7f6e3-a0c9-458a-afc3-2c928e3f12a5")
 		)
 		(pin "5"
-			(uuid "d7187167-3c35-41b2-8f7b-2d4fd457d8c9")
+			(uuid "d7187167-3c35-41b2-8f7b-2d4fd457d8ca")
 		)
 		(pin "4"
-			(uuid "84ec64fb-6ace-4441-b26e-6a03c8e70f72")
+			(uuid "84ec64fb-6ace-4441-b26e-6a03c8e70f73")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1509")
 					(unit 2)
@@ -10120,7 +10120,7 @@
 			(uuid "a050e61a-56cd-4597-8643-363095a24de2")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1503")
 					(unit 1)
@@ -10236,7 +10236,7 @@
 			(uuid "02157260-4d59-4e1f-ba7b-08447c8e12e0")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1506")
 					(unit 1)
@@ -10352,7 +10352,7 @@
 			(uuid "c77083a9-3a7b-4a77-b591-be7d5c139113")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1501")
 					(unit 1)
@@ -10430,7 +10430,7 @@
 			(uuid "e8503e90-b299-4f7d-846c-c6a00fa8e291")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "#PWR01502")
 					(unit 1)
@@ -10545,7 +10545,7 @@
 			(uuid "c77083a9-3a7b-4a77-b591-be7d5c139116")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1501")
 					(unit 2)
@@ -10625,7 +10625,7 @@
 			(uuid "271a986c-1e13-4fa8-9af3-ea2c2262857d")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "C1502")
 					(unit 1)
@@ -10703,7 +10703,7 @@
 			(uuid "66967f69-e93e-4aaf-a457-1fe732993935")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "#PWR01511")
 					(unit 1)
@@ -10781,7 +10781,7 @@
 			(uuid "1c88ca30-4e15-4040-9d34-c87c09736881")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "#PWR01507")
 					(unit 1)
@@ -10897,7 +10897,7 @@
 			(uuid "103225af-58f2-4d70-a60d-fc33adcb7364")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1505")
 					(unit 3)
@@ -11015,7 +11015,7 @@
 			(uuid "9047b04d-be3e-4332-be6c-1d131d5923b6")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1503")
 					(unit 5)
@@ -11093,7 +11093,7 @@
 			(uuid "84f97892-2229-410a-8c5f-527ad7693e17")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "#PWR01515")
 					(unit 1)
@@ -11209,7 +11209,7 @@
 			(uuid "0320bd39-0f47-43f2-9be7-3fd3b825e85b")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1504")
 					(unit 4)
@@ -11291,7 +11291,7 @@
 			(uuid "dd59f585-55e4-4c51-9b2a-1e29ec61ac01")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "C1507")
 					(unit 1)
@@ -11407,7 +11407,7 @@
 			(uuid "5e718f1e-e0a9-46ba-bf35-6f07c6e122ca")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1505")
 					(unit 4)
@@ -11525,7 +11525,7 @@
 			(uuid "4e9f39cd-b555-476f-87a4-a7406fbbe268")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1507")
 					(unit 5)
@@ -11603,7 +11603,7 @@
 			(uuid "3e76fcbd-c09a-48b9-ac07-bd270c6162e4")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "#PWR01503")
 					(unit 1)
@@ -11718,7 +11718,7 @@
 			(uuid "c77083a9-3a7b-4a77-b591-be7d5c139115")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1501")
 					(unit 4)
@@ -11798,7 +11798,7 @@
 			(uuid "d6da8de9-9f63-40bc-bc7c-548831eeaffa")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "C1503")
 					(unit 1)
@@ -11916,7 +11916,7 @@
 			(uuid "5e718f1e-e0a9-46ba-bf35-6f07c6e122c9")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1505")
 					(unit 5)
@@ -12032,7 +12032,7 @@
 			(uuid "0320bd39-0f47-43f2-9be7-3fd3b825e85d")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1504")
 					(unit 3)
@@ -12148,7 +12148,7 @@
 			(uuid "5e718f1e-e0a9-46ba-bf35-6f07c6e122cb")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1505")
 					(unit 2)
@@ -12266,7 +12266,7 @@
 			(uuid "a54326a8-de4a-4a00-b6a1-5d9ae2cac7b3")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1506")
 					(unit 5)
@@ -12345,7 +12345,7 @@
 			(uuid "40af6a2b-95a1-44a4-bdbe-abea918404e6")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "C1501")
 					(unit 1)
@@ -12460,7 +12460,7 @@
 			(uuid "ee479fb0-35ce-440e-af50-3b076610bc8b")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1501")
 					(unit 6)
@@ -12575,7 +12575,7 @@
 			(uuid "a050e61a-56cd-4597-8643-363095a24de3")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1503")
 					(unit 3)
@@ -12657,7 +12657,7 @@
 			(uuid "b4f9aa89-b37f-4b31-83c8-95037c90f9ca")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "C1506")
 					(unit 1)
@@ -12773,7 +12773,7 @@
 			(uuid "5e718f1e-e0a9-46ba-bf35-6f07c6e122c8")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1505")
 					(unit 1)
@@ -12851,7 +12851,7 @@
 			(uuid "7fc3acbb-a83d-4268-bccb-c6d05d7b6411")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "#PWR01506")
 					(unit 1)
@@ -12969,7 +12969,7 @@
 			(uuid "c77083a9-3a7b-4a77-b591-be7d5c139114")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1501")
 					(unit 7)
@@ -13085,7 +13085,7 @@
 			(uuid "02157260-4d59-4e1f-ba7b-08447c8e12e1")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1506")
 					(unit 2)
@@ -13163,7 +13163,7 @@
 			(uuid "fe92b9bb-c594-4256-b5f1-96da895f514f")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "#PWR01513")
 					(unit 1)
@@ -13237,49 +13237,49 @@
 			)
 		)
 		(pin "8"
-			(uuid "c4e51448-7f57-4edc-aa9b-f35f65f3c757")
+			(uuid "c4e51448-7f57-4edc-aa9b-f35f65f3c759")
 		)
 		(pin "10"
-			(uuid "3bcc010c-ffed-41db-96d5-bedbd6f91fed")
+			(uuid "3bcc010c-ffed-41db-96d5-bedbd6f91fef")
 		)
 		(pin "9"
-			(uuid "22564024-6afb-4635-92d4-85d5801a4dcf")
+			(uuid "22564024-6afb-4635-92d4-85d5801a4dd1")
 		)
 		(pin "7"
-			(uuid "12752b3f-b7e6-4dd4-adbe-4698291c8770")
+			(uuid "12752b3f-b7e6-4dd4-adbe-4698291c8772")
 		)
 		(pin "11"
-			(uuid "260c1e8a-8b21-4868-a8ab-99f1df37667d")
+			(uuid "260c1e8a-8b21-4868-a8ab-99f1df37667f")
 		)
 		(pin "14"
-			(uuid "baa90553-5a06-4bd1-b356-a5ed0969d051")
+			(uuid "baa90553-5a06-4bd1-b356-a5ed0969d053")
 		)
 		(pin "12"
-			(uuid "3fecea0b-7854-4c74-885e-a92177377b54")
+			(uuid "3fecea0b-7854-4c74-885e-a92177377b56")
 		)
 		(pin "1"
-			(uuid "135f7686-f8bc-41fe-8c95-cedff8a0e416")
+			(uuid "135f7686-f8bc-41fe-8c95-cedff8a0e418")
 		)
 		(pin "2"
-			(uuid "cb8442f9-01b4-4ee0-a6e1-872e5a540d25")
+			(uuid "cb8442f9-01b4-4ee0-a6e1-872e5a540d27")
 		)
 		(pin "6"
-			(uuid "cd4ceea4-2b11-491e-b5fc-1ccb8dbeb22f")
+			(uuid "cd4ceea4-2b11-491e-b5fc-1ccb8dbeb231")
 		)
 		(pin "13"
-			(uuid "3e275dd9-cfe7-4c21-a083-74dbf6e19b61")
+			(uuid "3e275dd9-cfe7-4c21-a083-74dbf6e19b63")
 		)
 		(pin "3"
-			(uuid "a9f7f6e3-a0c9-458a-afc3-2c928e3f12a4")
+			(uuid "a9f7f6e3-a0c9-458a-afc3-2c928e3f12a6")
 		)
 		(pin "5"
-			(uuid "d7187167-3c35-41b2-8f7b-2d4fd457d8c9")
+			(uuid "d7187167-3c35-41b2-8f7b-2d4fd457d8cb")
 		)
 		(pin "4"
-			(uuid "84ec64fb-6ace-4441-b26e-6a03c8e70f72")
+			(uuid "84ec64fb-6ace-4441-b26e-6a03c8e70f74")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1509")
 					(unit 3)
@@ -13395,7 +13395,7 @@
 			(uuid "0320bd39-0f47-43f2-9be7-3fd3b825e85e")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1504")
 					(unit 2)
@@ -13473,7 +13473,7 @@
 			(uuid "9da6aa28-833a-49cb-a585-e7d1d275e4c8")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "#PWR01501")
 					(unit 1)
@@ -13589,7 +13589,7 @@
 			(uuid "a050e61a-56cd-4597-8643-363095a24de5")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1503")
 					(unit 2)
@@ -13707,7 +13707,7 @@
 			(uuid "9fe4f879-60de-4fcc-97ae-faadd50f127f")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1504")
 					(unit 5)
@@ -13781,49 +13781,49 @@
 			)
 		)
 		(pin "8"
-			(uuid "c4e51448-7f57-4edc-aa9b-f35f65f3c757")
+			(uuid "c4e51448-7f57-4edc-aa9b-f35f65f3c75a")
 		)
 		(pin "10"
-			(uuid "3bcc010c-ffed-41db-96d5-bedbd6f91fed")
+			(uuid "3bcc010c-ffed-41db-96d5-bedbd6f91ff0")
 		)
 		(pin "9"
-			(uuid "22564024-6afb-4635-92d4-85d5801a4dcf")
+			(uuid "22564024-6afb-4635-92d4-85d5801a4dd2")
 		)
 		(pin "7"
-			(uuid "12752b3f-b7e6-4dd4-adbe-4698291c8770")
+			(uuid "12752b3f-b7e6-4dd4-adbe-4698291c8773")
 		)
 		(pin "11"
-			(uuid "260c1e8a-8b21-4868-a8ab-99f1df37667d")
+			(uuid "260c1e8a-8b21-4868-a8ab-99f1df376680")
 		)
 		(pin "14"
-			(uuid "baa90553-5a06-4bd1-b356-a5ed0969d051")
+			(uuid "baa90553-5a06-4bd1-b356-a5ed0969d054")
 		)
 		(pin "12"
-			(uuid "3fecea0b-7854-4c74-885e-a92177377b54")
+			(uuid "3fecea0b-7854-4c74-885e-a92177377b57")
 		)
 		(pin "1"
-			(uuid "135f7686-f8bc-41fe-8c95-cedff8a0e416")
+			(uuid "135f7686-f8bc-41fe-8c95-cedff8a0e419")
 		)
 		(pin "2"
-			(uuid "cb8442f9-01b4-4ee0-a6e1-872e5a540d25")
+			(uuid "cb8442f9-01b4-4ee0-a6e1-872e5a540d28")
 		)
 		(pin "6"
-			(uuid "cd4ceea4-2b11-491e-b5fc-1ccb8dbeb22f")
+			(uuid "cd4ceea4-2b11-491e-b5fc-1ccb8dbeb232")
 		)
 		(pin "13"
-			(uuid "3e275dd9-cfe7-4c21-a083-74dbf6e19b61")
+			(uuid "3e275dd9-cfe7-4c21-a083-74dbf6e19b64")
 		)
 		(pin "3"
-			(uuid "a9f7f6e3-a0c9-458a-afc3-2c928e3f12a4")
+			(uuid "a9f7f6e3-a0c9-458a-afc3-2c928e3f12a7")
 		)
 		(pin "5"
-			(uuid "d7187167-3c35-41b2-8f7b-2d4fd457d8c9")
+			(uuid "d7187167-3c35-41b2-8f7b-2d4fd457d8cc")
 		)
 		(pin "4"
-			(uuid "84ec64fb-6ace-4441-b26e-6a03c8e70f72")
+			(uuid "84ec64fb-6ace-4441-b26e-6a03c8e70f75")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1509")
 					(unit 1)
@@ -13833,7 +13833,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS08")
-		(at 143.51 97.79 0)
+		(at 142.24 102.87 0)
 		(unit 4)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13844,7 +13844,7 @@
 		(fields_autoplaced yes)
 		(uuid "e2daf7c4-74d0-4a84-bd1c-eaf3227ae226")
 		(property "Reference" "U1507"
-			(at 143.5017 88.9 0)
+			(at 142.2317 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13854,7 +13854,7 @@
 			)
 		)
 		(property "Value" "74LS08"
-			(at 143.5017 91.44 0)
+			(at 142.2317 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13864,7 +13864,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 97.79 0)
+			(at 142.24 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13875,7 +13875,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 143.51 97.79 0)
+			(at 142.24 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13886,7 +13886,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 143.51 97.79 0)
+			(at 142.24 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13939,7 +13939,7 @@
 			(uuid "e86da8ea-4ba4-4861-a4d1-5239be814036")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1507")
 					(unit 4)
@@ -14021,7 +14021,7 @@
 			(uuid "505918c8-2d23-4fce-bcee-8cda9e0adb65")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "C1505")
 					(unit 1)
@@ -14137,7 +14137,7 @@
 			(uuid "4e9f39cd-b555-476f-87a4-a7406fbbe267")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1507")
 					(unit 1)
@@ -14218,7 +14218,7 @@
 			(uuid "7162ccd5-74fc-4a59-b864-f44f49fcafab")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "C1504")
 					(unit 1)
@@ -14333,7 +14333,7 @@
 			(uuid "c77083a9-3a7b-4a77-b591-be7d5c139117")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1501")
 					(unit 5)
@@ -14449,7 +14449,7 @@
 			(uuid "a050e61a-56cd-4597-8643-363095a24de4")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "U1503")
 					(unit 4)
@@ -14527,7 +14527,7 @@
 			(uuid "da0089f2-f99c-4bd7-b074-23a3139755cb")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_2_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5f2ddf07-9846-470a-9333-ad8d658dfcaf"
 					(reference "#PWR01509")
 					(unit 1)
