@@ -8447,7 +8447,7 @@
 			(uuid "f090ac26-5167-4353-aba5-0bbb781fb692")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0316")
 					(unit 1)
@@ -8524,7 +8524,7 @@
 			(uuid "e1111826-f3f9-4a28-b751-e0f5f04719e8")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0317")
 					(unit 1)
@@ -8601,7 +8601,7 @@
 			(uuid "e09ac3b6-927f-4ee9-8838-1b9ca289d55f")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0305")
 					(unit 1)
@@ -8678,7 +8678,7 @@
 			(uuid "418057b5-fcc1-490f-9712-e5ba1970ec5e")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0307")
 					(unit 1)
@@ -8885,7 +8885,7 @@
 			(uuid "bf6bc9ba-3fda-4165-a869-6ee903cdbc45")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "IC302")
 					(unit 1)
@@ -8967,7 +8967,7 @@
 			(uuid "f46f515e-4c27-4ad0-94ae-2eba7f12f15e")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "C302")
 					(unit 1)
@@ -9073,7 +9073,7 @@
 			(uuid "412cdc92-4043-4b59-96c7-e8368c02946e")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "J302")
 					(unit 1)
@@ -9150,7 +9150,7 @@
 			(uuid "f91d3dc4-afad-4b3d-884b-5c6fcb276003")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0318")
 					(unit 1)
@@ -9229,7 +9229,7 @@
 			(uuid "91b32e52-e0c7-4a1c-a539-b9f0bc51dcaa")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "C305")
 					(unit 1)
@@ -9308,7 +9308,7 @@
 			(uuid "cc970f21-f7c7-4361-b3d4-44f2d7bbd1ed")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "C306")
 					(unit 1)
@@ -9387,7 +9387,7 @@
 			(uuid "792b9b51-b1c7-4a2c-8b79-87c2c6b2315b")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0320")
 					(unit 1)
@@ -9464,7 +9464,7 @@
 			(uuid "ce5d4c05-d72c-426c-a7fe-4baa36c9df4a")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0308")
 					(unit 1)
@@ -9588,7 +9588,7 @@
 			(uuid "f52fd4f8-4088-48ef-a8ab-a0f7bd116496")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "U301")
 					(unit 1)
@@ -9667,7 +9667,7 @@
 			(uuid "c0a2ce5f-365a-4285-85dc-ad0d516a0baf")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "C304")
 					(unit 1)
@@ -9744,7 +9744,7 @@
 			(uuid "ee3b7556-a2fd-4542-92a9-7a7f1c663746")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0311")
 					(unit 1)
@@ -9823,7 +9823,7 @@
 			(uuid "0a4f5f51-4538-486e-a034-20c3209033fc")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "C307")
 					(unit 1)
@@ -9929,7 +9929,7 @@
 			(uuid "6e6b46e3-a7c8-4901-b176-18fcc1eef28d")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "J304")
 					(unit 1)
@@ -10006,7 +10006,7 @@
 			(uuid "60b42878-12fd-4257-96ba-7fe1473f5451")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0302")
 					(unit 1)
@@ -10084,7 +10084,7 @@
 			(uuid "21a63ddb-8842-42dd-a033-5c18d50508c4")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0306")
 					(unit 1)
@@ -10163,7 +10163,7 @@
 			(uuid "b98c82ab-dc79-40a5-87ef-5b9593412e6d")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0309")
 					(unit 1)
@@ -10370,7 +10370,7 @@
 			(uuid "dfafabb3-26d8-45ae-8aaf-3aef3313ddc4")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "IC301")
 					(unit 1)
@@ -10447,7 +10447,7 @@
 			(uuid "bf5ec80d-c7b9-484b-b58c-c8fc2a607dae")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0315")
 					(unit 1)
@@ -10525,7 +10525,7 @@
 			(uuid "7b13f12d-9007-486f-b8ab-45cc0d5ebcca")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0310")
 					(unit 1)
@@ -10602,7 +10602,7 @@
 			(uuid "6d89e99e-bc22-4729-bd35-fef2f864da6c")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0312")
 					(unit 1)
@@ -10681,7 +10681,7 @@
 			(uuid "8d17efef-548d-43ca-aae3-1a48e9d05846")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "C303")
 					(unit 1)
@@ -10787,7 +10787,7 @@
 			(uuid "d643986e-87e6-4065-9810-d8fec7f46671")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "J301")
 					(unit 1)
@@ -10865,7 +10865,7 @@
 			(uuid "cb37070f-84d6-44f3-9c00-33e9fc386328")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0303")
 					(unit 1)
@@ -10943,7 +10943,7 @@
 			(uuid "3e41dfc2-2826-49df-a192-5bbdb44afbc1")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0313")
 					(unit 1)
@@ -11067,7 +11067,7 @@
 			(uuid "6b3d0105-272b-4bc7-a991-3d102583b0a5")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "U303")
 					(unit 1)
@@ -11191,7 +11191,7 @@
 			(uuid "e9b2f5a4-0057-492d-af05-c2ef1da5827b")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "U302")
 					(unit 1)
@@ -11315,7 +11315,7 @@
 			(uuid "a94dabff-b5d1-4f34-9a2b-21443c28f34e")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "U304")
 					(unit 1)
@@ -11522,7 +11522,7 @@
 			(uuid "4e9d3788-1882-43d4-9bca-413642de8913")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "IC304")
 					(unit 1)
@@ -11601,7 +11601,7 @@
 			(uuid "a17fc02e-dfe5-4e05-84fc-8f5270593ed2")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0319")
 					(unit 1)
@@ -11707,7 +11707,7 @@
 			(uuid "361a50d1-8cbb-4c48-9504-bc35ddb2d43b")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "J303")
 					(unit 1)
@@ -11784,7 +11784,7 @@
 			(uuid "2944fbef-267b-461f-abe4-3b0f79aa2a2e")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0301")
 					(unit 1)
@@ -11863,7 +11863,7 @@
 			(uuid "73462466-ae10-4403-bd58-7b701976de1a")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "C301")
 					(unit 1)
@@ -12070,7 +12070,7 @@
 			(uuid "52a22fd0-6e1c-48ee-bb5e-c407a4a9d91d")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "IC303")
 					(unit 1)
@@ -12147,7 +12147,7 @@
 			(uuid "7fdff9f6-5686-45c2-8ab3-4656d9836acd")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0314")
 					(unit 1)
@@ -12224,7 +12224,7 @@
 			(uuid "6250fd87-45ce-4994-9a8c-ddcc3aaba8b0")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "#PWR0304")
 					(unit 1)
@@ -12303,7 +12303,7 @@
 			(uuid "14447b5f-7d40-47f9-8c00-8221b1ce0e60")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04_S3_reg"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/87662b34-7613-4342-918c-9ae2f7d081f7"
 					(reference "C308")
 					(unit 1)
