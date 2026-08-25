@@ -499,60 +499,8 @@
       "TB04_IF_disp"
     ],
     [
-      "a1fb1557-9779-47a0-87e0-44b80b522f7b",
-      "RS00"
-    ],
-    [
-      "87662b34-7613-4342-918c-9ae2f7d081f7",
-      "RS01"
-    ],
-    [
-      "6e2ac36a-6f35-40e2-a6bf-b7b65f0ed4e4",
-      "PC_aluMux (4 ページ)"
-    ],
-    [
-      "9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31",
-      "CLK_RST"
-    ],
-    [
-      "0a14efc5-adfb-4d67-9882-eebc804e8eda",
-      "ROM_ALU"
-    ],
-    [
-      "f7d483f1-ac49-4e67-bd16-a14349eef1c2",
-      "Decoder"
-    ],
-    [
-      "8128481a-591d-4f1a-bdfd-fb80959a87d7",
-      "InterFace"
-    ],
-    [
       "0fcb6af9-236e-4ccd-af48-2dd0360a8279",
       "outPort"
-    ],
-    [
-      "b94da786-8338-40c3-8c17-e9858e8674bf",
-      "inPort"
-    ],
-    [
-      "d4d6bce3-987f-46b3-a9b7-788703d534f1",
-      "ram"
-    ],
-    [
-      "49a9e3a4-2acb-465c-a9e5-4345d5d7643a",
-      "sp"
-    ],
-    [
-      "5966379b-e25d-4be9-810c-b95428770124",
-      "addrDecord"
-    ],
-    [
-      "f34626c3-9aeb-4951-9d9d-6791a1e15fce",
-      "addrMUX"
-    ],
-    [
-      "5f2ddf07-9846-470a-9333-ad8d658dfcaf",
-      "gates"
     ]
   ],
   "text_variables": {},
