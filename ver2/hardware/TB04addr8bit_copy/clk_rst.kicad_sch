@@ -4890,7 +4890,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
+		(property "Footprint" "Connector_PinSocket_2.00mm:PinSocket_1x02_P2.00mm_Vertical"
 			(at 217.17 189.23 0)
 			(hide yes)
 			(show_name no)
