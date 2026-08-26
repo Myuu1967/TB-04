@@ -2180,6 +2180,553 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "My_Lib:rotarySW_01x09"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at -2.794 13.462 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "sw rotary"
+				(at 1.524 -12.446 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "LibraryTB04:SW_Rotary_1x9_Alpha_SR1712F-0109"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "rotarySW_01x09_0_1"
+				(polyline
+					(pts
+						(xy -5.08 0) (xy -3.175 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.54 0)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.3876 0.6604) (xy -1.4224 6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.27 6.985)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0.3174 2.2225)
+					(mid 1.424 0.449)
+					(end 0.9524 -1.5875)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -1.27 -7.62)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.9524 -1.5875) (xy 0.9524 -0.6985)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.9524 -1.5875) (xy 0.9524 -1.5875)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.9524 -1.5875) (xy 1.7144 -1.0795)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 6.35)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 -6.35)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.175 4.445)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.175 -4.445)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 2.54)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.08 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 5.715 0)
+					(radius 0.635)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 7.62) (xy 1.27 7.62) (xy 1.27 7.62) (xy 1.27 6.985)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 5.08) (xy 5.08 5.08) (xy 5.08 4.445) (xy 3.81 4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 2.54) (xy 5.715 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 0) (xy 6.35 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -2.54) (xy 5.715 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 5.08 -5.08) (xy 5.08 -4.445) (xy 3.81 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -7.62) (xy 3.175 -7.62) (xy 3.175 -6.35) (xy 1.905 -6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "rotarySW_01x09_1_1"
+				(polyline
+					(pts
+						(xy -5.08 11.43) (xy 7.62 11.43) (xy 7.62 -11.43) (xy -5.08 -11.43) (xy -5.08 11.43) (xy -5.08 11.43)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 10.16) (xy -1.27 10.16) (xy -1.27 7.62)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -10.16) (xy -1.27 -10.16) (xy -1.27 -8.255)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 10.16 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 7.62 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -7.62 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -10.16 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers
 				(hide yes)
@@ -2334,585 +2881,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Switch:SW_Rotary_1x9_MP"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at 0 12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_Rotary_1x9_MP"
-				(at 8.89 -12.7 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Rotary switch 1x8, SP8T with mount point"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Rotary switch 1x8 SP8T"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SW_Rotary_1x9_MP_0_1"
-				(polyline
-					(pts
-						(xy -7.62 0) (xy -5.715 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -5.08 0)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.9276 0.6604) (xy -3.9624 6.35)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -3.81 6.985)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.2226 2.2225)
-					(mid -1.116 0.449)
-					(end -1.5876 -1.5875)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -3.81 -7.62)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.5876 -1.5875) (xy -1.5876 -0.6985)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.5876 -1.5875) (xy -1.5876 -1.5875)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.5876 -1.5875) (xy -0.8256 -1.0795)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -1.27 6.35)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -1.27 -6.35)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0.635 4.445)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0.635 -4.445)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 2.54)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 -2.54)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 3.175 0)
-					(radius 0.635)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 7.62) (xy -1.27 7.62) (xy -1.27 7.62) (xy -1.27 6.985)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 5.08) (xy 2.54 5.08) (xy 2.54 4.445) (xy 1.27 4.445)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 3.175 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 0) (xy 3.81 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -2.54) (xy 3.175 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -5.08) (xy 2.54 -5.08) (xy 2.54 -4.445) (xy 1.27 -4.445)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -7.62) (xy 0.635 -7.62) (xy 0.635 -6.35) (xy -0.635 -6.35)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_Rotary_1x9_MP_1_1"
-				(polyline
-					(pts
-						(xy -7.62 11.43) (xy 5.08 11.43) (xy 5.08 -11.43) (xy -7.62 -11.43) (xy -7.62 11.43) (xy -7.62 11.43)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 10.16) (xy -3.81 10.16) (xy -3.81 7.62)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -10.16) (xy -3.81 -10.16) (xy -3.81 -8.255)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 7.62 10.16 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 7.62 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 5.08 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -5.08 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -7.62 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -10.16 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -10.16 -10.16 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3172,12 +3140,6 @@
 		(uuid "99fcf51c-bba8-4071-9904-a291924ae534")
 	)
 	(junction
-		(at 340.36 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9df1aa3b-83f8-4348-ad1b-a40bfe95945a")
-	)
-	(junction
 		(at 208.28 189.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3359,16 +3321,6 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 128.27) (xy 340.36 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21073961-c6c7-4d9d-b05d-ba3b59b93fce")
-	)
-	(wire
-		(pts
 			(xy 340.36 114.3) (xy 345.44 114.3)
 		)
 		(stroke
@@ -3399,7 +3351,7 @@
 	)
 	(wire
 		(pts
-			(xy 345.44 127) (xy 345.44 128.27)
+			(xy 345.44 127) (xy 345.44 130.81)
 		)
 		(stroke
 			(width 0)
@@ -3719,16 +3671,6 @@
 	)
 	(wire
 		(pts
-			(xy 345.44 128.27) (xy 340.36 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c89a2cc-22e3-43aa-8fc9-5ae1f1b17f1f")
-	)
-	(wire
-		(pts
 			(xy 234.95 74.93) (xy 234.95 83.82)
 		)
 		(stroke
@@ -3746,16 +3688,6 @@
 			(type default)
 		)
 		(uuid "5f3387b0-3a91-44b3-8338-c5c28209e2af")
-	)
-	(wire
-		(pts
-			(xy 340.36 124.46) (xy 340.36 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "610a6314-a71b-4b01-91c9-5e5670dca111")
 	)
 	(wire
 		(pts
@@ -4630,7 +4562,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "#PWR0502")
 					(unit 1)
@@ -4714,7 +4646,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "#PWR0505")
 					(unit 1)
@@ -4836,7 +4768,7 @@
 					(unit 4)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "U501")
 					(unit 4)
@@ -4878,7 +4810,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 237.1852 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -4918,7 +4850,7 @@
 			(uuid "6daa66ca-4043-4a26-9de1-af36d468a4fe")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "C506")
 					(unit 1)
@@ -4958,7 +4890,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm_Socket"
 			(at 217.17 189.23 0)
 			(hide yes)
 			(show_name no)
@@ -4998,7 +4930,7 @@
 			(uuid "0079081e-645c-46c8-9607-f306b1df1913")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "Y501")
 					(unit 1)
@@ -5086,7 +5018,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "C502")
 					(unit 1)
@@ -5208,7 +5140,7 @@
 					(unit 2)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "U501")
 					(unit 2)
@@ -5296,7 +5228,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "R510")
 					(unit 1)
@@ -5381,7 +5313,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "C503")
 					(unit 1)
@@ -5503,7 +5435,7 @@
 					(unit 3)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "U501")
 					(unit 3)
@@ -5589,7 +5521,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "R503")
 					(unit 1)
@@ -5677,7 +5609,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "C504")
 					(unit 1)
@@ -5799,7 +5731,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "U501")
 					(unit 1)
@@ -5885,9 +5817,114 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "R504")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "My_Lib:rotarySW_01x09")
+		(at 332.74 114.3 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3ce74227-08a5-49c5-9a54-980a94ba6552")
+		(property "Reference" "SW502"
+			(at 331.47 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "sw rotary"
+			(at 331.47 100.33 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LibraryTB04:SW_Rotary_1x9_Alpha_SR1712F-0109"
+			(at 332.74 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 332.74 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 332.74 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "7"
+			(uuid "5e9ad033-c086-4f29-99ee-bad257af611c")
+		)
+		(pin "9"
+			(uuid "ef0b3d37-a63f-4e8a-b41c-1e6ba889c6f2")
+		)
+		(pin "1"
+			(uuid "8763d5cb-e5ac-4550-933a-3908cac37a72")
+		)
+		(pin "2"
+			(uuid "3a593d27-2f74-4334-8b8e-eff2822e9031")
+		)
+		(pin "5"
+			(uuid "178a4da3-df2d-4b21-b4e4-6d60b3df59e0")
+		)
+		(pin "4"
+			(uuid "92e07408-4e75-4242-b013-f9e854b1cc86")
+		)
+		(pin "3"
+			(uuid "39897293-1ad2-49e9-9de1-a2c578b5e798")
+		)
+		(pin "6"
+			(uuid "892a5c94-bf47-453c-8a52-742c09bc54b6")
+		)
+		(pin "8"
+			(uuid "f32c5c8b-3aee-468e-a3b6-e4c23545063b")
+		)
+		(pin "10"
+			(uuid "1d9b884c-8cb1-4b92-9072-c4035c4f508e")
+		)
+		(instances
+			(project "TB04addr8bit_copy"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
+					(reference "SW502")
 					(unit 1)
 				)
 			)
@@ -5971,7 +6008,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "R507")
 					(unit 1)
@@ -6049,7 +6086,7 @@
 			(uuid "5ce5d12e-39c0-45a7-b1dd-0b5544af9098")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "#PWR0512")
 					(unit 1)
@@ -6170,7 +6207,7 @@
 					(unit 6)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "U501")
 					(unit 6)
@@ -6212,7 +6249,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_DIP:DIP-16_W7.62mm_Socket"
 			(at 271.78 181.61 0)
 			(hide yes)
 			(show_name no)
@@ -6294,7 +6331,7 @@
 			(uuid "bb172eba-5da8-41d5-85e9-84afa6f5252a")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "U502")
 					(unit 1)
@@ -6378,7 +6415,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "#PWR0504")
 					(unit 1)
@@ -6499,7 +6536,7 @@
 					(unit 5)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "U501")
 					(unit 5)
@@ -6583,7 +6620,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "#PWR0509")
 					(unit 1)
@@ -6683,7 +6720,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "D501")
 					(unit 1)
@@ -6767,7 +6804,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "#PWR0501")
 					(unit 1)
@@ -6851,7 +6888,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "#PWR0510")
 					(unit 1)
@@ -6938,7 +6975,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "R502")
 					(unit 1)
@@ -7022,7 +7059,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "#PWR0514")
 					(unit 1)
@@ -7110,7 +7147,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "SW501")
 					(unit 1)
@@ -7152,7 +7189,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 			(at 209.2452 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -7192,7 +7229,7 @@
 			(uuid "3ddc0dc0-83a4-4045-baaa-2fe6e5d330f8")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "C505")
 					(unit 1)
@@ -7275,7 +7312,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "#PWR0508")
 					(unit 1)
@@ -7359,7 +7396,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "H501")
 					(unit 1)
@@ -7443,7 +7480,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "#PWR0506")
 					(unit 1)
@@ -7528,7 +7565,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "H504")
 					(unit 1)
@@ -7606,7 +7643,7 @@
 			(uuid "afc632ec-ffd6-4715-ad28-30206d48498f")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "#PWR0513")
 					(unit 1)
@@ -7646,7 +7683,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 222.25 179.578 90)
 			(hide yes)
 			(show_name no)
@@ -7686,7 +7723,7 @@
 			(uuid "db8d5cab-f129-42cd-97bc-dc4485c0ba5a")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "R511")
 					(unit 1)
@@ -7772,7 +7809,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "R506")
 					(unit 1)
@@ -7856,7 +7893,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "#PWR0511")
 					(unit 1)
@@ -7896,7 +7933,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 228.6 191.008 90)
 			(hide yes)
 			(show_name no)
@@ -7936,117 +7973,9 @@
 			(uuid "6692a177-1c98-4455-bace-b0f26ebfc1e9")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "R512")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Rotary_1x9_MP")
-		(at 330.2 114.3 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b8f64ace-b31f-4490-8330-371e0d01a878")
-		(property "Reference" "SW502"
-			(at 331.47 97.79 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Rotary_1x9_MP"
-			(at 331.47 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 330.2 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 330.2 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Rotary switch 1x8, SP8T with mount point"
-			(at 330.2 114.3 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d0730f91-09ff-46a7-b0ab-0d07b00256d2")
-		)
-		(pin "8"
-			(uuid "97261eaf-2442-4485-b893-f212b75fff1d")
-		)
-		(pin "1"
-			(uuid "cfe57ac5-75b9-4dad-9b86-7365704fbc48")
-		)
-		(pin "6"
-			(uuid "a2dc4dc3-dd98-49da-b102-62ebc4094be9")
-		)
-		(pin "7"
-			(uuid "5952b0e5-d5f5-40c3-836b-f13fdc934117")
-		)
-		(pin "9"
-			(uuid "05d65431-62cd-4a51-a119-e31324f6b01d")
-		)
-		(pin "3"
-			(uuid "f40fef1e-f0b4-44bf-b573-86d14e4ff514")
-		)
-		(pin "4"
-			(uuid "ebb54d60-6e2c-4c03-8900-f0fbc9c0d7f7")
-		)
-		(pin "5"
-			(uuid "ef2a1271-afea-4a3d-bea7-f9268c878c08")
-		)
-		(pin "MP"
-			(uuid "fe036e8f-faa6-41b5-b001-6fabdc8841fd")
-		)
-		(pin "10"
-			(uuid "ab277046-50a5-4c39-8bda-3f6f8763187b")
-		)
-		(instances
-			(project "TB04addr8bit"
-				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
-					(reference "SW502")
 					(unit 1)
 				)
 			)
@@ -8132,7 +8061,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "R508")
 					(unit 1)
@@ -8173,7 +8102,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
 			(at 343.662 123.19 90)
 			(hide yes)
 			(show_name no)
@@ -8213,7 +8142,7 @@
 			(uuid "584e3475-979e-435b-ad68-bc0881faa657")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "R509")
 					(unit 1)
@@ -8301,7 +8230,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "SW503")
 					(unit 1)
@@ -8389,7 +8318,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "R501")
 					(unit 1)
@@ -8473,7 +8402,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "H502")
 					(unit 1)
@@ -8561,7 +8490,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "C501")
 					(unit 1)
@@ -8660,7 +8589,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "D502")
 					(unit 1)
@@ -8670,7 +8599,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 340.36 132.08 0)
+		(at 345.44 130.81 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8681,7 +8610,7 @@
 		(fields_autoplaced yes)
 		(uuid "eb8be27f-3cee-438b-a6de-074a8dfdf9a9")
 		(property "Reference" "#PWR0507"
-			(at 340.36 138.43 0)
+			(at 345.44 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8692,7 +8621,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 340.36 137.16 0)
+			(at 345.44 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8702,7 +8631,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 340.36 132.08 0)
+			(at 345.44 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8713,7 +8642,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 340.36 132.08 0)
+			(at 345.44 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8724,7 +8653,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 340.36 132.08 0)
+			(at 345.44 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8738,7 +8667,7 @@
 			(uuid "eaf8057e-b067-47ec-a397-1844188bcf33")
 		)
 		(instances
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "#PWR0507")
 					(unit 1)
@@ -8824,7 +8753,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "R505")
 					(unit 1)
@@ -8908,7 +8837,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "#PWR0503")
 					(unit 1)
@@ -8992,7 +8921,7 @@
 					(unit 1)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "H503")
 					(unit 1)
@@ -9116,7 +9045,7 @@
 					(unit 7)
 				)
 			)
-			(project "TB04addr8bit"
+			(project "TB04addr8bit_copy"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31"
 					(reference "U501")
 					(unit 7)

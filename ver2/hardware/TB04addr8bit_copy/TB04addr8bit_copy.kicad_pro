@@ -258,7 +258,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "TB04addr8bit.kicad_pro",
+    "filename": "TB04addr8bit_copy.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -485,8 +485,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "TB04addr8bit.kicad_sch",
-        "name": "ルート",
+        "filename": "TB04addr8bit_copy.kicad_sch",
+        "name": "TB04addr8bit_copy",
         "uuid": "d176c79b-dced-4d01-bcec-7dfd676fcfc2"
       }
     ],
@@ -496,7 +496,7 @@
   "sheets": [
     [
       "d176c79b-dced-4d01-bcec-7dfd676fcfc2",
-      "ルート"
+      "TB04addr8bit_copy"
     ],
     [
       "a1fb1557-9779-47a0-87e0-44b80b522f7b",
