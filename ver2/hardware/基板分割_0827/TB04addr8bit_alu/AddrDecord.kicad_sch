@@ -1769,7 +1769,7 @@
 			(uuid "2b8e3cb0-0e2d-4de2-b058-1762ac8ae248")
 		)
 		(instances
-			(project "TB04addr8bit_copy"
+			(project "TB04addr8bit_alu"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5966379b-e25d-4be9-810c-b95428770124"
 					(reference "#PWR01301")
 					(unit 1)
@@ -1851,7 +1851,7 @@
 			(uuid "02cbaa3d-3891-4a26-9ccf-6504e64a3186")
 		)
 		(instances
-			(project "TB04addr8bit_copy"
+			(project "TB04addr8bit_alu"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5966379b-e25d-4be9-810c-b95428770124"
 					(reference "C1301")
 					(unit 1)
@@ -1929,7 +1929,7 @@
 			(uuid "211f80fd-afb3-4303-abc0-a98d3a7b827f")
 		)
 		(instances
-			(project "TB04addr8bit_copy"
+			(project "TB04addr8bit_alu"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5966379b-e25d-4be9-810c-b95428770124"
 					(reference "#PWR01302")
 					(unit 1)
@@ -2045,7 +2045,7 @@
 			(uuid "44efe8b1-df9e-4f92-acb3-b5ae5241ddb8")
 		)
 		(instances
-			(project "TB04addr8bit_copy"
+			(project "TB04addr8bit_alu"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5966379b-e25d-4be9-810c-b95428770124"
 					(reference "U1301")
 					(unit 2)
@@ -2161,7 +2161,7 @@
 			(uuid "44efe8b1-df9e-4f92-acb3-b5ae5241ddb9")
 		)
 		(instances
-			(project "TB04addr8bit_copy"
+			(project "TB04addr8bit_alu"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5966379b-e25d-4be9-810c-b95428770124"
 					(reference "U1301")
 					(unit 4)
@@ -2277,7 +2277,7 @@
 			(uuid "44efe8b1-df9e-4f92-acb3-b5ae5241ddba")
 		)
 		(instances
-			(project "TB04addr8bit_copy"
+			(project "TB04addr8bit_alu"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5966379b-e25d-4be9-810c-b95428770124"
 					(reference "U1301")
 					(unit 3)
@@ -2395,7 +2395,7 @@
 			(uuid "44efe8b1-df9e-4f92-acb3-b5ae5241ddbb")
 		)
 		(instances
-			(project "TB04addr8bit_copy"
+			(project "TB04addr8bit_alu"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5966379b-e25d-4be9-810c-b95428770124"
 					(reference "U1301")
 					(unit 5)
@@ -2511,7 +2511,7 @@
 			(uuid "44efe8b1-df9e-4f92-acb3-b5ae5241ddbc")
 		)
 		(instances
-			(project "TB04addr8bit_copy"
+			(project "TB04addr8bit_alu"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2/5966379b-e25d-4be9-810c-b95428770124"
 					(reference "U1301")
 					(unit 1)

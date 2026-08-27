@@ -4260,7 +4260,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/a28aa4b9-8e18-4531-8165-4a9743c2c6db")
 		(sheetname "/")
-		(sheetfile "TB04addr8bit_copy.kicad_sch")
+		(sheetfile "TB04addr8bit_alu.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -7748,7 +7748,7 @@
 		(property ki_fp_filters "DIP?16*")
 		(path "/dfba4e86-07e8-476d-b8a7-9dc89561e2e0")
 		(sheetname "/")
-		(sheetfile "TB04addr8bit_copy.kicad_sch")
+		(sheetfile "TB04addr8bit_alu.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -31413,7 +31413,7 @@
 		(property ki_fp_filters "DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* SSOP*5.3x6.2mm*P0.65mm*")
 		(path "/ff9ffbc5-a0c3-4467-944a-8c075928af3f")
 		(sheetname "/")
-		(sheetfile "TB04addr8bit_copy.kicad_sch")
+		(sheetfile "TB04addr8bit_alu.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -43442,7 +43442,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/09d06967-0b50-4fe7-a347-935ecfdeff41")
 		(sheetname "/")
-		(sheetfile "TB04addr8bit_copy.kicad_sch")
+		(sheetfile "TB04addr8bit_alu.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -44766,7 +44766,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/d7f0e1f3-8c16-4dea-8528-020131190025")
 		(sheetname "/")
-		(sheetfile "TB04addr8bit_copy.kicad_sch")
+		(sheetfile "TB04addr8bit_alu.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -52605,7 +52605,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/eabe39b3-c904-4907-9bc9-633398f0a8c8")
 		(sheetname "/")
-		(sheetfile "TB04addr8bit_copy.kicad_sch")
+		(sheetfile "TB04addr8bit_alu.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -54829,7 +54829,7 @@
 		(property ki_fp_filters "USB*C*Receptacle*")
 		(path "/8676f737-5c1e-4d21-b630-bdfd6f023366")
 		(sheetname "/")
-		(sheetfile "TB04addr8bit_copy.kicad_sch")
+		(sheetfile "TB04addr8bit_alu.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -55980,7 +55980,7 @@
 		)
 		(path "/e6652354-3743-4b99-a49a-0c6c880bc354")
 		(sheetname "/")
-		(sheetfile "TB04addr8bit_copy.kicad_sch")
+		(sheetfile "TB04addr8bit_alu.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -58140,7 +58140,7 @@
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/ab65face-4636-40af-9830-601053620146")
 		(sheetname "/")
-		(sheetfile "TB04addr8bit_copy.kicad_sch")
+		(sheetfile "TB04addr8bit_alu.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -59250,7 +59250,7 @@
 		(property ki_fp_filters "CP_*")
 		(path "/16019024-cb2b-406c-a791-c46d911688c1")
 		(sheetname "/")
-		(sheetfile "TB04addr8bit_copy.kicad_sch")
+		(sheetfile "TB04addr8bit_alu.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -78772,7 +78772,7 @@
 		(property ki_fp_filters "C_*")
 		(path "/440e1fee-0f43-4ad8-8803-6f79d5cfcc16")
 		(sheetname "/")
-		(sheetfile "TB04addr8bit_copy.kicad_sch")
+		(sheetfile "TB04addr8bit_alu.kicad_sch")
 		(units
 			(unit
 				(name "A")
@@ -89879,7 +89879,7 @@
 		(property ki_fp_filters "R_*")
 		(path "/4e2b84e8-0a57-4d8c-90a4-26fabae9f66a")
 		(sheetname "/")
-		(sheetfile "TB04addr8bit_copy.kicad_sch")
+		(sheetfile "TB04addr8bit_alu.kicad_sch")
 		(units
 			(unit
 				(name "A")
