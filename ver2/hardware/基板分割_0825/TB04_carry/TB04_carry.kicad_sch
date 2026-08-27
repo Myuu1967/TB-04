@@ -5327,7 +5327,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical"
 			(at 168.91 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -5971,7 +5971,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-02P_1x02_P5.00mm"
 			(at 67.31 46.99 0)
 			(hide yes)
 			(show_name no)
