@@ -727,10 +727,6 @@
       "PC_aluMux (4 ページ)"
     ],
     [
-      "9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31",
-      "CLK_RST"
-    ],
-    [
       "0a14efc5-adfb-4d67-9882-eebc804e8eda",
       "ROM_ALU"
     ],
@@ -741,14 +737,6 @@
     [
       "8128481a-591d-4f1a-bdfd-fb80959a87d7",
       "InterFace"
-    ],
-    [
-      "0fcb6af9-236e-4ccd-af48-2dd0360a8279",
-      "outPort"
-    ],
-    [
-      "b94da786-8338-40c3-8c17-e9858e8674bf",
-      "inPort"
     ],
     [
       "d4d6bce3-987f-46b3-a9b7-788703d534f1",

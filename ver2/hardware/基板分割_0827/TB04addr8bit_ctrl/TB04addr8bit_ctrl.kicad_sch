@@ -7443,52 +7443,6 @@
 		)
 	)
 	(sheet
-		(at 369.57 66.04)
-		(size 12.7 5.08)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "0fcb6af9-236e-4ccd-af48-2dd0360a8279")
-		(property "Sheetname" "outPort"
-			(at 369.57 65.3284 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "outPut.kicad_sch"
-			(at 369.57 71.7046 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "TB04addr8bit_ctrl"
-				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2"
-					(page "9")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 370.84 100.33)
 		(size 12.7 5.08)
 		(exclude_from_sim no)
@@ -8017,57 +7971,6 @@
 		)
 	)
 	(sheet
-		(at 369.57 24.13)
-		(size 12.7 3.81)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "9fd3b1a0-5dcc-4ed0-85ea-18f61fa16f31")
-		(property "Sheetname" "CLK_RST"
-			(at 369.57 23.4184 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "clk_rst.kicad_sch"
-			(at 369.57 28.5246 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "TB04addr4bitVer3"
-				(path "/4ea1f5c4-c9b0-4258-a3d4-23d6760fc0c5"
-					(page "4")
-				)
-			)
-			(project "TB04addr8bit_ctrl"
-				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 109.22 26.67)
 		(size 21.59 43.18)
 		(exclude_from_sim no)
@@ -8334,52 +8237,6 @@
 			(project "TB04addr8bit_ctrl"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2"
 					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 370.84 77.47)
-		(size 12.7 5.08)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "b94da786-8338-40c3-8c17-e9858e8674bf")
-		(property "Sheetname" "inPort"
-			(at 370.84 76.7584 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "inPut.kicad_sch"
-			(at 370.84 83.1346 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "TB04addr8bit_ctrl"
-				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2"
-					(page "10")
 				)
 			)
 		)
