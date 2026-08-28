@@ -5447,57 +5447,6 @@
 		)
 	)
 	(sheet
-		(at 369.57 55.88)
-		(size 12.7 5.08)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "8128481a-591d-4f1a-bdfd-fb80959a87d7")
-		(property "Sheetname" "InterFace"
-			(at 369.57 55.1684 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "ALU.kicad_sch"
-			(at 369.57 61.5446 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "TB04addr4bitVer3"
-				(path "/4ea1f5c4-c9b0-4258-a3d4-23d6760fc0c5"
-					(page "6")
-				)
-			)
-			(project "TB04addr8bit_alu"
-				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2"
-					(page "8")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 194.31 27.94)
 		(size 21.59 43.18)
 		(exclude_from_sim no)
