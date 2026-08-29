@@ -4381,7 +4381,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74LS157"
+		(property "Value" "74HC157"
 			(at 74.5333 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4907,7 +4907,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74LS157"
+		(property "Value" "74HC157"
 			(at 73.2633 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
