@@ -3611,6 +3611,129 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -3897,6 +4020,12 @@
 		(uuid "3f4ecbfb-7c35-4aab-8fba-8e75a2a29acf")
 	)
 	(junction
+		(at 339.09 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e891ec9-f6f3-4009-98e8-138abf79409d")
+	)
+	(junction
 		(at 86.36 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3919,6 +4048,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5abff4bd-73ec-4070-b519-424d76cce978")
+	)
+	(junction
+		(at 339.09 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "687ac55d-6bdc-4815-ab0c-b871efc155f5")
 	)
 	(junction
 		(at 262.89 208.28)
@@ -3973,6 +4108,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b2a1ab20-f740-4f1d-8c5f-c8a39a24c51a")
+	)
+	(junction
+		(at 339.09 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bd49aead-d4ff-48a9-bec1-b86e84a414f3")
 	)
 	(junction
 		(at 102.87 127)
@@ -4414,6 +4555,16 @@
 	)
 	(wire
 		(pts
+			(xy 339.09 87.63) (xy 339.09 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e2c955b-409f-4276-8c80-95040e669b7a")
+	)
+	(wire
+		(pts
 			(xy 130.81 212.09) (xy 135.89 212.09)
 		)
 		(stroke
@@ -4794,6 +4945,16 @@
 	)
 	(wire
 		(pts
+			(xy 339.09 81.28) (xy 339.09 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f9aef0f-ef86-45e6-b81b-181f55c398cd")
+	)
+	(wire
+		(pts
 			(xy 135.89 196.85) (xy 135.89 194.31)
 		)
 		(stroke
@@ -4811,6 +4972,16 @@
 			(type default)
 		)
 		(uuid "71897897-bd33-4ecf-a2d9-63a4d12dbb65")
+	)
+	(wire
+		(pts
+			(xy 339.09 100.33) (xy 355.6 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73609bd4-ff6d-4111-982f-34e3a9fbc2df")
 	)
 	(wire
 		(pts
@@ -4841,6 +5012,16 @@
 			(type default)
 		)
 		(uuid "75db4a5e-1866-4ae3-8912-dc3243695a18")
+	)
+	(wire
+		(pts
+			(xy 339.09 93.98) (xy 339.09 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7620326c-edd5-44f9-b5f2-f6b3597f6d15")
 	)
 	(wire
 		(pts
@@ -5034,6 +5215,16 @@
 	)
 	(wire
 		(pts
+			(xy 339.09 93.98) (xy 350.52 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9220b867-3bc3-48ca-b575-7f28ed7acf33")
+	)
+	(wire
+		(pts
 			(xy 189.23 39.37) (xy 194.31 39.37)
 		)
 		(stroke
@@ -5151,6 +5342,16 @@
 			(type default)
 		)
 		(uuid "9e68576c-83c1-402e-8943-6ff0733cf481")
+	)
+	(wire
+		(pts
+			(xy 339.09 100.33) (xy 339.09 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fc3d29f-6ce4-4544-9cc3-3f0381d81d95")
 	)
 	(wire
 		(pts
@@ -5711,6 +5912,16 @@
 			(type default)
 		)
 		(uuid "f69104f4-7893-4688-9c74-91a7d255958c")
+	)
+	(wire
+		(pts
+			(xy 339.09 87.63) (xy 344.17 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8d80520-07ed-4d5a-bfdd-a68056874056")
 	)
 	(wire
 		(pts
@@ -8443,6 +8654,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 344.17 85.09 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4c3544b6-9acc-49ba-a450-3afb531075af")
+		(property "Reference" "H102"
+			(at 346.71 82.5499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 346.71 85.0899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 344.17 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 344.17 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 344.17 85.09 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "23af406e-6d6a-42c4-9645-e08f7dfec04b")
+		)
+		(instances
+			(project "TB04addr8bit_alu"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2"
+					(reference "H102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 125.73 133.35 0)
 		(unit 1)
@@ -8643,7 +8933,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical"
 			(at 223.52 200.66 0)
 			(hide yes)
 			(show_name no)
@@ -8924,6 +9214,163 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 339.09 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b563bdfd-b748-4273-afa5-36e3eb13cc30")
+		(property "Reference" "#PWR0107"
+			(at 339.09 110.49 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 339.09 109.22 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 339.09 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 339.09 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 339.09 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "08d9c729-33c6-4273-94a4-44fa4dc2a0eb")
+		)
+		(instances
+			(project "TB04addr8bit_alu"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 355.6 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b8a8341f-8a60-483c-ae1d-439e8efaf060")
+		(property "Reference" "H104"
+			(at 358.14 95.2499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 358.14 97.7899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 355.6 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 355.6 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 355.6 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3e9e4a15-4715-4520-9ad2-e12cfdfcbf1e")
+		)
+		(instances
+			(project "TB04addr8bit_alu"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2"
+					(reference "H104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 125.73 151.13 0)
 		(unit 1)
 		(body_style 1)
@@ -9038,7 +9485,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical"
 			(at 123.19 207.01 0)
 			(hide yes)
 			(show_name no)
@@ -9201,6 +9648,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 339.09 78.74 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd525e00-b25e-4ca7-a181-a063977223a9")
+		(property "Reference" "H101"
+			(at 341.63 76.1999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 341.63 78.7399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 339.09 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 339.09 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 339.09 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f06d5b24-bc67-4eda-a43c-a3961b62b88a")
+		)
+		(instances
+			(project "TB04addr8bit_alu"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2"
+					(reference "H101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
 		(at 62.23 127 0)
 		(mirror y)
@@ -9233,7 +9759,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_MaiXu_MX126-5.0-02P_1x02_P5.00mm"
 			(at 62.23 127 0)
 			(hide yes)
 			(show_name no)
@@ -9525,6 +10051,85 @@
 			(project "TB04addr8bit_alu"
 				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2"
 					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 350.52 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f804d11a-14f0-4d83-b1f1-1637fa30b7b8")
+		(property "Reference" "H103"
+			(at 353.06 88.8999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 353.06 91.4399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 350.52 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 350.52 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 350.52 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5b0d61ec-3c6e-412f-99ec-5626f9cfefcf")
+		)
+		(instances
+			(project "TB04addr8bit_alu"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2"
+					(reference "H103")
 					(unit 1)
 				)
 			)
