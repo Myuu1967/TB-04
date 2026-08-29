@@ -1959,7 +1959,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS08"
+		(property "Value" "74HC08"
 			(at 67.3017 55.88 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2075,7 +2075,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS08"
+		(property "Value" "74HC08"
 			(at 119.3717 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2191,7 +2191,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS08"
+		(property "Value" "74HC08"
 			(at 92.7017 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2308,7 +2308,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74LS08"
+		(property "Value" "74HC08"
 			(at 114.3 114.2999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2425,7 +2425,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS08"
+		(property "Value" "74HC08"
 			(at 67.3017 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)

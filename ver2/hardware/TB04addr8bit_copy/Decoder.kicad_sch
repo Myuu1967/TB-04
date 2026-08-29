@@ -6241,7 +6241,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74LS273"
+		(property "Value" "74HC273"
 			(at 149.4633 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6377,7 +6377,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74LS273"
+		(property "Value" "74HC273"
 			(at 148.1933 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6829,7 +6829,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74LS273"
+		(property "Value" "74HC273"
 			(at 310.7533 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)

@@ -10294,7 +10294,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74LS253"
+		(property "Value" "74HC253"
 			(at 332.3433 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12248,7 +12248,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74LS253"
+		(property "Value" "74HC253"
 			(at 267.5733 147.32 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12372,7 +12372,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74LS253"
+		(property "Value" "74HC253"
 			(at 332.3433 101.6 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12589,7 +12589,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74LS253"
+		(property "Value" "74HC253"
 			(at 299.3233 219.71 0)
 			(show_name no)
 			(do_not_autoplace no)
