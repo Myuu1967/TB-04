@@ -1375,7 +1375,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS253"
+		(property "Value" "74HC253"
 			(at 3.81 20.11 0)
 			(layer "F.Fab")
 			(uuid "ab18283f-c4a6-408b-8da1-e50e5fb89c9b")
@@ -1802,7 +1802,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS253"
+		(property "Value" "74HC253"
 			(at 3.81 20.11 0)
 			(layer "F.Fab")
 			(uuid "d8bb7e19-bb05-4b61-9977-415af6ce82cc")
@@ -5593,7 +5593,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS253"
+		(property "Value" "74HC253"
 			(at 3.81 20.11 0)
 			(layer "F.Fab")
 			(uuid "4cf19c4d-9667-40e7-b7a1-c4bd546483db")
@@ -7184,7 +7184,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS253"
+		(property "Value" "74HC253"
 			(at 3.81 20.11 0)
 			(layer "F.Fab")
 			(uuid "60584fbd-61e3-4f16-8210-4ebf58128782")
@@ -11566,7 +11566,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS253"
+		(property "Value" "74HC253"
 			(at 3.81 20.11 0)
 			(layer "F.Fab")
 			(uuid "998dfd62-405a-426f-95eb-f29cf4b8f819")
@@ -15336,7 +15336,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS253"
+		(property "Value" "74HC253"
 			(at 3.81 20.11 0)
 			(layer "F.Fab")
 			(uuid "aae14dd1-ee98-4cd9-9801-dd572c38b641")
@@ -20764,7 +20764,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS253"
+		(property "Value" "74HC253"
 			(at 3.81 20.11 0)
 			(layer "F.Fab")
 			(uuid "ce396a35-d729-4eb9-baa9-a0db065c50fe")
@@ -24537,7 +24537,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS253"
+		(property "Value" "74HC253"
 			(at 3.81 20.11 0)
 			(layer "F.Fab")
 			(uuid "077b728d-2f95-43f8-88f5-54e9437f4234")
@@ -24964,7 +24964,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS253"
+		(property "Value" "74HC253"
 			(at 3.81 20.11 0)
 			(layer "F.Fab")
 			(uuid "8d0e3e11-be29-468e-8397-ab539d53a8dd")
@@ -25391,7 +25391,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS273"
+		(property "Value" "74HC273"
 			(at 3.81 25.19 0)
 			(layer "F.Fab")
 			(uuid "20483304-46c8-4b55-9011-2e3d29754f9a")
@@ -25862,7 +25862,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS253"
+		(property "Value" "74HC253"
 			(at 3.81 20.11 0)
 			(layer "F.Fab")
 			(uuid "16ed681a-b98b-4867-a3dc-b394f356db67")
@@ -26289,7 +26289,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS253"
+		(property "Value" "74HC253"
 			(at 3.81 20.11 0)
 			(layer "F.Fab")
 			(uuid "2fdcb492-5418-4974-b884-39be78a50f1f")
@@ -26716,7 +26716,7 @@
 				)
 			)
 		)
-		(property "Value" "74LS253"
+		(property "Value" "74HC253"
 			(at 3.81 20.11 0)
 			(layer "F.Fab")
 			(uuid "7f49e689-5058-4df7-a318-6ecb84b33c56")
