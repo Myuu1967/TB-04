@@ -1049,7 +1049,7 @@
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "190c210d-c23e-416c-a604-1a0dcadb07ec")
-		(at 139.7 55.62 90)
+		(at 162 54 90)
 		(descr "Through hole straight socket strip, 2x05, 2.54mm pitch, double rows (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 2x05 2.54mm double row")
 		(property "Reference" "J904"
@@ -3526,13 +3526,13 @@
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "35fd789d-d1a0-4a74-b944-d19cc1394b7e")
-		(at 141.7 84.62 90)
+		(at 162.787486 83.963983 90)
 		(descr "Through hole straight socket strip, 2x05, 2.54mm pitch, double rows (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 2x05 2.54mm double row")
 		(property "Reference" "J902"
 			(at -0.41 -2.77 90)
 			(layer "F.SilkS")
-			(uuid "58fce196-fb54-4713-b97a-747ff49a232f")
+			(uuid "f03bc0dd-8364-4ad4-a385-1aaf18dff691")
 			(effects
 				(font
 					(size 1 1)
@@ -3543,7 +3543,7 @@
 		(property "Value" "Conn_02x05_Odd_Even"
 			(at -1.27 12.93 90)
 			(layer "F.Fab")
-			(uuid "d3524c18-cd4a-4bfd-8ebe-65a37553196b")
+			(uuid "644cfc1b-e8fb-4b5e-8a18-d5c8ea420ed7")
 			(effects
 				(font
 					(size 1 1)
@@ -3555,7 +3555,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fc2f6513-4d90-4393-b35f-38e6bce59d26")
+			(uuid "03e6fef9-1f6b-4e50-bb8b-e597f0b6dad6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3566,7 +3566,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0ba513c3-6bcd-4067-bf1b-2bf5ad50d835")
+			(uuid "f3f413e8-90b7-4768-a322-07363ff76acd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6704,7 +6704,7 @@
 	(footprint "Resistor_THT:R_Array_SIP9"
 		(layer "F.Cu")
 		(uuid "47fdc7be-3235-43b5-b493-46fb24b69273")
-		(at 154.7 56.62)
+		(at 135 57)
 		(descr "9-pin Resistor SIP pack")
 		(tags "R")
 		(property "Reference" "RN902"
@@ -7965,13 +7965,13 @@
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "4ab0359a-9225-4ad3-bd53-f01e159d8952")
-		(at 124.11 55.54 90)
+		(at 117.11 55.54 90)
 		(descr "Through hole straight socket strip, 2x05, 2.54mm pitch, double rows (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 2x05 2.54mm double row")
 		(property "Reference" "J903"
 			(at -1.27 -2.77 90)
 			(layer "F.SilkS")
-			(uuid "b51b8c20-3bc8-4bcb-ab0a-e1f5701110c0")
+			(uuid "2ed2be3e-eb4d-43ac-a023-1c2db26bb785")
 			(effects
 				(font
 					(size 1 1)
@@ -7982,7 +7982,7 @@
 		(property "Value" "Conn_02x05_Odd_Even"
 			(at -1.27 12.93 90)
 			(layer "F.Fab")
-			(uuid "ba43dd0b-a1d1-4ad2-96a7-a97bb1435ea1")
+			(uuid "02786922-9c2e-44b3-9c31-41aaea61a4ed")
 			(effects
 				(font
 					(size 1 1)
@@ -7994,7 +7994,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5c8092bf-4443-4a31-8f61-dbe537342f6f")
+			(uuid "4eb854d6-a702-4ded-92d8-9a8c7d7cecc5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8005,7 +8005,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d382cb11-0a4a-4c39-b8eb-660bbd613df2")
+			(uuid "d284e8a7-bb56-4ce6-99f0-ec77fd3361d7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8331,7 +8331,7 @@
 	(footprint "Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm"
 		(layer "F.Cu")
 		(uuid "4fadbfec-b132-47e2-b475-113f44741e85")
-		(at 172 116.62 90)
+		(at 175 116.62 90)
 		(descr "4x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x12.34mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)")
 		(tags "DIP Switch SPST Slide 7.62mm 300mil")
 		(property "Reference" "SW1004"
@@ -8790,7 +8790,7 @@
 			)
 		)
 		(point
-			(at 175.81 112.81)
+			(at 178.81 112.81)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "b5bcb2b5-efe8-407b-bdd3-fa55765ce0cc")
@@ -13730,7 +13730,7 @@
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "73205c0b-f2cb-46da-8f28-37a8e63f540a")
-		(at 123.7 84.62 90)
+		(at 118 84 90)
 		(descr "Through hole straight socket strip, 2x05, 2.54mm pitch, double rows (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 2x05 2.54mm double row")
 		(property "Reference" "J901"
@@ -14096,7 +14096,7 @@
 	(footprint "Resistor_THT:R_Array_SIP9"
 		(layer "F.Cu")
 		(uuid "738ef80a-010d-42c4-8510-bf540b586344")
-		(at 158.7 85.62)
+		(at 135 85)
 		(descr "9-pin Resistor SIP pack")
 		(tags "R")
 		(property "Reference" "RN901"
@@ -31021,7 +31021,7 @@
 	(footprint "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "e938accf-ffd2-40dc-a5f1-a0af24ada273")
-		(at 120 110 90)
+		(at 117 110 90)
 		(descr "Through hole straight socket strip, 2x05, 2.54mm pitch, double rows (from Kicad 4.0.7), script generated")
 		(tags "Through hole socket strip THT 2x05 2.54mm double row")
 		(property "Reference" "J12"
