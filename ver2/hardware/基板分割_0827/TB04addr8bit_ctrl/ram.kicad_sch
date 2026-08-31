@@ -4029,7 +4029,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-24_18.0mmx34.29mm_W15.24mm_Socket"
+		(property "Footprint" "Package_DIP:DIP-24_W15.24mm_Socket"
 			(at 77.47 44.45 0)
 			(hide yes)
 			(show_name no)

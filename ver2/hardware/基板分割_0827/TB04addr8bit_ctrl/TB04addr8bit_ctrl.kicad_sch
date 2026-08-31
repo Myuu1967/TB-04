@@ -4458,12 +4458,6 @@
 		(uuid "4816dfa4-7445-4445-952f-10ba7aa7bac6")
 	)
 	(junction
-		(at 34.29 250.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4f6078d2-ba7c-49c6-b1b6-2d069aa41b6e")
-	)
-	(junction
 		(at 77.47 185.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4542,6 +4536,12 @@
 		(uuid "8810efa5-5990-417f-b613-a6477bae30d6")
 	)
 	(junction
+		(at 34.29 260.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8af5bf7c-8288-467a-9bbe-a4c6474b0123")
+	)
+	(junction
 		(at 77.47 200.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4594,6 +4594,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aaed0145-cef5-489b-9ffb-8f522d67a18e")
+	)
+	(junction
+		(at 34.29 250.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "adf76742-1928-45a6-8dce-ff76727f9f85")
 	)
 	(junction
 		(at 157.48 171.45)
@@ -4672,6 +4678,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f35ea352-3229-4932-b018-ace742ca26dd")
+	)
+	(junction
+		(at 34.29 255.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f51ce2b8-ff3c-4357-a2be-ce4e609a5de5")
 	)
 	(junction
 		(at 261.62 176.53)
@@ -4846,6 +4858,16 @@
 			(type default)
 		)
 		(uuid "081f3448-430d-4892-9cf8-562b4e22ec69")
+	)
+	(wire
+		(pts
+			(xy 34.29 255.27) (xy 34.29 260.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08622ee3-16c6-46de-9385-77299754d18a")
 	)
 	(wire
 		(pts
@@ -5506,6 +5528,16 @@
 			(type default)
 		)
 		(uuid "56619e46-0d8d-4ea8-86ac-60382f2a3bc9")
+	)
+	(wire
+		(pts
+			(xy 63.5 260.35) (xy 34.29 260.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5678eb4b-0511-4af0-8c5c-89806340e73d")
 	)
 	(wire
 		(pts
@@ -6229,7 +6261,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 250.19) (xy 34.29 254)
+			(xy 34.29 250.19) (xy 34.29 255.27)
 		)
 		(stroke
 			(width 0)
@@ -6489,6 +6521,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 260.35) (xy 34.29 265.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb75c23a-ebb9-4429-814f-0f69d8baa42c")
+	)
+	(wire
+		(pts
 			(xy 281.94 232.41) (xy 287.02 232.41)
 		)
 		(stroke
@@ -6646,6 +6688,16 @@
 			(type default)
 		)
 		(uuid "d3a1ac09-8bf7-461f-9a69-b5843fe042ce")
+	)
+	(wire
+		(pts
+			(xy 34.29 255.27) (xy 58.42 255.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3ebee4b-afab-4c0f-b50b-3403e03fe0e2")
 	)
 	(wire
 		(pts
@@ -9702,6 +9754,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 58.42 252.73 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4ae70e80-f0fe-43d6-9531-4f934d5aa2c1")
+		(property "Reference" "H105"
+			(at 61.722 248.92 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 61.722 251.46 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 58.42 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 58.42 252.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ca9c70b6-0a65-4ac6-a5d1-18b6ae71ac97")
+		)
+		(instances
+			(project "TB04addr8bit_ctrl"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2"
+					(reference "H105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 86.36 160.02 0)
 		(unit 1)
@@ -11380,6 +11510,84 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
+		(at 63.5 257.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bcd1760b-6515-42fa-aa58-995252e201ce")
+		(property "Reference" "H106"
+			(at 66.802 254 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 66.802 256.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 63.5 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 63.5 257.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3464ba95-d8a6-48c2-8111-cb7d837865f6")
+		)
+		(instances
+			(project "TB04addr8bit_ctrl"
+				(path "/d176c79b-dced-4d01-bcec-7dfd676fcfc2"
+					(reference "H106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 46.99 242.57 0)
 		(unit 1)
 		(body_style 1)
@@ -11536,7 +11744,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 34.29 254 0)
+		(at 34.29 265.43 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11547,7 +11755,7 @@
 		(fields_autoplaced yes)
 		(uuid "dabeb354-f93b-44c8-8bdd-faf13416f9fb")
 		(property "Reference" "#PWR0111"
-			(at 34.29 260.35 0)
+			(at 34.29 271.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11558,7 +11766,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 34.29 259.08 0)
+			(at 34.29 270.51 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11568,7 +11776,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 34.29 254 0)
+			(at 34.29 265.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11579,7 +11787,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 34.29 254 0)
+			(at 34.29 265.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11590,7 +11798,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 34.29 254 0)
+			(at 34.29 265.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
