@@ -545,8 +545,8 @@
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "pattern": "VDD",
-        "netclass": "Power"
+        "netclass": "Power",
+        "pattern": "VDD"
       }
     ]
   },
