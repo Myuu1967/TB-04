@@ -51,6 +51,10 @@ ver1/必要最小限命令セット.xlsx
 ver2/addr8bitCPU仕様.xlsx
 ver2/addr12bitCPU仕様.xlsx
 ver2/回路部品表.xlsx
+# ロゴ資産（ユーザー個人のロゴ・ローカル管理）
+tanuLogo*.kicad_mod
+tanuki_logo.kicad_sym
+tanuki_logo.png
 ver1/DEVLOG.md
 ver2/DEVLOG.md
 ver3/DEVLOG.md
