@@ -47,6 +47,9 @@ PXL_*.mp4
 
 # ローカル限定（GitHub非公開）
 ver1/CLAUDE.md
+# KiCADの版を取り違えないための自分宛て注意書き（ローカルのみ）
+ver1/hardware/4bit-addr/このプロジェクトはKicad９対象です.txt
+ver1/hardware/ここのkicadだけファイルはKicad10で開くこと.txt
 # ブログ記事用の命令ROM（ロータリースイッチ付きの別バージョン・KiCAD 10形式。本体は 4bit-addr/ 内）
 ver1/hardware/ROM_ALU_Decoder.kicad_sch
 ver1/必要最小限命令セット.xlsx
