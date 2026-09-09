@@ -2313,7 +2313,7 @@
 			)
 		)
 	)
-	(global_label "~{OE_RAM}"
+	(global_label "WR"
 		(shape input)
 		(at 95.25 68.58 0)
 		(fields_autoplaced yes)
@@ -2325,7 +2325,7 @@
 		)
 		(uuid "06215369-4a7d-4da7-9d2d-4bc8824169ae")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.4923 68.58 0)
+			(at 100.9566 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
