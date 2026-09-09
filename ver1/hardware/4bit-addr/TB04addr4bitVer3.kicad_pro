@@ -747,7 +747,7 @@
         "uuid": "00000000-0000-0000-0000-000000000000"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR6,RN10,SW8",
     "variants": []
   },
   "sheets": [
