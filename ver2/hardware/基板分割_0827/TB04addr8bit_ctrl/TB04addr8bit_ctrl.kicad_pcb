@@ -33680,14 +33680,6 @@
 		(uuid "eb752d6d-1f4d-4503-aaaa-20dabf35f828")
 	)
 	(segment
-		(start 179.62 102.68)
-		(end 179.7 102.6)
-		(width 0.8)
-		(layer "B.Cu")
-		(net "VDD")
-		(uuid "ec0766dc-6a18-4887-8c9f-c8a1c6ba60d4")
-	)
-	(segment
 		(start 285.5 82.42)
 		(end 281.62 78.54)
 		(width 0.8)
