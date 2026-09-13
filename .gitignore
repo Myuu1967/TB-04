@@ -75,4 +75,4 @@ ver2/tools/
 ver1/ブログ記事用/
 
 # 配置図（生成物・再生成可）
-ver2/layout_ctrl.svg
+ver2/layout_ctrl*.svg
