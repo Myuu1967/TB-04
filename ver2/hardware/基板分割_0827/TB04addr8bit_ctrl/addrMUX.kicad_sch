@@ -1972,6 +1972,17 @@
 		)
 		(uuid "0f2eec2e-e722-450b-9a30-6e884d1a400d")
 	)
+	(text "I/Oチャネル指定用の244\n他のアドレスを選択しないようにしている"
+		(exclude_from_sim no)
+		(at 38.608 158.242 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8b22d29d-5983-4d62-8e55-441072eae08f")
+	)
 	(text "PC"
 		(exclude_from_sim no)
 		(at 78.74 74.676 0)
