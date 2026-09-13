@@ -33091,14 +33091,6 @@
 		(uuid "d235d97f-1217-41e3-848f-8766fbbde49a")
 	)
 	(segment
-		(start 254.46 171)
-		(end 253 171)
-		(width 0.8)
-		(layer "F.Cu")
-		(net "VDD")
-		(uuid "d4903be5-02ab-4b21-ae9c-2b0030f4ff1b")
-	)
-	(segment
 		(start 153.78 114.665)
 		(end 160 120.885)
 		(width 0.8)
