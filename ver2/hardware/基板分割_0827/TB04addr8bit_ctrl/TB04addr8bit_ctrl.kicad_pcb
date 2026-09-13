@@ -558,7 +558,7 @@
 	(footprint "Package_DIP:DIP-20_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "05a56a8a-14fb-4839-ab70-803866b0a004")
-		(at 146.76 128.745 90)
+		(at 146.76 130.545 90)
 		(descr "20-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U1405"
@@ -776,7 +776,7 @@
 			)
 		)
 		(point
-			(at 158.19 124.935)
+			(at 158.19 126.735)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "78b05e40-8a31-4d54-a246-bcdefb6410d0")
@@ -1018,7 +1018,7 @@
 	(footprint "Package_DIP:DIP-14_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "0a249f8a-5ebf-4f08-8e77-4f1add16ce02")
-		(at 223.88 170.645 -90)
+		(at 239.12 174.165 -90)
 		(descr "14-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U1506"
@@ -1250,7 +1250,7 @@
 			)
 		)
 		(point
-			(at 216.26 174.455)
+			(at 231.5 177.975)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "1fb62cfe-a083-422d-afb2-db817d38134b")
@@ -1414,7 +1414,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "0affea27-8a00-4a00-b071-2eb866747c6f")
-		(at 135.14 140.085 90)
+		(at 140.22 142.485 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C401"
@@ -1952,11 +1952,11 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "12aa2715-8b00-46a7-a774-4e7864467ed3")
-		(at 232.96 137.705 -90)
+		(at 222.42 142.485 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1201"
-			(at 2.5 -2 270)
+			(at 2.5 -2 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -1969,7 +1969,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 2.5 2.2 270)
+			(at 2.5 2.2 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f1dd928c-ed62-41f5-b837-20b3ce2ba6bb")
@@ -1981,7 +1981,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 270)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6795545b-33e8-4b94-99ef-e88c08a6c2ae")
@@ -1992,7 +1992,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 270)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "678e152c-f2e2-4fff-a68b-39f8f982c87a")
@@ -2015,24 +2015,14 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start 4.77 1.07)
-			(end 0.23 1.07)
+			(start 0.23 -1.07)
+			(end 4.77 -1.07)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "1679f704-0ca1-4b86-9294-fb4d827b87a8")
-		)
-		(fp_line
-			(start 4.77 1.014)
-			(end 4.77 1.07)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "c7a4e876-a714-48a4-aa91-58f5ccc2ee91")
+			(uuid "b9f6e284-c12c-40d4-a5ac-663e10170d4f")
 		)
 		(fp_line
 			(start 0.23 -1.014)
@@ -2045,14 +2035,24 @@
 			(uuid "5fd37623-eaff-447c-8dda-397e1f0bf6aa")
 		)
 		(fp_line
-			(start 0.23 -1.07)
-			(end 4.77 -1.07)
+			(start 4.77 1.014)
+			(end 4.77 1.07)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "b9f6e284-c12c-40d4-a5ac-663e10170d4f")
+			(uuid "c7a4e876-a714-48a4-aa91-58f5ccc2ee91")
+		)
+		(fp_line
+			(start 4.77 1.07)
+			(end 0.23 1.07)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "1679f704-0ca1-4b86-9294-fb4d827b87a8")
 		)
 		(fp_rect
 			(start -1.05 -1.2)
@@ -2077,7 +2077,7 @@
 			(uuid "62245eca-900e-4272-8d7f-0537d02e1776")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.5 0 270)
+			(at 2.5 0 90)
 			(layer "F.Fab")
 			(uuid "95c9ba33-91f2-48e3-9cd2-310128b9326c")
 			(effects
@@ -2088,7 +2088,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0 270)
+			(at 0 0 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -2098,7 +2098,7 @@
 			(uuid "e9b71fb7-f16d-4b73-8f98-f72190eab691")
 		)
 		(pad "2" thru_hole circle
-			(at 5 0 270)
+			(at 5 0 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -2123,7 +2123,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "13f52156-ed6f-4e6e-aacf-ab0252a28139")
-		(at 182.86 189.605 90)
+		(at 180.32 191.985 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C701"
@@ -2294,7 +2294,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "177386b6-251b-4c1a-89ea-8323826f9b9c")
-		(at 147.84 112.165 90)
+		(at 147.84 113.365 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C606"
@@ -2465,7 +2465,7 @@
 	(footprint "Package_DIP:DIP-14_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "18a005c5-e8b6-4742-8c73-93cd53febcdb")
-		(at 144.22 178.265 90)
+		(at 141.68 181.785 90)
 		(descr "14-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U1505"
@@ -2697,7 +2697,7 @@
 			)
 		)
 		(point
-			(at 151.84 174.455)
+			(at 149.3 177.975)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "955e4e82-6b9c-452d-a34c-d674f8d80c1e")
@@ -2861,11 +2861,11 @@
 	(footprint "Package_DIP:DIP-20_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "18ba460b-1be4-4831-940d-5f4291c1070b")
-		(at 137.14 60.265 -90)
+		(at 114.28 67.885 90)
 		(descr "20-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U1102"
-			(at 3.81 11.43 270)
+			(at 3.81 11.43 90)
 			(layer "F.SilkS")
 			(uuid "952c086e-fdf3-475d-8259-edc211a93355")
 			(effects
@@ -2876,7 +2876,7 @@
 			)
 		)
 		(property "Value" "74HC244"
-			(at 3.81 25.19 270)
+			(at 3.81 25.19 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b19cc521-281a-4c64-adc1-2de3805474e5")
@@ -2888,7 +2888,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT244.pdf"
-			(at 0 0 270)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f57032e6-4132-4a7a-b0b1-7c812e384e39")
@@ -2899,7 +2899,7 @@
 			)
 		)
 		(property "Description" "8-bit Buffer/Line Driver 3-state"
-			(at 0 0 270)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3d969de7-4a0c-4efe-85c0-497b7007beed")
@@ -2924,34 +2924,14 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start 1.16 24.19)
-			(end 6.46 24.19)
+			(start 6.46 -1.33)
+			(end 4.81 -1.33)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "cf0e0874-8258-42e5-9e22-bf5e84640655")
-		)
-		(fp_line
-			(start 6.46 24.19)
-			(end 6.46 -1.33)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "9f1f4534-a055-45f8-9618-60e4670707c2")
-		)
-		(fp_line
-			(start 1.16 -1.33)
-			(end 1.16 24.19)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d943fdfd-a255-4dc3-a48d-3e1ef1024026")
+			(uuid "5083df5b-4910-454a-b886-04881513b31d")
 		)
 		(fp_line
 			(start 2.81 -1.33)
@@ -2964,14 +2944,34 @@
 			(uuid "ec8f87b2-491e-4347-bd8a-dae5df1ddab5")
 		)
 		(fp_line
-			(start 6.46 -1.33)
-			(end 4.81 -1.33)
+			(start 1.16 -1.33)
+			(end 1.16 24.19)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "5083df5b-4910-454a-b886-04881513b31d")
+			(uuid "d943fdfd-a255-4dc3-a48d-3e1ef1024026")
+		)
+		(fp_line
+			(start 6.46 24.19)
+			(end 6.46 -1.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9f1f4534-a055-45f8-9618-60e4670707c2")
+		)
+		(fp_line
+			(start 1.16 24.19)
+			(end 6.46 24.19)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "cf0e0874-8258-42e5-9e22-bf5e84640655")
 		)
 		(fp_rect
 			(start -1.33 -1.39)
@@ -3007,34 +3007,14 @@
 			(uuid "a9c20ddf-4140-4cc9-9a15-8a3747199f7d")
 		)
 		(fp_line
-			(start 0.635 24.13)
-			(end 0.635 -0.27)
+			(start 6.985 -1.27)
+			(end 6.985 24.13)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "323739f9-dd13-4404-8678-31590c68c21d")
-		)
-		(fp_line
-			(start 6.985 24.13)
-			(end 0.635 24.13)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "659a142b-644c-4559-893d-24fce700d47f")
-		)
-		(fp_line
-			(start 0.635 -0.27)
-			(end 1.635 -1.27)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "cda39ee5-460e-41c4-8214-fa54cd583f94")
+			(uuid "1bce43eb-b05b-489b-b39d-e2a5ab68133e")
 		)
 		(fp_line
 			(start 1.635 -1.27)
@@ -3047,14 +3027,34 @@
 			(uuid "56f273ee-0e46-4051-af0d-2a6af642af53")
 		)
 		(fp_line
-			(start 6.985 -1.27)
-			(end 6.985 24.13)
+			(start 0.635 -0.27)
+			(end 1.635 -1.27)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "1bce43eb-b05b-489b-b39d-e2a5ab68133e")
+			(uuid "cda39ee5-460e-41c4-8214-fa54cd583f94")
+		)
+		(fp_line
+			(start 6.985 24.13)
+			(end 0.635 24.13)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "659a142b-644c-4559-893d-24fce700d47f")
+		)
+		(fp_line
+			(start 0.635 24.13)
+			(end 0.635 -0.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "323739f9-dd13-4404-8678-31590c68c21d")
 		)
 		(fp_rect
 			(start -1.27 -1.33)
@@ -3068,7 +3068,7 @@
 			(uuid "12ed0552-b1aa-41d1-ae20-a1c440471c70")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 3.81 11.43 180)
+			(at 3.81 11.43 0)
 			(layer "F.Fab")
 			(uuid "634747e6-dce6-4bb1-9974-6663468d2df8")
 			(effects
@@ -3085,7 +3085,7 @@
 			(uuid "be14cce9-3fc3-4ff4-b292-3f2770c0a989")
 		)
 		(pad "1" thru_hole roundrect
-			(at 0 0 270)
+			(at 0 0 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3097,7 +3097,7 @@
 			(uuid "ba06ad32-0998-463b-8181-20f37bd1cfd1")
 		)
 		(pad "2" thru_hole circle
-			(at 0 2.54 270)
+			(at 0 2.54 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3108,7 +3108,7 @@
 			(uuid "b28b8aa1-0cb9-4cfc-b309-38c754fbc2ce")
 		)
 		(pad "3" thru_hole circle
-			(at 0 5.08 270)
+			(at 0 5.08 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3119,7 +3119,7 @@
 			(uuid "81fa6f35-8f37-43ee-b7b4-121773b2d8c6")
 		)
 		(pad "4" thru_hole circle
-			(at 0 7.62 270)
+			(at 0 7.62 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3130,7 +3130,7 @@
 			(uuid "dc1b5270-786f-4f4f-b0fc-025f3faf42bb")
 		)
 		(pad "5" thru_hole circle
-			(at 0 10.16 270)
+			(at 0 10.16 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3141,7 +3141,7 @@
 			(uuid "7866f718-763e-48ed-ad04-fdcd2280297b")
 		)
 		(pad "6" thru_hole circle
-			(at 0 12.7 270)
+			(at 0 12.7 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3152,7 +3152,7 @@
 			(uuid "e736ad9b-a9f0-4c89-8ba1-a173f5665fc9")
 		)
 		(pad "7" thru_hole circle
-			(at 0 15.24 270)
+			(at 0 15.24 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3163,7 +3163,7 @@
 			(uuid "37fba9b9-eac3-485a-a8a1-fdd5b408e260")
 		)
 		(pad "8" thru_hole circle
-			(at 0 17.78 270)
+			(at 0 17.78 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3174,7 +3174,7 @@
 			(uuid "d56c35c9-3a31-4398-a664-0943b605ec93")
 		)
 		(pad "9" thru_hole circle
-			(at 0 20.32 270)
+			(at 0 20.32 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3185,7 +3185,7 @@
 			(uuid "064a29b0-83ae-4c0e-9c85-010f45142a11")
 		)
 		(pad "10" thru_hole circle
-			(at 0 22.86 270)
+			(at 0 22.86 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3196,7 +3196,7 @@
 			(uuid "8b4d7de8-e0d7-48c4-941a-afc8c190f66f")
 		)
 		(pad "11" thru_hole circle
-			(at 7.62 22.86 270)
+			(at 7.62 22.86 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3207,7 +3207,7 @@
 			(uuid "60335973-e9fa-4101-b360-b713a1929b7f")
 		)
 		(pad "12" thru_hole circle
-			(at 7.62 20.32 270)
+			(at 7.62 20.32 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3218,7 +3218,7 @@
 			(uuid "ec545cda-5c2d-4713-a4b4-a28ffbe16468")
 		)
 		(pad "13" thru_hole circle
-			(at 7.62 17.78 270)
+			(at 7.62 17.78 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3229,7 +3229,7 @@
 			(uuid "367f766f-be56-4e97-a4d4-a0264e22c74c")
 		)
 		(pad "14" thru_hole circle
-			(at 7.62 15.24 270)
+			(at 7.62 15.24 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3240,7 +3240,7 @@
 			(uuid "398b4a2c-38e2-4d9b-8711-8f295948af08")
 		)
 		(pad "15" thru_hole circle
-			(at 7.62 12.7 270)
+			(at 7.62 12.7 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3251,7 +3251,7 @@
 			(uuid "9dfae9f5-e95c-4708-a46a-062a0b1204d5")
 		)
 		(pad "16" thru_hole circle
-			(at 7.62 10.16 270)
+			(at 7.62 10.16 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3262,7 +3262,7 @@
 			(uuid "c6f99768-3ecb-4f08-9f8c-f2a1e277d1ef")
 		)
 		(pad "17" thru_hole circle
-			(at 7.62 7.62 270)
+			(at 7.62 7.62 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3273,7 +3273,7 @@
 			(uuid "a916643b-4379-438a-ac1a-2bd75f8b8b3a")
 		)
 		(pad "18" thru_hole circle
-			(at 7.62 5.08 270)
+			(at 7.62 5.08 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3284,7 +3284,7 @@
 			(uuid "6591cd88-f4db-4b8c-89f4-80974cdaffcb")
 		)
 		(pad "19" thru_hole circle
-			(at 7.62 2.54 270)
+			(at 7.62 2.54 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3295,7 +3295,7 @@
 			(uuid "a393a680-97fa-4e13-adfa-f7a55a807001")
 		)
 		(pad "20" thru_hole circle
-			(at 7.62 0 270)
+			(at 7.62 0 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -3526,7 +3526,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "1ce05922-8b0d-4122-bef3-dde678ed216a")
-		(at 227.88 173.265 -90)
+		(at 243.12 176.785 -90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1505"
@@ -3876,7 +3876,7 @@
 	(footprint "Package_DIP:DIP-20_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "250837b5-5852-4708-8eca-a77589f3a0de")
-		(at 176.7 128.745 90)
+		(at 184.32 130.545 90)
 		(descr "20-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U1404"
@@ -4094,7 +4094,7 @@
 			)
 		)
 		(point
-			(at 188.13 124.935)
+			(at 195.75 126.735)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "304ee187-2250-4a0a-9d8a-bbe0d93df1b1")
@@ -4896,11 +4896,11 @@
 	(footprint "Package_DIP:DIP-14_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "2adaa111-a636-483a-8438-c7e706eb2923")
-		(at 116.82 142.705 90)
+		(at 132.06 137.485 -90)
 		(descr "14-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U1301"
-			(at 3.81 7.62 90)
+			(at 3.81 7.62 270)
 			(layer "F.SilkS")
 			(uuid "3d3a2192-9139-4bd0-8b34-8391cce8a296")
 			(effects
@@ -4911,7 +4911,7 @@
 			)
 		)
 		(property "Value" "74HC08"
-			(at 3.81 17.57 90)
+			(at 3.81 17.57 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "26c31d6b-40e8-44d3-8907-6a0a2ed7d225")
@@ -4923,7 +4923,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS08"
-			(at 0 0 90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "219503f2-f329-4363-b568-456064dfd145")
@@ -4934,7 +4934,7 @@
 			)
 		)
 		(property "Description" "Quad And2"
-			(at 0 0 90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b86db652-bbca-46b2-bf19-9fb115567a80")
@@ -4973,34 +4973,14 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start 6.46 -1.33)
-			(end 4.81 -1.33)
+			(start 1.16 16.57)
+			(end 6.46 16.57)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "9f646ec8-7aec-4dbe-9a80-3d005f076cd8")
-		)
-		(fp_line
-			(start 2.81 -1.33)
-			(end 1.16 -1.33)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "184d3f8d-ba0c-4a0c-8d58-107d1ecb4d92")
-		)
-		(fp_line
-			(start 1.16 -1.33)
-			(end 1.16 16.57)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "52a3f806-4dbe-4cfe-921d-49ec38d7a9d6")
+			(uuid "fb09b5ba-7263-4249-82f6-54f0cf7ff49e")
 		)
 		(fp_line
 			(start 6.46 16.57)
@@ -5013,14 +4993,34 @@
 			(uuid "24d670d8-af33-4917-a765-ac6ce88313a7")
 		)
 		(fp_line
-			(start 1.16 16.57)
-			(end 6.46 16.57)
+			(start 1.16 -1.33)
+			(end 1.16 16.57)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "fb09b5ba-7263-4249-82f6-54f0cf7ff49e")
+			(uuid "52a3f806-4dbe-4cfe-921d-49ec38d7a9d6")
+		)
+		(fp_line
+			(start 2.81 -1.33)
+			(end 1.16 -1.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "184d3f8d-ba0c-4a0c-8d58-107d1ecb4d92")
+		)
+		(fp_line
+			(start 6.46 -1.33)
+			(end 4.81 -1.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9f646ec8-7aec-4dbe-9a80-3d005f076cd8")
 		)
 		(fp_rect
 			(start -1.33 -1.39)
@@ -5056,34 +5056,14 @@
 			(uuid "91c65987-b777-4f6f-a661-a1509439e141")
 		)
 		(fp_line
-			(start 6.985 -1.27)
-			(end 6.985 16.51)
+			(start 0.635 16.51)
+			(end 0.635 -0.27)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "5f16e034-65b7-4cb2-b497-218400c7bb68")
-		)
-		(fp_line
-			(start 1.635 -1.27)
-			(end 6.985 -1.27)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "d74fce44-dade-4b2c-aa04-d01bdf5fd4fa")
-		)
-		(fp_line
-			(start 0.635 -0.27)
-			(end 1.635 -1.27)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "bed698c2-18c4-418e-b137-0a6135204b05")
+			(uuid "2491343b-9bdf-4f2a-9e97-62fecf0e5c1a")
 		)
 		(fp_line
 			(start 6.985 16.51)
@@ -5096,14 +5076,34 @@
 			(uuid "9227c25e-89f9-4c49-a632-9c15587fe884")
 		)
 		(fp_line
-			(start 0.635 16.51)
-			(end 0.635 -0.27)
+			(start 0.635 -0.27)
+			(end 1.635 -1.27)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "2491343b-9bdf-4f2a-9e97-62fecf0e5c1a")
+			(uuid "bed698c2-18c4-418e-b137-0a6135204b05")
+		)
+		(fp_line
+			(start 1.635 -1.27)
+			(end 6.985 -1.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d74fce44-dade-4b2c-aa04-d01bdf5fd4fa")
+		)
+		(fp_line
+			(start 6.985 -1.27)
+			(end 6.985 16.51)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "5f16e034-65b7-4cb2-b497-218400c7bb68")
 		)
 		(fp_rect
 			(start -1.27 -1.33)
@@ -5117,7 +5117,7 @@
 			(uuid "6b3f49e3-1bfa-4962-ac64-2fb5657f3aa6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 3.81 7.62 0)
+			(at 3.81 7.62 180)
 			(layer "F.Fab")
 			(uuid "f680d535-c631-4377-a17f-2b349afbb6ad")
 			(effects
@@ -5128,13 +5128,13 @@
 			)
 		)
 		(point
-			(at 124.44 138.895)
+			(at 124.44 141.295)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "32452827-d320-494c-83b8-8c6eeafaa6a4")
 		)
 		(pad "1" thru_hole roundrect
-			(at 0 0 90)
+			(at 0 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -5145,7 +5145,7 @@
 			(uuid "0fc5a6df-913f-4232-a77b-f5c896884882")
 		)
 		(pad "2" thru_hole circle
-			(at 0 2.54 90)
+			(at 0 2.54 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -5155,7 +5155,7 @@
 			(uuid "edc76329-2293-4acf-a8e2-5d44ec86277a")
 		)
 		(pad "3" thru_hole circle
-			(at 0 5.08 90)
+			(at 0 5.08 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -5165,7 +5165,7 @@
 			(uuid "a5e85265-70d9-45ed-9e49-85a9628fdcbc")
 		)
 		(pad "4" thru_hole circle
-			(at 0 7.62 90)
+			(at 0 7.62 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -5175,7 +5175,7 @@
 			(uuid "cf2a84c6-ca6d-4023-adbc-8c82587ab1a0")
 		)
 		(pad "5" thru_hole circle
-			(at 0 10.16 90)
+			(at 0 10.16 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -5185,7 +5185,7 @@
 			(uuid "d380eeef-6ae1-455d-8388-691670f97227")
 		)
 		(pad "6" thru_hole circle
-			(at 0 12.7 90)
+			(at 0 12.7 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -5195,7 +5195,7 @@
 			(uuid "acbd6a7c-7702-4c64-b5c0-b33aa1caa181")
 		)
 		(pad "7" thru_hole circle
-			(at 0 15.24 90)
+			(at 0 15.24 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -5206,7 +5206,7 @@
 			(uuid "6d975ea1-1f24-4221-9768-252b710582fb")
 		)
 		(pad "8" thru_hole circle
-			(at 7.62 15.24 90)
+			(at 7.62 15.24 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -5216,7 +5216,7 @@
 			(uuid "84b6ac76-6f14-49e3-8a16-656e065b56c9")
 		)
 		(pad "9" thru_hole circle
-			(at 7.62 12.7 90)
+			(at 7.62 12.7 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -5226,7 +5226,7 @@
 			(uuid "551e6193-1315-4b31-94f2-6e461a627e2c")
 		)
 		(pad "10" thru_hole circle
-			(at 7.62 10.16 90)
+			(at 7.62 10.16 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -5236,7 +5236,7 @@
 			(uuid "79b491bd-8426-42c5-946f-748ea5c7eb5a")
 		)
 		(pad "11" thru_hole circle
-			(at 7.62 7.62 90)
+			(at 7.62 7.62 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -5246,7 +5246,7 @@
 			(uuid "7014f771-ecb3-4c41-9149-878601bdfbdf")
 		)
 		(pad "12" thru_hole circle
-			(at 7.62 5.08 90)
+			(at 7.62 5.08 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -5256,7 +5256,7 @@
 			(uuid "2a88a2a0-a852-4bd2-91fc-e1786a20929f")
 		)
 		(pad "13" thru_hole circle
-			(at 7.62 2.54 90)
+			(at 7.62 2.54 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -5266,7 +5266,7 @@
 			(uuid "b351dcbd-76aa-4b12-bfd1-4dc68da18181")
 		)
 		(pad "14" thru_hole circle
-			(at 7.62 0 90)
+			(at 7.62 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -5292,7 +5292,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "31bc0bf0-acac-490d-880a-150237b58981")
-		(at 151.84 114.785 90)
+		(at 151.84 115.985 90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U607"
@@ -5510,7 +5510,7 @@
 			)
 		)
 		(point
-			(at 160.73 110.975)
+			(at 160.73 112.175)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "3307bbf7-480a-4e14-b8e6-14d7abeec35b")
@@ -6407,7 +6407,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "35ea81ee-a92e-4f39-a676-3277230591b2")
-		(at 168.54 95.825 -90)
+		(at 176.16 96.425 -90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C604"
@@ -6578,7 +6578,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "380683ca-3140-4fa6-a212-9d3c27e9c462")
-		(at 121.9 128.745 90)
+		(at 114.28 130.545 90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U1406"
@@ -6796,7 +6796,7 @@
 			)
 		)
 		(point
-			(at 130.79 124.935)
+			(at 123.17 126.735)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "6f893464-7e3f-4620-bfc7-6402038d2b3a")
@@ -6994,7 +6994,7 @@
 	(footprint "Package_DIP:DIP-14_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "38eaf070-ce5c-4bc6-8f91-87d265fbdf96")
-		(at 166.54 178.265 90)
+		(at 169.08 181.785 90)
 		(descr "14-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U1503"
@@ -7226,7 +7226,7 @@
 			)
 		)
 		(point
-			(at 174.16 174.455)
+			(at 176.7 177.975)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "de0a7b78-e261-44d8-b9d3-b686b7165668")
@@ -8305,7 +8305,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "3ffc3fab-6da4-44bb-a836-b6d56e82ecaf")
-		(at 186.86 149.045 -90)
+		(at 202.1 152.045 -90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U401"
@@ -8523,7 +8523,7 @@
 			)
 		)
 		(point
-			(at 177.97 152.855)
+			(at 193.21 155.855)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "81b46c2a-d950-40c6-9c60-7a231c97df8f")
@@ -8721,7 +8721,7 @@
 	(footprint "Package_DIP:DIP-14_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "41477a32-618a-4f95-921e-3429e9c79ded")
-		(at 184.32 67.885 90)
+		(at 219.88 67.885 90)
 		(descr "14-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U1509"
@@ -8949,7 +8949,7 @@
 			)
 		)
 		(point
-			(at 191.94 64.075)
+			(at 227.5 64.075)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "d4095a76-b019-416f-8409-42c4221cb4b4")
@@ -9113,7 +9113,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "44526b21-ddfa-4c4f-bf71-2e8e89e9334c")
-		(at 202.64 126.125 90)
+		(at 217.88 127.925 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1407"
@@ -9284,7 +9284,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "45703979-4639-4481-a443-52c8b52aaa30")
-		(at 112.82 189.605 90)
+		(at 110.28 191.985 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C706"
@@ -10187,7 +10187,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "4eac50f3-1eaf-4075-a4e3-abb9572828c4")
-		(at 188.86 142.705 90)
+		(at 199.02 145.105 90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U1407"
@@ -10411,7 +10411,7 @@
 			)
 		)
 		(point
-			(at 197.75 138.895)
+			(at 207.91 141.295)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "5076208d-b911-4347-bfbf-0b1a4f990095")
@@ -10609,7 +10609,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "4f3d85bd-1acd-47a1-8f0d-d3fa6121d190")
-		(at 162 149.045 -90)
+		(at 167.08 152.045 -90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U404"
@@ -10827,7 +10827,7 @@
 			)
 		)
 		(point
-			(at 153.11 152.855)
+			(at 158.19 155.855)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "407dda35-679f-4905-9886-70f5d802e280")
@@ -11025,7 +11025,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "544c9541-d355-487b-a54f-f6296b67ee1d")
-		(at 230.96 95.825 -90)
+		(at 246.2 96.425 -90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C603"
@@ -11196,7 +11196,7 @@
 	(footprint "Package_DIP:DIP-28_W15.24mm_Socket"
 		(layer "F.Cu")
 		(uuid "576cb0fc-8e52-4a5a-a250-d0a73eacdf64")
-		(at 186.86 199.845 90)
+		(at 184.32 202.225 90)
 		(descr "28-lead though-hole mounted DIP package, row spacing 15.24mm (600 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket")
 		(property "Reference" "U703"
@@ -11414,7 +11414,7 @@
 			)
 		)
 		(point
-			(at 203.37 192.225)
+			(at 200.83 194.605)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "c706e8f1-3023-44d4-8274-f78374b1fe4d")
@@ -11744,11 +11744,11 @@
 	(footprint "Package_DIP:DIP-20_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "5b3dd34b-e93c-42c9-9100-f735e468c635")
-		(at 114.28 100.825 90)
+		(at 137.14 93.805 -90)
 		(descr "20-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U601"
-			(at 3.81 11.43 90)
+			(at 3.81 11.43 270)
 			(layer "F.SilkS")
 			(uuid "0af2613f-b144-41ac-a59c-f59891c3409c")
 			(effects
@@ -11759,7 +11759,7 @@
 			)
 		)
 		(property "Value" "74HC273"
-			(at 3.81 25.19 90)
+			(at 3.81 25.19 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "65c048fa-52cd-4eaa-b8fa-2a7cbacd326a")
@@ -11771,7 +11771,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS273"
-			(at 0 0 90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "47cda92a-7c24-4c3f-b37f-cfd1c79c8ec2")
@@ -11782,7 +11782,7 @@
 			)
 		)
 		(property "Description" "8-bit D Flip-Flop, reset"
-			(at 0 0 90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "67deacd5-ff0c-4824-8dda-c5ca3b3588e6")
@@ -11807,34 +11807,14 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start 6.46 -1.33)
-			(end 4.81 -1.33)
+			(start 1.16 24.19)
+			(end 6.46 24.19)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "5365c154-1b7c-49c0-af47-4f83e0654a63")
-		)
-		(fp_line
-			(start 2.81 -1.33)
-			(end 1.16 -1.33)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "7b0e5c82-ba9c-4456-b2df-364f527e7c7b")
-		)
-		(fp_line
-			(start 1.16 -1.33)
-			(end 1.16 24.19)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "3f7dbadc-509c-411f-9a86-05e6ed28fd14")
+			(uuid "d8be9943-ac9c-4f02-84a6-a1d259e22db3")
 		)
 		(fp_line
 			(start 6.46 24.19)
@@ -11847,14 +11827,34 @@
 			(uuid "33263b76-9138-4f70-b657-a064e041954b")
 		)
 		(fp_line
-			(start 1.16 24.19)
-			(end 6.46 24.19)
+			(start 1.16 -1.33)
+			(end 1.16 24.19)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "d8be9943-ac9c-4f02-84a6-a1d259e22db3")
+			(uuid "3f7dbadc-509c-411f-9a86-05e6ed28fd14")
+		)
+		(fp_line
+			(start 2.81 -1.33)
+			(end 1.16 -1.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7b0e5c82-ba9c-4456-b2df-364f527e7c7b")
+		)
+		(fp_line
+			(start 6.46 -1.33)
+			(end 4.81 -1.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5365c154-1b7c-49c0-af47-4f83e0654a63")
 		)
 		(fp_rect
 			(start -1.33 -1.39)
@@ -11890,34 +11890,14 @@
 			(uuid "1ac44962-514b-427f-8957-d1ca10b2076b")
 		)
 		(fp_line
-			(start 6.985 -1.27)
-			(end 6.985 24.13)
+			(start 0.635 24.13)
+			(end 0.635 -0.27)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "19bccf8d-c07f-430a-a280-687e177ba05b")
-		)
-		(fp_line
-			(start 1.635 -1.27)
-			(end 6.985 -1.27)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "1422ef43-fa90-4bc0-8755-7e6151b5cb0e")
-		)
-		(fp_line
-			(start 0.635 -0.27)
-			(end 1.635 -1.27)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "d6ffbf61-edb6-48b7-903d-e3d77a716814")
+			(uuid "8520fd7a-286b-4b9c-9a45-5dc29f356a78")
 		)
 		(fp_line
 			(start 6.985 24.13)
@@ -11930,14 +11910,34 @@
 			(uuid "01fe68b9-4728-4490-806a-190e245ae3e3")
 		)
 		(fp_line
-			(start 0.635 24.13)
-			(end 0.635 -0.27)
+			(start 0.635 -0.27)
+			(end 1.635 -1.27)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "8520fd7a-286b-4b9c-9a45-5dc29f356a78")
+			(uuid "d6ffbf61-edb6-48b7-903d-e3d77a716814")
+		)
+		(fp_line
+			(start 1.635 -1.27)
+			(end 6.985 -1.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1422ef43-fa90-4bc0-8755-7e6151b5cb0e")
+		)
+		(fp_line
+			(start 6.985 -1.27)
+			(end 6.985 24.13)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "19bccf8d-c07f-430a-a280-687e177ba05b")
 		)
 		(fp_rect
 			(start -1.27 -1.33)
@@ -11951,7 +11951,7 @@
 			(uuid "d083d37a-34e1-49e8-ad51-9ac8847b473e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 3.81 11.43 0)
+			(at 3.81 11.43 180)
 			(layer "F.Fab")
 			(uuid "2c39033a-882d-41ae-ad68-e440551a52b7")
 			(effects
@@ -11962,13 +11962,13 @@
 			)
 		)
 		(point
-			(at 125.71 97.015)
+			(at 125.71 97.615)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "7769ef77-f29c-4b3e-a604-758e1b378ed8")
 		)
 		(pad "1" thru_hole roundrect
-			(at 0 0 90)
+			(at 0 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -11980,7 +11980,7 @@
 			(uuid "71c5e0b7-d26c-4e8c-8f7f-79022ad59e8f")
 		)
 		(pad "2" thru_hole circle
-			(at 0 2.54 90)
+			(at 0 2.54 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -11991,7 +11991,7 @@
 			(uuid "235a2be7-c005-4390-b543-97891922ca12")
 		)
 		(pad "3" thru_hole circle
-			(at 0 5.08 90)
+			(at 0 5.08 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -12002,7 +12002,7 @@
 			(uuid "b1fe2a58-6ca9-438f-a49e-3c5ab753611a")
 		)
 		(pad "4" thru_hole circle
-			(at 0 7.62 90)
+			(at 0 7.62 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -12013,7 +12013,7 @@
 			(uuid "9f60c9a8-2f2b-4f33-83a4-26fafaeb0970")
 		)
 		(pad "5" thru_hole circle
-			(at 0 10.16 90)
+			(at 0 10.16 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -12024,7 +12024,7 @@
 			(uuid "c3ec4663-3a62-425d-b399-20f93054c844")
 		)
 		(pad "6" thru_hole circle
-			(at 0 12.7 90)
+			(at 0 12.7 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -12035,7 +12035,7 @@
 			(uuid "163df524-b043-4b40-b3c3-e41e212c2e63")
 		)
 		(pad "7" thru_hole circle
-			(at 0 15.24 90)
+			(at 0 15.24 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -12046,7 +12046,7 @@
 			(uuid "2577f589-0f78-453b-9596-e983b12e55a0")
 		)
 		(pad "8" thru_hole circle
-			(at 0 17.78 90)
+			(at 0 17.78 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -12057,7 +12057,7 @@
 			(uuid "21ecb534-c82d-41d2-8c3b-94e6da7ce8cc")
 		)
 		(pad "9" thru_hole circle
-			(at 0 20.32 90)
+			(at 0 20.32 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -12068,7 +12068,7 @@
 			(uuid "49804e55-a905-43bc-b5ef-6dbf4e4e7bee")
 		)
 		(pad "10" thru_hole circle
-			(at 0 22.86 90)
+			(at 0 22.86 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -12079,7 +12079,7 @@
 			(uuid "8aa22ed8-59a1-48b0-a05c-12842d181042")
 		)
 		(pad "11" thru_hole circle
-			(at 7.62 22.86 90)
+			(at 7.62 22.86 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -12090,7 +12090,7 @@
 			(uuid "c99dbdf1-555a-4e74-b058-56e47bbe215d")
 		)
 		(pad "12" thru_hole circle
-			(at 7.62 20.32 90)
+			(at 7.62 20.32 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -12101,7 +12101,7 @@
 			(uuid "a274b679-d2fe-4980-8ade-b686aa66df08")
 		)
 		(pad "13" thru_hole circle
-			(at 7.62 17.78 90)
+			(at 7.62 17.78 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -12112,7 +12112,7 @@
 			(uuid "40170053-704b-4f01-af1d-fd52b80d2f10")
 		)
 		(pad "14" thru_hole circle
-			(at 7.62 15.24 90)
+			(at 7.62 15.24 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -12123,7 +12123,7 @@
 			(uuid "36fa99fd-c29f-4c5f-b143-2810166f2d70")
 		)
 		(pad "15" thru_hole circle
-			(at 7.62 12.7 90)
+			(at 7.62 12.7 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -12134,7 +12134,7 @@
 			(uuid "83534e3a-e8b2-47d3-a782-e1d9a22a34bc")
 		)
 		(pad "16" thru_hole circle
-			(at 7.62 10.16 90)
+			(at 7.62 10.16 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -12145,7 +12145,7 @@
 			(uuid "2edef907-dde5-4112-baed-8ebeadb9ba91")
 		)
 		(pad "17" thru_hole circle
-			(at 7.62 7.62 90)
+			(at 7.62 7.62 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -12156,7 +12156,7 @@
 			(uuid "a281226c-8547-43ec-bc26-b60752927dab")
 		)
 		(pad "18" thru_hole circle
-			(at 7.62 5.08 90)
+			(at 7.62 5.08 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -12167,7 +12167,7 @@
 			(uuid "ae905977-e5ec-4664-bded-76fb5b52966d")
 		)
 		(pad "19" thru_hole circle
-			(at 7.62 2.54 90)
+			(at 7.62 2.54 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -12178,7 +12178,7 @@
 			(uuid "1a6fd5df-fdbe-4f67-97ea-b7420a5dcad0")
 		)
 		(pad "20" thru_hole circle
-			(at 7.62 0 90)
+			(at 7.62 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -12438,7 +12438,7 @@
 	(footprint "Package_DIP:DIP-20_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "5d182275-e4af-49f7-821a-d4815be9da1a")
-		(at 176.7 100.825 90)
+		(at 184.32 101.425 90)
 		(descr "20-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U1103"
@@ -12656,7 +12656,7 @@
 			)
 		)
 		(point
-			(at 188.13 97.015)
+			(at 195.75 97.615)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "92f2f526-53d9-4f51-8b40-000a8478a3b4")
@@ -12898,7 +12898,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "6048c5e8-015b-45fd-811f-8c7a6bdafc4d")
-		(at 137.14 149.045 -90)
+		(at 132.06 152.045 -90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U101"
@@ -13116,7 +13116,7 @@
 			)
 		)
 		(point
-			(at 128.25 152.855)
+			(at 123.17 155.855)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "25d36829-2ed3-48e7-ad66-128ba61205b9")
@@ -13314,7 +13314,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "63049ea9-a2d9-4942-929e-ff3e11e43eba")
-		(at 139.14 142.705 90)
+		(at 144.22 145.105 90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC401"
@@ -13622,7 +13622,7 @@
 			)
 		)
 		(point
-			(at 148.03 138.895)
+			(at 153.11 141.295)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "d7821c30-cd88-4c36-9f37-e1a75afbcd34")
@@ -13820,7 +13820,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "6d3256d6-33a2-49aa-a03f-a97d7a7299e8")
-		(at 160 140.085 90)
+		(at 167.62 142.485 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C402"
@@ -13991,11 +13991,11 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "6e9a02ec-2364-4a8a-8728-2ef8599e6d8f")
-		(at 110.28 98.205 90)
+		(at 141.14 96.425 -90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C602"
-			(at 2.5 -2 90)
+			(at 2.5 -2 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -14008,7 +14008,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 2.5 2.2 90)
+			(at 2.5 2.2 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a2a658db-8e50-444b-8d28-f28924d0be9a")
@@ -14020,7 +14020,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "8a68faa6-91f4-4b03-97b4-f7f2ff49420c")
@@ -14031,7 +14031,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1e8759a5-fa6b-4526-9be7-d0421a9b9854")
@@ -14054,24 +14054,14 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start 0.23 -1.07)
-			(end 4.77 -1.07)
+			(start 4.77 1.07)
+			(end 0.23 1.07)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "7c5e75db-893f-4c1c-b980-fc38639e1281")
-		)
-		(fp_line
-			(start 0.23 -1.014)
-			(end 0.23 -1.07)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "a064fbe1-d531-47f2-866d-6992d37a6527")
+			(uuid "eafb82f5-c03c-4cd7-a6e4-8600ac589962")
 		)
 		(fp_line
 			(start 4.77 1.014)
@@ -14084,14 +14074,24 @@
 			(uuid "f69fe6f4-3b7f-4949-a269-1dcbb36ad39e")
 		)
 		(fp_line
-			(start 4.77 1.07)
-			(end 0.23 1.07)
+			(start 0.23 -1.014)
+			(end 0.23 -1.07)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "eafb82f5-c03c-4cd7-a6e4-8600ac589962")
+			(uuid "a064fbe1-d531-47f2-866d-6992d37a6527")
+		)
+		(fp_line
+			(start 0.23 -1.07)
+			(end 4.77 -1.07)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7c5e75db-893f-4c1c-b980-fc38639e1281")
 		)
 		(fp_rect
 			(start -1.05 -1.2)
@@ -14116,7 +14116,7 @@
 			(uuid "601ddc72-2753-4b3b-bb0a-2bfa6c3b8766")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.5 0 90)
+			(at 2.5 0 270)
 			(layer "F.Fab")
 			(uuid "343dd16c-bfce-40ad-aa2e-ab2c5ebe763f")
 			(effects
@@ -14127,7 +14127,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0 90)
+			(at 0 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -14137,7 +14137,7 @@
 			(uuid "53cc93b4-5e6a-4c09-b283-d41addb91f76")
 		)
 		(pad "2" thru_hole circle
-			(at 5 0 90)
+			(at 5 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -14396,11 +14396,11 @@
 	(footprint "Package_DIP:DIP-14_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "70ab1e31-b21c-4aa4-8f13-f7cd5789d479")
-		(at 121.9 178.265 90)
+		(at 129.52 174.165 -90)
 		(descr "14-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U1501"
-			(at 3.81 7.62 90)
+			(at 3.81 7.62 270)
 			(layer "F.SilkS")
 			(uuid "1e757718-f177-4e1f-9bca-ab25a58276ce")
 			(effects
@@ -14411,7 +14411,7 @@
 			)
 		)
 		(property "Value" "74AHC04"
-			(at 4.11 17.27 90)
+			(at 4.11 17.27 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "0ec64264-1fe9-4db7-93e4-f1df35369c8f")
@@ -14423,7 +14423,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74AHC_AHCT04.pdf"
-			(at 0 0 90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "91b5c2ed-31ad-4726-8a22-ce33740402e0")
@@ -14434,7 +14434,7 @@
 			)
 		)
 		(property "Description" "Hex Inverter"
-			(at 0 0 90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "dd674499-e983-4e45-9499-4dfdb7cdcd8b")
@@ -14481,34 +14481,14 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start 6.46 -1.33)
-			(end 4.81 -1.33)
+			(start 1.16 16.57)
+			(end 6.46 16.57)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "67a498bb-5a59-4538-8775-b38afc8f3bed")
-		)
-		(fp_line
-			(start 2.81 -1.33)
-			(end 1.16 -1.33)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "8204060a-1020-467b-9604-1e38fa95182d")
-		)
-		(fp_line
-			(start 1.16 -1.33)
-			(end 1.16 16.57)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "80007c29-f43e-4f90-be88-a438bac1faed")
+			(uuid "c766e788-f9d2-4ec1-828b-076794683543")
 		)
 		(fp_line
 			(start 6.46 16.57)
@@ -14521,14 +14501,34 @@
 			(uuid "b24c1f60-ed32-49bb-bfdf-731216c09dbc")
 		)
 		(fp_line
-			(start 1.16 16.57)
-			(end 6.46 16.57)
+			(start 1.16 -1.33)
+			(end 1.16 16.57)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "c766e788-f9d2-4ec1-828b-076794683543")
+			(uuid "80007c29-f43e-4f90-be88-a438bac1faed")
+		)
+		(fp_line
+			(start 2.81 -1.33)
+			(end 1.16 -1.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8204060a-1020-467b-9604-1e38fa95182d")
+		)
+		(fp_line
+			(start 6.46 -1.33)
+			(end 4.81 -1.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "67a498bb-5a59-4538-8775-b38afc8f3bed")
 		)
 		(fp_rect
 			(start -1.33 -1.39)
@@ -14564,34 +14564,14 @@
 			(uuid "50779ce0-bdc9-44e9-9ec0-aa9ac8c7b798")
 		)
 		(fp_line
-			(start 6.985 -1.27)
-			(end 6.985 16.51)
+			(start 0.635 16.51)
+			(end 0.635 -0.27)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "4d7661be-b057-4995-aece-f990cab9f7f4")
-		)
-		(fp_line
-			(start 1.635 -1.27)
-			(end 6.985 -1.27)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "276da4d4-1e3c-4bfe-9bcc-1598b8e562b7")
-		)
-		(fp_line
-			(start 0.635 -0.27)
-			(end 1.635 -1.27)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "a4d86417-8ff3-4707-9af6-dc97492c5d3b")
+			(uuid "ce6d9651-cdf8-475c-b80e-952e386dd42a")
 		)
 		(fp_line
 			(start 6.985 16.51)
@@ -14604,14 +14584,34 @@
 			(uuid "bca31d71-b013-4f9b-bf9e-75853a7acd2c")
 		)
 		(fp_line
-			(start 0.635 16.51)
-			(end 0.635 -0.27)
+			(start 0.635 -0.27)
+			(end 1.635 -1.27)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "ce6d9651-cdf8-475c-b80e-952e386dd42a")
+			(uuid "a4d86417-8ff3-4707-9af6-dc97492c5d3b")
+		)
+		(fp_line
+			(start 1.635 -1.27)
+			(end 6.985 -1.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "276da4d4-1e3c-4bfe-9bcc-1598b8e562b7")
+		)
+		(fp_line
+			(start 6.985 -1.27)
+			(end 6.985 16.51)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4d7661be-b057-4995-aece-f990cab9f7f4")
 		)
 		(fp_rect
 			(start -1.27 -1.33)
@@ -14625,7 +14625,7 @@
 			(uuid "ba36dfe4-98a4-453d-8eac-45318e787b34")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 3.81 7.62 0)
+			(at 3.81 7.62 180)
 			(layer "F.Fab")
 			(uuid "67011f5b-7201-4a4c-a36f-7a0cf4fa62fd")
 			(effects
@@ -14636,13 +14636,13 @@
 			)
 		)
 		(point
-			(at 129.52 174.455)
+			(at 121.9 177.975)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "788dea36-3901-4ea9-97c4-0c97b9012cb8")
 		)
 		(pad "1" thru_hole roundrect
-			(at 0 0 90)
+			(at 0 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -14653,7 +14653,7 @@
 			(uuid "7ff2eb5f-2231-4747-955c-2c85e0159770")
 		)
 		(pad "2" thru_hole circle
-			(at 0 2.54 90)
+			(at 0 2.54 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -14663,7 +14663,7 @@
 			(uuid "9e0cf866-3030-4dc9-8aaa-657e3467505d")
 		)
 		(pad "3" thru_hole circle
-			(at 0 5.08 90)
+			(at 0 5.08 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -14673,7 +14673,7 @@
 			(uuid "01e6a036-7adf-4172-8a87-368cbb9f980b")
 		)
 		(pad "4" thru_hole circle
-			(at 0 7.62 90)
+			(at 0 7.62 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -14683,7 +14683,7 @@
 			(uuid "489c86a8-261c-4ce3-a32d-9dcf8af29165")
 		)
 		(pad "5" thru_hole circle
-			(at 0 10.16 90)
+			(at 0 10.16 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -14693,7 +14693,7 @@
 			(uuid "f8e225b0-15d4-41e6-aada-2d5e7d24d362")
 		)
 		(pad "6" thru_hole circle
-			(at 0 12.7 90)
+			(at 0 12.7 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -14703,7 +14703,7 @@
 			(uuid "b796fe16-20c8-44e1-9254-3e68eaf9723b")
 		)
 		(pad "7" thru_hole circle
-			(at 0 15.24 90)
+			(at 0 15.24 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -14714,7 +14714,7 @@
 			(uuid "b351052d-c9d3-49de-9685-e1752f40aa07")
 		)
 		(pad "8" thru_hole circle
-			(at 7.62 15.24 90)
+			(at 7.62 15.24 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -14724,7 +14724,7 @@
 			(uuid "37a4c88c-6819-4060-84e3-286fd837e690")
 		)
 		(pad "9" thru_hole circle
-			(at 7.62 12.7 90)
+			(at 7.62 12.7 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -14734,7 +14734,7 @@
 			(uuid "5e8f8d14-8b92-4239-80eb-0c4078846948")
 		)
 		(pad "10" thru_hole circle
-			(at 7.62 10.16 90)
+			(at 7.62 10.16 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -14744,7 +14744,7 @@
 			(uuid "2456dd1d-021e-472b-9f46-01f04a4e0dd1")
 		)
 		(pad "11" thru_hole circle
-			(at 7.62 7.62 90)
+			(at 7.62 7.62 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -14754,7 +14754,7 @@
 			(uuid "8e8b2c3f-88fe-4a5e-99a1-08d88e56b307")
 		)
 		(pad "12" thru_hole circle
-			(at 7.62 5.08 90)
+			(at 7.62 5.08 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -14764,7 +14764,7 @@
 			(uuid "1dab9ed2-6fb9-4c72-b1f0-5e5414eff403")
 		)
 		(pad "13" thru_hole circle
-			(at 7.62 2.54 90)
+			(at 7.62 2.54 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -14774,7 +14774,7 @@
 			(uuid "fe669775-9725-473e-a64d-f5e07b66df45")
 		)
 		(pad "14" thru_hole circle
-			(at 7.62 0 90)
+			(at 7.62 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -14800,7 +14800,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "71c36041-84be-4aa8-b265-d43cd382d66c")
-		(at 139.68 107.165 -90)
+		(at 134.6 108.365 -90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC601"
@@ -15108,7 +15108,7 @@
 			)
 		)
 		(point
-			(at 130.79 110.975)
+			(at 125.71 112.175)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "f661a0f6-084f-4b70-9b5a-4d1896f36f66")
@@ -15306,7 +15306,7 @@
 	(footprint "Socket:DIP_Socket-28_W11.9mm_W12.7mm_W15.24mm_W17.78mm_W18.5mm_3M_228-1277-00-0602J"
 		(layer "F.Cu")
 		(uuid "731fc12b-0f0c-4e58-86dc-b7ba9b679cb9")
-		(at 238.76 63.5)
+		(at 254.98 63.5)
 		(descr "3M 28-pin zero insertion force socket, through-hole, row spacing 15.24 mm (600 mils), http://multimedia.3m.com/mws/media/494546O/3mtm-dip-sockets-100-2-54-mm-ts0365.pdf")
 		(tags "THT DIP DIL ZIF 15.24mm 600mil Socket")
 		(property "Reference" "U604"
@@ -16045,7 +16045,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "754a6b79-cdec-48f7-87b5-d8831c0e866d")
-		(at 142.76 189.605 90)
+		(at 140.22 191.985 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C702"
@@ -17976,7 +17976,7 @@
 	(footprint "Package_DIP:DIP-14_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "7edc5d73-076a-4206-910f-25a8790f6ecc")
-		(at 188.86 178.265 90)
+		(at 196.48 181.785 90)
 		(descr "14-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U1504"
@@ -18208,7 +18208,7 @@
 			)
 		)
 		(point
-			(at 196.48 174.455)
+			(at 204.1 177.975)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "cfbfa1dc-2987-4171-8a17-2f381ac50c9f")
@@ -18739,7 +18739,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "845b2697-ab70-44bd-ac24-37843b67cda9")
-		(at 142.76 126.125 90)
+		(at 142.76 127.925 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1404"
@@ -18910,7 +18910,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "853a12e0-bce7-49bd-92d6-b4f0d9043d00")
-		(at 198.48 109.785 -90)
+		(at 208.64 110.985 -90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1402"
@@ -19315,7 +19315,7 @@
 	(footprint "Package_DIP:DIP-20_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "8ad4e8e2-0945-4eff-a800-c00958f59dac")
-		(at 164.54 93.205 -90)
+		(at 172.16 93.805 -90)
 		(descr "20-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U606"
@@ -19533,7 +19533,7 @@
 			)
 		)
 		(point
-			(at 153.11 97.015)
+			(at 160.73 97.615)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "be4d124c-2773-420e-9df9-3e0c39c5ea6d")
@@ -20356,7 +20356,7 @@
 	(footprint "Package_DIP:DIP-20_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "953d7943-6a43-4849-87d0-82e62838536a")
-		(at 206.64 128.745 90)
+		(at 221.88 130.545 90)
 		(descr "20-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U1403"
@@ -20574,7 +20574,7 @@
 			)
 		)
 		(point
-			(at 218.07 124.935)
+			(at 233.31 126.735)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "73fa655a-fc11-4dee-a264-99360b60c545")
@@ -20816,7 +20816,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "9c3418e5-0f94-45b8-b0a5-032a4b14bc85")
-		(at 143.68 109.785 -90)
+		(at 138.6 110.985 -90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C605"
@@ -20987,7 +20987,7 @@
 	(footprint "Package_DIP:DIP-20_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "9db17e44-56f1-443f-ba66-e7f34679cdb0")
-		(at 216.8 149.045 -90)
+		(at 242.2 152.045 -90)
 		(descr "20-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U701"
@@ -21205,7 +21205,7 @@
 			)
 		)
 		(point
-			(at 205.37 152.855)
+			(at 230.77 155.855)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "e3d10480-6449-4fba-81ac-d9ca159f436d")
@@ -21447,7 +21447,7 @@
 	(footprint "Package_DIP:DIP-24_W15.24mm_Socket"
 		(layer "F.Cu")
 		(uuid "9ef455c2-3cc7-4319-a1f2-b56044107d71")
-		(at 149.3 75.505 90)
+		(at 164.54 75.505 90)
 		(descr "24-lead though-hole mounted DIP package, row spacing 15.24mm (600 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket")
 		(property "Reference" "U1101"
@@ -21664,7 +21664,7 @@
 			)
 		)
 		(point
-			(at 163.27 67.885)
+			(at 178.51 67.885)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "371e3325-b220-490b-a64d-2a741d6d2edf")
@@ -21950,7 +21950,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "a12fded7-534d-4a86-9d14-2b3bc30098d5")
-		(at 141.14 151.665 -90)
+		(at 136.06 154.665 -90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C103"
@@ -23013,7 +23013,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "ac249372-a1fa-405b-a477-df4c67e147b1")
-		(at 194.48 107.165 -90)
+		(at 204.64 108.365 -90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U1401"
@@ -23231,7 +23231,7 @@
 			)
 		)
 		(point
-			(at 185.59 110.975)
+			(at 195.75 112.175)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "1af11665-5205-423b-a65d-1e6c02c5739e")
@@ -23429,7 +23429,7 @@
 	(footprint "Package_DIP:DIP-28_W15.24mm_Socket"
 		(layer "F.Cu")
 		(uuid "ae4fe051-a0f2-4502-9cf6-4eb6279ce5a7")
-		(at 146.76 199.845 90)
+		(at 144.22 202.225 90)
 		(descr "28-lead though-hole mounted DIP package, row spacing 15.24mm (600 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket")
 		(property "Reference" "U706"
@@ -23647,7 +23647,7 @@
 			)
 		)
 		(point
-			(at 163.27 192.225)
+			(at 160.73 194.605)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "14320ed0-f7a8-4e26-b1a3-f07fb91a1d2f")
@@ -23977,7 +23977,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "b4033e71-4214-45fb-81da-24d434877a1a")
-		(at 172.7 126.125 90)
+		(at 180.32 127.925 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1403"
@@ -24353,7 +24353,7 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "c18404bf-c898-44dc-b4a3-201d3ae6e86a")
-		(at 164 142.705 90)
+		(at 171.62 145.105 90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "IC402"
@@ -24661,7 +24661,7 @@
 			)
 		)
 		(point
-			(at 172.89 138.895)
+			(at 180.51 141.295)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "6989de24-6a04-4dff-b283-c82ff5221260")
@@ -24859,7 +24859,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "c2becd4a-7d28-4997-b7f7-9322d50c0804")
-		(at 145.3 65.265 90)
+		(at 160.54 65.265 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1101"
@@ -25030,7 +25030,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "c30a8d20-1386-4f4b-bc92-3cf194d9e6ae")
-		(at 162.54 175.645 90)
+		(at 165.08 179.165 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1409"
@@ -25395,7 +25395,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "c3e3b73a-c01e-4e8c-a170-7b353a0d697c")
-		(at 166 151.665 -90)
+		(at 171.08 154.665 -90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C404"
@@ -25566,7 +25566,7 @@
 	(footprint "Package_DIP:DIP-20_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "c6d03e10-7731-4e80-96ec-fcb46a72e791")
-		(at 226.96 93.205 -90)
+		(at 242.2 93.805 -90)
 		(descr "20-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U602"
@@ -25784,7 +25784,7 @@
 			)
 		)
 		(point
-			(at 215.53 97.015)
+			(at 230.77 97.615)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "1de448a9-cab2-4888-a8df-1f0e97940264")
@@ -26026,7 +26026,7 @@
 	(footprint "Package_DIP:DIP-20_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "d11e3924-e0c4-4fca-abfa-9c565e87d772")
-		(at 206.64 114.785 90)
+		(at 221.88 115.985 90)
 		(descr "20-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U1402"
@@ -26244,7 +26244,7 @@
 			)
 		)
 		(point
-			(at 218.07 110.975)
+			(at 233.31 112.175)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "2aa7e88b-237f-40cc-b802-18d9e123d810")
@@ -26486,11 +26486,11 @@
 	(footprint "Package_DIP:DIP-16_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "d29c159c-18c0-4efa-9162-b9ede724a249")
-		(at 228.96 135.085 -90)
+		(at 226.42 145.105 90)
 		(descr "16-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U1201"
-			(at 3.81 8.89 270)
+			(at 3.81 8.89 90)
 			(layer "F.SilkS")
 			(uuid "5968b419-069f-4f75-af78-072d4f5b2b68")
 			(effects
@@ -26501,7 +26501,7 @@
 			)
 		)
 		(property "Value" "74HC193"
-			(at 3.81 20.11 270)
+			(at 3.81 20.11 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "b61e092b-d2e0-4a14-98dc-f46e9e63c80a")
@@ -26513,7 +26513,7 @@
 			)
 		)
 		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/74HC_HCT193.pdf"
-			(at 0 0 270)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ad576502-d21a-4faa-8814-3a7d31cbe04f")
@@ -26524,7 +26524,7 @@
 			)
 		)
 		(property "Description" "Synchronous 4-bit Up/Down (2 clk) counter"
-			(at 0 0 270)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c7e63739-445b-4121-9b94-1042c802e724")
@@ -26549,34 +26549,14 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start 1.16 19.11)
-			(end 6.46 19.11)
+			(start 6.46 -1.33)
+			(end 4.81 -1.33)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "74b4bead-93b5-45ed-b019-1ade7e7211d7")
-		)
-		(fp_line
-			(start 6.46 19.11)
-			(end 6.46 -1.33)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "4d631fd7-ae6c-443f-b04a-9e527e41c81e")
-		)
-		(fp_line
-			(start 1.16 -1.33)
-			(end 1.16 19.11)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "188c2898-8543-44a5-87be-b939638acaf0")
+			(uuid "d4688bb7-99f6-4dc7-a8a5-d6ecc4fa220e")
 		)
 		(fp_line
 			(start 2.81 -1.33)
@@ -26589,14 +26569,34 @@
 			(uuid "a59a6676-d6fa-4b3b-9119-47caf8b23375")
 		)
 		(fp_line
-			(start 6.46 -1.33)
-			(end 4.81 -1.33)
+			(start 1.16 -1.33)
+			(end 1.16 19.11)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "d4688bb7-99f6-4dc7-a8a5-d6ecc4fa220e")
+			(uuid "188c2898-8543-44a5-87be-b939638acaf0")
+		)
+		(fp_line
+			(start 6.46 19.11)
+			(end 6.46 -1.33)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4d631fd7-ae6c-443f-b04a-9e527e41c81e")
+		)
+		(fp_line
+			(start 1.16 19.11)
+			(end 6.46 19.11)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "74b4bead-93b5-45ed-b019-1ade7e7211d7")
 		)
 		(fp_rect
 			(start -1.33 -1.39)
@@ -26632,34 +26632,14 @@
 			(uuid "5b40a0a0-1d9f-43df-b3ef-b6e9a2bd18c1")
 		)
 		(fp_line
-			(start 0.635 19.05)
-			(end 0.635 -0.27)
+			(start 6.985 -1.27)
+			(end 6.985 19.05)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "2b4be74b-4d1a-401c-b3d5-9163dbd179e1")
-		)
-		(fp_line
-			(start 6.985 19.05)
-			(end 0.635 19.05)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "9c998b6f-309b-4062-8efe-d1dc8822d9e4")
-		)
-		(fp_line
-			(start 0.635 -0.27)
-			(end 1.635 -1.27)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "b715906b-33e0-496b-a307-1c1de3ac487d")
+			(uuid "3af36caf-ad18-4b81-a79c-9b03d5a4dc2e")
 		)
 		(fp_line
 			(start 1.635 -1.27)
@@ -26672,14 +26652,34 @@
 			(uuid "07b630b3-948e-4b40-9c01-667c2e3f524e")
 		)
 		(fp_line
-			(start 6.985 -1.27)
-			(end 6.985 19.05)
+			(start 0.635 -0.27)
+			(end 1.635 -1.27)
 			(stroke
 				(width 0.1)
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "3af36caf-ad18-4b81-a79c-9b03d5a4dc2e")
+			(uuid "b715906b-33e0-496b-a307-1c1de3ac487d")
+		)
+		(fp_line
+			(start 6.985 19.05)
+			(end 0.635 19.05)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "9c998b6f-309b-4062-8efe-d1dc8822d9e4")
+		)
+		(fp_line
+			(start 0.635 19.05)
+			(end 0.635 -0.27)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2b4be74b-4d1a-401c-b3d5-9163dbd179e1")
 		)
 		(fp_rect
 			(start -1.27 -1.33)
@@ -26693,7 +26693,7 @@
 			(uuid "bd40258b-1978-4ed0-a97b-e6fd12c7f03a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 3.81 8.89 180)
+			(at 3.81 8.89 0)
 			(layer "F.Fab")
 			(uuid "1c439155-f051-47c8-8b7e-bac3467c8015")
 			(effects
@@ -26704,13 +26704,13 @@
 			)
 		)
 		(point
-			(at 220.07 138.895)
+			(at 235.31 141.295)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "3221370d-4c20-4f95-813c-bac35cc224dd")
 		)
 		(pad "1" thru_hole roundrect
-			(at 0 0 270)
+			(at 0 0 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -26722,7 +26722,7 @@
 			(uuid "ac23dc05-f122-44c7-aeb1-f1975111300d")
 		)
 		(pad "2" thru_hole circle
-			(at 0 2.54 270)
+			(at 0 2.54 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -26733,7 +26733,7 @@
 			(uuid "43a0aede-0c61-4f6b-a5fb-e38661db029e")
 		)
 		(pad "3" thru_hole circle
-			(at 0 5.08 270)
+			(at 0 5.08 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -26744,7 +26744,7 @@
 			(uuid "742d2200-9543-4bd8-94c5-57da3c0129a6")
 		)
 		(pad "4" thru_hole circle
-			(at 0 7.62 270)
+			(at 0 7.62 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -26755,7 +26755,7 @@
 			(uuid "d2ec1f87-f83f-4d8b-af87-c9ef9fd1c946")
 		)
 		(pad "5" thru_hole circle
-			(at 0 10.16 270)
+			(at 0 10.16 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -26766,7 +26766,7 @@
 			(uuid "3e2aebbb-239c-4ede-a2e8-e4a042fdd134")
 		)
 		(pad "6" thru_hole circle
-			(at 0 12.7 270)
+			(at 0 12.7 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -26777,7 +26777,7 @@
 			(uuid "bd854f90-19f1-44d5-aea3-7c8b93e2082f")
 		)
 		(pad "7" thru_hole circle
-			(at 0 15.24 270)
+			(at 0 15.24 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -26788,7 +26788,7 @@
 			(uuid "64cccddf-eaf5-4b1c-b8a4-4b3e6015f996")
 		)
 		(pad "8" thru_hole circle
-			(at 0 17.78 270)
+			(at 0 17.78 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -26799,7 +26799,7 @@
 			(uuid "e9aa6d75-3836-40ae-8009-e7f5594fd6fa")
 		)
 		(pad "9" thru_hole circle
-			(at 7.62 17.78 270)
+			(at 7.62 17.78 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -26810,7 +26810,7 @@
 			(uuid "d4846784-b59c-424d-b64a-bb1d00d4437f")
 		)
 		(pad "10" thru_hole circle
-			(at 7.62 15.24 270)
+			(at 7.62 15.24 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -26821,7 +26821,7 @@
 			(uuid "972ef6a2-79c9-44fd-9fc6-02cde5ea132b")
 		)
 		(pad "11" thru_hole circle
-			(at 7.62 12.7 270)
+			(at 7.62 12.7 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -26832,7 +26832,7 @@
 			(uuid "1f2281fa-129b-4ee6-a0a5-08ad2a02c7af")
 		)
 		(pad "12" thru_hole circle
-			(at 7.62 10.16 270)
+			(at 7.62 10.16 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -26843,7 +26843,7 @@
 			(uuid "a3e8de01-06d4-4438-8832-fb7074299792")
 		)
 		(pad "13" thru_hole circle
-			(at 7.62 7.62 270)
+			(at 7.62 7.62 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -26854,7 +26854,7 @@
 			(uuid "f363c8f3-0307-4da9-b140-0128352299d6")
 		)
 		(pad "14" thru_hole circle
-			(at 7.62 5.08 270)
+			(at 7.62 5.08 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -26865,7 +26865,7 @@
 			(uuid "052030cf-9cf1-4bd2-bdbf-6a421027b9df")
 		)
 		(pad "15" thru_hole circle
-			(at 7.62 2.54 270)
+			(at 7.62 2.54 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -26876,7 +26876,7 @@
 			(uuid "f0072003-f989-494b-a534-14f7900f33de")
 		)
 		(pad "16" thru_hole circle
-			(at 7.62 0 270)
+			(at 7.62 0 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -27081,7 +27081,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "d43b1503-92bd-4efd-bae9-6f63489112ac")
-		(at 190.86 151.665 -90)
+		(at 206.1 154.665 -90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C403"
@@ -27252,7 +27252,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "d576424a-50b7-415c-b26a-e071ad4a0adf")
-		(at 117.9 126.125 90)
+		(at 110.28 127.925 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1408"
@@ -27423,11 +27423,11 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "da250a61-3583-4a10-aeb5-4f3a41afe848")
-		(at 117.9 175.645 90)
+		(at 133.52 176.785 -90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1501"
-			(at 2.5 -2 90)
+			(at 2.5 -2 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -27440,7 +27440,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 2.5 2.2 90)
+			(at 2.5 2.2 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "ed1c93dd-4bde-41c0-8363-ab489f91bc8a")
@@ -27452,7 +27452,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c75714b2-58ea-4866-85d3-49d660da8e0e")
@@ -27463,7 +27463,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "430e262c-02cc-46c3-a90a-394acf409ead")
@@ -27486,24 +27486,14 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start 0.23 -1.07)
-			(end 4.77 -1.07)
+			(start 4.77 1.07)
+			(end 0.23 1.07)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "1f3d5f1c-b230-4c4d-b9d4-27e385f103a9")
-		)
-		(fp_line
-			(start 0.23 -1.014)
-			(end 0.23 -1.07)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "39263ef0-84f1-44b8-886a-3bc0563c867a")
+			(uuid "bc2c630a-9749-4347-a1a5-d30a8d42219d")
 		)
 		(fp_line
 			(start 4.77 1.014)
@@ -27516,14 +27506,24 @@
 			(uuid "481f7f4b-aa18-4d29-afc2-b989705211b5")
 		)
 		(fp_line
-			(start 4.77 1.07)
-			(end 0.23 1.07)
+			(start 0.23 -1.014)
+			(end 0.23 -1.07)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "bc2c630a-9749-4347-a1a5-d30a8d42219d")
+			(uuid "39263ef0-84f1-44b8-886a-3bc0563c867a")
+		)
+		(fp_line
+			(start 0.23 -1.07)
+			(end 4.77 -1.07)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "1f3d5f1c-b230-4c4d-b9d4-27e385f103a9")
 		)
 		(fp_rect
 			(start -1.05 -1.2)
@@ -27548,7 +27548,7 @@
 			(uuid "83fd0fd9-49de-4fa1-9fd5-d0f7fd8c326d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.5 0 90)
+			(at 2.5 0 270)
 			(layer "F.Fab")
 			(uuid "617a6e6a-68ce-4827-9639-3d10f8c842e6")
 			(effects
@@ -27559,7 +27559,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0 90)
+			(at 0 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -27569,7 +27569,7 @@
 			(uuid "1a959d62-7845-43e9-b2bb-a153dbf6fa7a")
 		)
 		(pad "2" thru_hole circle
-			(at 5 0 90)
+			(at 5 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -27960,7 +27960,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "dabe755c-7af9-449b-8d5c-1a8ee1c67ad0")
-		(at 184.86 140.085 90)
+		(at 195.02 142.485 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1506"
@@ -28131,11 +28131,11 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "dba3ec35-348e-4aae-b66f-61dff921cca1")
-		(at 112.82 140.085 90)
+		(at 136.06 140.105 -90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1301"
-			(at 2.5 -2 90)
+			(at 2.5 -2 270)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -28148,7 +28148,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 2.5 2.2 90)
+			(at 2.5 2.2 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "03ab6c2e-e2cf-4d38-bc9d-14fbc03666f5")
@@ -28160,7 +28160,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cb9aefa7-2ae8-40ed-bbd2-140cbb5e960e")
@@ -28171,7 +28171,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 90)
+			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "03ab5af6-4c70-4d3b-ae3c-fd6802ccfe33")
@@ -28194,24 +28194,14 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start 0.23 -1.07)
-			(end 4.77 -1.07)
+			(start 4.77 1.07)
+			(end 0.23 1.07)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "d9ed1153-f656-443e-bda5-13b95adb3511")
-		)
-		(fp_line
-			(start 0.23 -1.014)
-			(end 0.23 -1.07)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "6e25f169-3c59-4494-b191-7e02f3914476")
+			(uuid "7b9d7990-ef6b-400d-ba70-c07d1570c2e9")
 		)
 		(fp_line
 			(start 4.77 1.014)
@@ -28224,14 +28214,24 @@
 			(uuid "de6b9b25-04e8-4649-9dec-b1fb72af42fd")
 		)
 		(fp_line
-			(start 4.77 1.07)
-			(end 0.23 1.07)
+			(start 0.23 -1.014)
+			(end 0.23 -1.07)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "7b9d7990-ef6b-400d-ba70-c07d1570c2e9")
+			(uuid "6e25f169-3c59-4494-b191-7e02f3914476")
+		)
+		(fp_line
+			(start 0.23 -1.07)
+			(end 4.77 -1.07)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d9ed1153-f656-443e-bda5-13b95adb3511")
 		)
 		(fp_rect
 			(start -1.05 -1.2)
@@ -28256,7 +28256,7 @@
 			(uuid "f748da8c-e394-43f0-a6fc-6f351c4f40ef")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.5 0 90)
+			(at 2.5 0 270)
 			(layer "F.Fab")
 			(uuid "6964bcd7-e581-4252-98b1-60615a1db209")
 			(effects
@@ -28267,7 +28267,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0 90)
+			(at 0 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -28277,7 +28277,7 @@
 			(uuid "2fda9dcc-1f05-422f-b3b8-677467611771")
 		)
 		(pad "2" thru_hole circle
-			(at 5 0 90)
+			(at 5 0 270)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -29853,7 +29853,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "e5a8faa2-0d3a-4482-8e7c-fdd56d3182b4")
-		(at 172.7 98.205 90)
+		(at 180.32 98.805 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1103"
@@ -30024,7 +30024,7 @@
 	(footprint "Package_DIP:DIP-20_W7.62mm_Socket"
 		(layer "F.Cu")
 		(uuid "e5d66fe9-342d-4f9b-9bbb-dc86f4bf0d38")
-		(at 116.82 192.225 90)
+		(at 114.28 194.605 90)
 		(descr "20-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils), Socket")
 		(tags "THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket")
 		(property "Reference" "U705"
@@ -30242,7 +30242,7 @@
 			)
 		)
 		(point
-			(at 128.25 188.415)
+			(at 125.71 190.795)
 			(size 1.27)
 			(layer "F.Fab")
 			(uuid "8b4ace50-a1c0-4bcb-a2c1-9044c9e08950")
@@ -30484,7 +30484,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "e5dd7175-a0b4-4fe2-97fe-ac1c4cc2895a")
-		(at 140.22 175.645 90)
+		(at 137.68 179.165 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1504"
@@ -30655,7 +30655,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "ee88d4d6-7c5f-4dfa-91a9-571f4c25aa86")
-		(at 260 64 90)
+		(at 276.5 64 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C607"
@@ -30826,7 +30826,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "f1d5d7a3-2245-48e1-92d4-aff712576bfc")
-		(at 202.64 112.165 90)
+		(at 217.88 113.365 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1401"
@@ -30997,7 +30997,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "f5ace900-1ee5-4bdd-9ab7-764a7b4da3cc")
-		(at 184.86 175.645 90)
+		(at 192.48 179.165 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1503"
@@ -31168,11 +31168,11 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "f76807ca-acde-4a35-87cc-7023f27b7e21")
-		(at 141.14 62.885 -90)
+		(at 110.28 65.265 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1102"
-			(at 2.5 -2 270)
+			(at 2.5 -2 90)
 			(unlocked yes)
 			(layer "F.SilkS")
 			(hide yes)
@@ -31185,7 +31185,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 2.5 2.2 270)
+			(at 2.5 2.2 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a5dda8d5-2b8e-4705-bb45-c55346ba2abc")
@@ -31197,7 +31197,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 270)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "30a445a9-9abd-4644-858e-7730028aa9b2")
@@ -31208,7 +31208,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 0 0 270)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "913b7159-09ed-4dd6-a557-31eaac6efe9c")
@@ -31231,24 +31231,14 @@
 		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start 4.77 1.07)
-			(end 0.23 1.07)
+			(start 0.23 -1.07)
+			(end 4.77 -1.07)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "3a59399c-7cc0-4003-a173-873d19a92126")
-		)
-		(fp_line
-			(start 4.77 1.014)
-			(end 4.77 1.07)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d97e38ec-f2fd-4675-be32-0a47b19f1bd1")
+			(uuid "fee0332f-c658-4b49-aed7-5a68dae22d83")
 		)
 		(fp_line
 			(start 0.23 -1.014)
@@ -31261,14 +31251,24 @@
 			(uuid "d6d745a6-face-4c73-b6a0-588a5d452148")
 		)
 		(fp_line
-			(start 0.23 -1.07)
-			(end 4.77 -1.07)
+			(start 4.77 1.014)
+			(end 4.77 1.07)
 			(stroke
 				(width 0.12)
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "fee0332f-c658-4b49-aed7-5a68dae22d83")
+			(uuid "d97e38ec-f2fd-4675-be32-0a47b19f1bd1")
+		)
+		(fp_line
+			(start 4.77 1.07)
+			(end 0.23 1.07)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3a59399c-7cc0-4003-a173-873d19a92126")
 		)
 		(fp_rect
 			(start -1.05 -1.2)
@@ -31293,7 +31293,7 @@
 			(uuid "735d22d2-b5f2-41d3-8e29-7c86bc23b21f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.5 0 270)
+			(at 2.5 0 90)
 			(layer "F.Fab")
 			(uuid "38b47eb7-786c-4934-8772-002ee8419b33")
 			(effects
@@ -31304,7 +31304,7 @@
 			)
 		)
 		(pad "1" thru_hole circle
-			(at 0 0 270)
+			(at 0 0 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -31314,7 +31314,7 @@
 			(uuid "276bb289-e68f-4c09-9f5e-0e50bcbfd761")
 		)
 		(pad "2" thru_hole circle
-			(at 5 0 270)
+			(at 5 0 90)
 			(size 1.6 1.6)
 			(drill 0.8)
 			(layers "*.Cu" "*.Mask")
@@ -31339,7 +31339,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "f8b3b72b-1ba9-4fc4-89a5-d1f2c5a3c5d7")
-		(at 220.8 151.665 -90)
+		(at 246.2 154.665 -90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C705"
@@ -31510,7 +31510,7 @@
 	(footprint "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "fb0ae7b9-7185-402c-b8f8-f868abe54b3d")
-		(at 180.32 65.265 90)
+		(at 215.88 65.265 90)
 		(descr "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf")
 		(tags "C Disc series Radial pin pitch 5.00mm diameter 4.3mm width 1.9mm Capacitor")
 		(property "Reference" "C1507"
