@@ -32008,6 +32008,30 @@
 		(layer "Edge.Cuts")
 		(uuid "d98e60d8-2ba6-4a29-9e08-410d2d832608")
 	)
+	(gr_text "1"
+		(at 106.9 133.23 0)
+		(layer "F.SilkS")
+		(uuid "92f99447-e32d-476f-b4c6-c980f7772926")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "1"
+		(at 108.428524 68.23 0)
+		(layer "F.SilkS")
+		(uuid "7f0ac03a-1be7-46d9-850d-ae35b5bb9451")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(segment
 		(start 133.885568 216.614432)
 		(end 133.885568 215.925616)
