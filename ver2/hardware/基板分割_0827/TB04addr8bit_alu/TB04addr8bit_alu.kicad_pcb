@@ -82,9 +82,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "TB-04_alu/")
 		)
 	)
 	(footprint "Package_DIP:DIP-28_W15.24mm_Socket"

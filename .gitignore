@@ -24,6 +24,8 @@ amp/
 *.gbrjob
 *.drl
 peripherals/7segIF/hardware/7segIF.zip
+ver2/hardware/基板分割_0827/*/TB-04_*.zip
+ver2/hardware/基板分割_0827/*/TB-04_*/
 
 # AIレビュー用の生成物（ネットリスト＋ERCの自動出力。回路図から再生成可）
 ai-review/
