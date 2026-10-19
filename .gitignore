@@ -30,6 +30,7 @@ ver2/hardware/基板分割_0827/*/TB-04_*/
 # AIレビュー用の生成物（ネットリスト＋ERCの自動出力。回路図から再生成可）
 ai-review/
 **/hardware/**/*.xml
+peripherals/clock4096/*.xml
 
 # KiCAD ロックファイル（編集中のみ生成される一時ファイル）
 *.lck
@@ -67,6 +68,7 @@ ver1/DEVLOG.md
 ver2/DEVLOG.md
 ver3/DEVLOG.md
 peripherals/7segIF/DEVLOG.md
+peripherals/clock4096/DEVLOG.md
 ver2/ver2設計仕様ドラフト.md
 ver2/ver2_ISA.csv
 # ver2 実装成果物（sim・生成ツール・生成ROM）は設計凍結まで非公開。公開時に解除
