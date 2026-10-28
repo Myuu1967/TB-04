@@ -1,12 +1,31 @@
 import sys
 import serial
+import serial.tools.list_ports
 import matplotlib.pyplot as plt
 
 # TB-04 ver2 用 Pico 高速ロジアナ（PC側）。Pico側は forLogiAna.py
-# 使い方: python logicAnalyzer.py [COMポート] [取り込む回数]
+# 使い方: python logicAnalyzer.py [COMポート] [取り込む回数]   例) python logicAnalyzer.py COM16 2 ／ python logicAnalyzer.py 3
+# COMポートを省くと自動で探す（1つならそれを使い、複数なら番号で選ぶ）
 # 先にこれを起動 → TB-04 をリセットして走らせる。1回目＝最初の CALL の EXE 末、2回目＝RET の EXE 末
-COM_PORT = sys.argv[1] if len(sys.argv) > 1 else 'COM13'
-N_CAP = int(sys.argv[2]) if len(sys.argv) > 2 else 2
+args = sys.argv[1:]
+COM_PORT = args.pop(0) if args and not args[0].isdigit() else None
+N_CAP = int(args[0]) if args else 2
+
+
+def find_port():
+    ports = sorted(serial.tools.list_ports.comports(), key=lambda p: p.device)
+    if not ports:
+        sys.exit('COMポートが見つかりません（USBシリアル変換の接続を確認）')
+    if len(ports) == 1:
+        return ports[0].device
+    for i, p in enumerate(ports):
+        print(f'{i}: {p.device}  {p.description}')
+    return ports[int(input('使うポートの番号: '))].device
+
+
+if COM_PORT is None:
+    COM_PORT = find_port()
+print(f'{COM_PORT} を開きます')
 NAMES = ['CLK_CPU', '~WE_RAM', '~CS_RAM', 'MD5', 'CH4', 'CH5', 'CH6', 'CH7']
 
 plt.rcParams['font.family'] = 'MS Gothic'

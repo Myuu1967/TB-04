@@ -27,7 +27,7 @@ ver1 の 10Hz 版（[`../../ver1/pico_codes/`](../../ver1/pico_codes/)）を元�
 ## 使い方
 
 1. Pico に MicroPython を書き込み、`forLogiAna.py` を実行（または `main.py` として配置）。UART に `READY,4,8,64` が出る
-2. PC で `python logicAnalyzer.py COM13 2`（COM ポート・取り込む回数）
+2. PC で `python logicAnalyzer.py`（引数は省略可：`python logicAnalyzer.py COM16 2` で COM ポートと取り込む回数を指定。COM ポートを省くと自動で探し、複数あれば一覧から番号で選ぶ。データは USB シリアル変換側＝CH340 など。Pico の USB は REPL 用）
 3. TB-04 をリセットして走らせる。テスト ROM バンク 12 なら取込 1＝最初の CALL、取込 2＝RET の EXE 末
 
 コンソールには「**★ `~WE`・`~CS` 同時 L：何 ns〜何 ns、その間の MD5**」が出ます（書込が成立しうる窓）。
