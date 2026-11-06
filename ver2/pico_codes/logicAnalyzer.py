@@ -1,4 +1,7 @@
+import csv
+import os
 import sys
+from datetime import datetime
 import serial
 import serial.tools.list_ports
 import matplotlib.pyplot as plt
@@ -8,6 +11,7 @@ import matplotlib.pyplot as plt
 #   例) python logicAnalyzer.py COM16 2 ／ python logicAnalyzer.py 3 ／ python logicAnalyzer.py --yen 4
 # COMポートを省くと自動で探す（1つならそれを使い、複数なら番号で選ぶ）
 # 先にこれを起動 → TB-04 をリセットして走らせる
+# 結果は captures/ に「日時_配線名」で保存（.png＝図／.csv＝生データ）。上書きしない
 # 配線ごとの表示名（CH2 はトリガー条件＝この信号が L のあいだの CLK↑ で取り込む）
 WIRINGS = {
     # --we（既定）: 1回目＝最初の CALL の EXE 末、2回目＝RET の EXE 末
@@ -103,5 +107,16 @@ for col, (n, nch, ns, s) in enumerate(caps):
     axes[0][col].set_title(f'取込{n}')
     axes[-1][col].set_xlabel('CLK↑ からの時間 [ns]')
 fig.tight_layout()
-fig.savefig('logicAnalyzer.png')
+
+# 日時入りの名前で保存（同じ名前で上書きすると過去の実測が消えるため）
+os.makedirs('captures', exist_ok=True)
+base = os.path.join('captures', f'{datetime.now():%Y%m%d_%H%M%S}_{WIRING}')
+fig.savefig(base + '.png')
+with open(base + '.csv', 'w', newline='', encoding='utf-8') as fp:
+    w = csv.writer(fp)
+    w.writerow(['取込', 't_ns'] + NAMES[:caps[0][1]])
+    for n, nch, ns, s in caps:
+        for i, v in enumerate(s):
+            w.writerow([n, i * ns] + v)
+print(f'保存: {base}.png / .csv')
 plt.show()

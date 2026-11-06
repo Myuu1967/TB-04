@@ -7,7 +7,7 @@ ver1 の 10Hz 版（[`../../ver1/pico_codes/`](../../ver1/pico_codes/)）を元�
 | ファイル | 動く場所 | 役割 |
 |---|---|---|
 | `forLogiAna.py` | Pico（MicroPython） | トリガー待ち → 64 サンプル（512ns）取り込み → UART へ送信。これを繰り返す |
-| `logicAnalyzer.py` | PC（Python 3・`pyserial`・`matplotlib`） | 指定回数受信して、全サンプルの表と判定を表示し、波形を `logicAnalyzer.png` に保存 |
+| `logicAnalyzer.py` | PC（Python 3・`pyserial`・`matplotlib`） | 指定回数受信して、全サンプルの表と判定を表示し、波形の図（.png）と生データ（.csv）を `captures/` に日時入りの名前で保存（上書きしない） |
 
 ## 配線（4ch）
 
