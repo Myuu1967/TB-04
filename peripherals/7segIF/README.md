@@ -14,6 +14,17 @@
 | デコード方式 | MCU のルックアップテーブル（`0`〜`F` → セグメントパターン） |
 | コネクタ | J1（TB-04 OUT 入力）／J2（WCH-Link ＋ UART 兼用ヘッダ） |
 
+## 外観と回路図
+
+<p>
+  <img src="7segIF_3d.png" alt="7segIF の3D表示" width="320">
+  <img src="7segIF_pcb.png" alt="7segIF の基板レイアウト（23×41.5mm）" width="300">
+</p>
+
+基板は 23×41.5mm です。
+
+![7segIF の回路図](7segIF_schematic.png)
+
 ## ディレクトリ
 
 ```
