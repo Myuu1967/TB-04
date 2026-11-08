@@ -53,4 +53,4 @@ peripherals/7segIF/
 ## ライセンス
 
 - **ハードウェア**（`hardware/`）: CC BY-SA 4.0。詳細・帰属は [`LICENSE`](./LICENSE) を参照。
-- **ファームウェア**（`firmware/`）: ちぇりー氏の著作物に由来しない独自実装で、上記 CC BY-SA の対象外です。
+- **ファームウェア**（`firmware/`）: ちぇりー氏の著作物に由来しない独自実装で、上記 CC BY-SA の対象外です。リポジトリ全体と同じ [MIT License](../../LICENSE) です。

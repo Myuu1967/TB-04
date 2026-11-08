@@ -45,6 +45,11 @@ KiCAD のバージョンは、ver1 が 9.0（ロジックアナライザのみ 1
 - 展示会の配布資料「これまでに製作した自作CPUについてのまとめ」（2026-08-08・PDF）: <https://drive.google.com/file/d/16cySft4IG1u6tpTtqwmJSpbO6KQHhh4Z/view?usp=drive_link>
   CPU のしくみの解説と、TB-01（1bit）・TB-02（2bit）・TD4・TB-04 ver1 の構成と命令表をまとめたものです。
 
+## ライセンス
+
+[MIT License](LICENSE)（回路図・PCB・プログラム・ドキュメントを含む）。
+ただし 7segIF の回路図・基板（`peripherals/7segIF/hardware/`）は、CC BY-SA 4.0 の作品をもとにしているため CC BY-SA 4.0 です（[`peripherals/7segIF/LICENSE`](peripherals/7segIF/LICENSE)）。
+
 ## 関連記事
 
 ver1
