@@ -52,7 +52,7 @@
 | シート | 内容 |
 |--------|------|
 | TB04addr4bitVer3.kicad_sch | トップシート（電源・WEデコード） |
-| RS.kicad_sch | レジスタ群①：汎用レジスタ R0〜R3（74HC161・74HC253） |
+| RS.kicad_sch | レジスタ群①：汎用レジスタ R0〜R3（74HC161 × 4 ＋ 74HC253 × 4） |
 | RS01.kicad_sch | レジスタ群②：PC・入出力ポート・OPR から ALU への出力（即値） |
 | ROM_ALU_Decoder.kicad_sch | 28C256 × 4 + PC + フラグ |
 | ALU.kicad_sch | LEDモニターインターフェース |
