@@ -41,6 +41,8 @@ TB-04 の2世代目です。データは 4bit のまま、アドレスを 8bit�
 
 （PNG 版: [`tb04_ver2_block.png`](tb04_ver2_block.png)。図は `tools/gen_block_diagram.py` で生成）
 
+### ブロックと主な IC
+
 | 基板 | ブロック | 主な IC |
 |---|---|---|
 | IF 板 | クロック・リセット（水晶は不使用・外付け clock4096 からクロックを入れる） | 74HC14 ＋ clock4096（74HC04・4040） |
