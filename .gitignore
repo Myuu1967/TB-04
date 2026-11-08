@@ -92,3 +92,4 @@ ver2/hardware/基板分割_0827/TB04_carry/
 # 公開する回路図PDF
 !peripherals/clock4096/clock4096.pdf
 !ver2/ver2_decoder_truthtable.csv
+!ver2/hardware/基板分割_0827/TB04addr8bit_*/TB04addr8bit_*.pdf

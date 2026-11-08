@@ -121,6 +121,14 @@ ver2/
 
 KiCAD は 10.0 で作成しています（9.0 では開けません）。
 
+KiCAD がなくても見られるように、回路図の PDF を置いています（KiCAD 10.0 から出力）。
+
+- IF 板: [`TB04addr8bit_if.pdf`](hardware/基板分割_0827/TB04addr8bit_if/TB04addr8bit_if.pdf)（4ページ）
+- 制御板: [`TB04addr8bit_ctrl.pdf`](hardware/基板分割_0827/TB04addr8bit_ctrl/TB04addr8bit_ctrl.pdf)（10ページ）
+- 演算板: [`TB04addr8bit_alu.pdf`](hardware/基板分割_0827/TB04addr8bit_alu/TB04addr8bit_alu.pdf)（6ページ）
+
+PDF も回路図ファイルと同じく、下の「回路図と実機の違い」にある2点の変更は反映していません。
+
 `hardware/TB04addr8bit_copy/` は、3枚に分割する前の1枚の回路図です（分割作業の元にした版で、その後の基板側の修正は反映していません）。
 
 3枚の基板はケーブル（40ピン＋40ピン＋20ピン）で IF 板－制御板－演算板の順につなぎます。**20ピンのケーブルは 180°ひねって挿します。**
