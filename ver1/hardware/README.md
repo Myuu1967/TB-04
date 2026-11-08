@@ -54,7 +54,7 @@
 | TB04addr4bitVer3.kicad_sch | トップシート（電源・WEデコード） |
 | RS.kicad_sch | レジスタ群①：汎用レジスタ R0〜R3（74HC161 × 4 ＋ 74HC253 × 4） |
 | RS01.kicad_sch | レジスタ群②：PC・入出力ポート・OPR から ALU への出力（即値） |
-| ROM_ALU_Decoder.kicad_sch | 28C256 × 4 + PC + フラグ |
+| ROM_ALU_Decoder.kicad_sch | ROM（28C256 × 4）・位相カウンタ（74HC161 でクロックを数えフェーズ信号を作る）・フラグ |
 | ALU.kicad_sch | LEDモニターインターフェース |
 | clk_rst.kicad_sch | クロック・リセット |
 | TB04addr4bitVer3.kicad_pcb | PCBレイアウト |
