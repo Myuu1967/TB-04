@@ -83,3 +83,9 @@ ver2/ブログ記事用/
 ver2/layout_ctrl*.svg
 ver2/pico_codes/*.png
 ver2/pico_codes/captures/
+
+# ver2 の採用しなかった基板分割案と凍結マスター（ローカルには残す・2026-11-08に公開から外した）
+ver2/hardware/TB04addr8bit/
+ver2/hardware/基板分割_0824/
+ver2/hardware/基板分割_0825/
+ver2/hardware/基板分割_0827/TB04_carry/
