@@ -93,3 +93,5 @@ ver2/hardware/基板分割_0827/TB04_carry/
 !peripherals/clock4096/clock4096.pdf
 !ver2/ver2_decoder_truthtable.csv
 !ver2/hardware/基板分割_0827/TB04addr8bit_*/TB04addr8bit_*.pdf
+!ver1/hardware/4bit-addr/TB04addr4bitVer3.pdf
+!ver1/hardware/logicAnalyzer/logicAnalyzer.pdf

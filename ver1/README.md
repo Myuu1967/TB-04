@@ -16,6 +16,11 @@ ver1/
 
 ハードウェアの詳細・KiCAD ライブラリの登録方法は [`hardware/README.md`](hardware/README.md) を参照してください。KiCAD は 9.0 で作成しています。
 
+KiCAD がなくても見られるように、回路図の PDF を置いています。
+
+- CPU 本体: [`TB04addr4bitVer3.pdf`](hardware/4bit-addr/TB04addr4bitVer3.pdf)（6ページ・KiCAD 9.0 から出力）
+- ロジックアナライザ: [`logicAnalyzer.pdf`](hardware/logicAnalyzer/logicAnalyzer.pdf)（1ページ・KiCAD 10.0 から出力）
+
 ## アーキテクチャ
 
 | 項目 | 仕様 |
