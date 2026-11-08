@@ -113,6 +113,9 @@ ver2/
       TB04addr8bit_ctrl/   制御板
       TB04addr8bit_alu/    演算板
     footprints/       カスタムフットプリント
+  sim/                Python による CPU モデル・アセンブラ・デモプログラム・テスト
+  tools/              ROM データ生成ツール（ALU / デコーダ / ブリングアップ用テスト ROM）と生成済み ROM
+  ver2_decoder_truthtable.csv   デコーダ ROM の真理値表（gen_decoder_rom.py の入力）
   pico_codes/         Pico PIO 高速ロジックアナライザ（8ns 分解能）
 ```
 
@@ -128,6 +131,34 @@ KiCAD は 10.0 で作成しています（9.0 では開けません）。
 
 - **クロック**：IF 板の水晶発振（32.768kHz＋74HC4060）は、周波数が安定しなかったため使っていません。代わりに外付けのクロック供給ユニット [`clock4096`](../peripherals/clock4096/) からクロックを入れています。IF 板の手動クロックの信号をユニットへ回し、ユニットのスライドスイッチで切り替えた出力を IF 板の `CLK_CPU` につないでいます。
 - **RAM の書込パルス**：CALL でスタックに誤って書き込む不具合の対策として、制御板の `U1509` の 9 番ピンを浮かせ、パッドとの間に 1kΩ を直列に入れ、9 番ピンと GND の間に 220pF をつないでいます（クロックを約 150ns 遅らせる）。経緯は完成編の記事を参照してください。
+
+## シミュレータと ROM 生成ツール
+
+Python 3 の標準ライブラリだけで動きます。
+
+```
+cd ver2/sim
+python test_cpu.py                     # 全命令のテスト
+python sim.py --prog counter --trace   # 1命令ごとに PC・SP・R0〜R3・C/Z・OUT を表示
+python cpu_phase.py --prog countdown   # 4フェーズ（FCH1/FCH2/DCR/EXE）単位で実行
+```
+
+デモ（`--prog`）は `counter`・`led_flow`・`fibonacci`・`ramen_timer`・`kakezan`・`life_ca`・`pred_prey`・`calc`・`sec_count`・`showcase`（展示デモ）です。プログラムは `programs.py` に Python のコードで書いています。
+
+`cpu.py`（命令単位）は、命令の実行結果（レジスタ・フラグ・RAM・OUT）が実機と一致します（テスト ROM の期待値をこのモデルで求め、実機は全バンク合格）。実機との違いは次のとおりです。
+
+- リセット直後の C/Z・OUT・RAM を 0 にしています（実機では不定）。
+- `cpu_phase.py` は POP/RET の SP 更新などを EXE にまとめており、フェーズ単位では実機と異なるところがあります。
+- ns 単位のタイミング（ゲート遅延やヒゲ）は扱いません。
+
+```
+cd ver2/tools
+python gen_alu_rom.py       # alu_rom.bin / .hex（ALU ROM U603）
+python gen_decoder_rom.py   # decoder_romA/B/C.bin / .hex（デコーダ ROM U704/U703/U706）
+python gen_test_rom.py      # test_rom.bin / .hex（命令 ROM U604 用・16バンク）
+```
+
+テスト ROM は 1バンク＝256バイトで、制御板のロータリースイッチ `SW601` の位置がバンク番号になります。バンク 0〜14 は命令を依存順に1グループずつ確かめるテスト、バンク 15 は展示デモ（`showcase`）です。
 
 ## 高速ロジックアナライザ
 

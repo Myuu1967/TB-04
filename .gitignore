@@ -71,9 +71,8 @@ peripherals/7segIF/DEVLOG.md
 peripherals/clock4096/DEVLOG.md
 ver2/ver2設計仕様ドラフト.md
 ver2/ver2_ISA.csv
-# ver2 実装成果物（sim・生成ツール・生成ROM）は設計凍結まで非公開。公開時に解除
-ver2/sim/
-ver2/tools/
+# ver2 の GUI シミュレータは非公開（BOOTH での配布を検討）。sim の他と tools は 2026-11-08 に公開
+ver2/sim/sim_TB04ver2_GUI.py
 
 # ブログ用デモ素材・動画（容量が大きいためローカル管理）
 ver1/ブログ記事用/
@@ -92,3 +91,4 @@ ver2/hardware/基板分割_0827/TB04_carry/
 
 # 公開する回路図PDF
 !peripherals/clock4096/clock4096.pdf
+!ver2/ver2_decoder_truthtable.csv
