@@ -218,4 +218,5 @@ python gen_test_rom.py      # test_rom.bin / .hex（命令 ROM U604 用・16バ�
 - 設計編「【TB-04】4bitCPUの設計（addr 8bit ver）」: <https://tanuki-bayashin.hatenablog.com/entry/2026/11/03/164404>
 - 回路図とPCB設計編「【TB-04】4bitCPUの回路図とPCB設計(addr 8bit ver)」: <https://tanuki-bayashin.hatenablog.com/entry/2026/11/05/082909>
 - 完成編「【TB-04】4bitCPUの完成（addr 8bit ver）」: <https://tanuki-bayashin.hatenablog.com/entry/2026/11/07/110004>
+- 番外編「使ったIC」: <https://tanuki-bayashin.hatenablog.com/entry/2026/11/08/191106>
 - デモ動画: <https://www.youtube.com/watch?v=xa86bRDYqcg>
