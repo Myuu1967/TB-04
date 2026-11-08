@@ -4,7 +4,7 @@
 TD4 ライクなアーキテクチャをベースに、ALU とデコーダを ROM で実装した独自設計の 4bit CPU です。
 データ幅は 4bit のまま、世代ごとにアドレス空間を広げています。
 
-回路図・PCB（KiCAD）とプログラム・ツール類を、世代ごとのディレクトリにまとめています。
+回路図・PCB（KiCAD）とプログラム・ツール類を、世代ごとのディレクトリにまとめています。回路図は KiCAD がなくても見られるよう PDF も置いています（各 README からリンク）。
 
 ## 世代
 
@@ -29,12 +29,12 @@ TD4 ライクなアーキテクチャをベースに、ALU とデコーダを RO
 ## ディレクトリ構成
 
 ```
-ver1/         アドレス 4bit 版（回路図・PCB・アセンブラ・シミュレータ・サンプルプログラム）
+ver1/         アドレス 4bit 版（回路図・PCB・アセンブラ・シミュレータ・サンプルプログラム・Pico 簡易ロジックアナライザ）
 ver2/         アドレス 8bit 版（回路図・PCB・シミュレータ・ROM 生成ツール・高速ロジックアナライザ）
 peripherals/  世代共通の周辺ユニット（7segIF・clock4096）
 ```
 
-KiCAD のバージョンは、ver1 が 9.0、ver2 と 7segIF が 10.0 です。
+KiCAD のバージョンは、ver1 が 9.0（ロジックアナライザのみ 10.0）、ver2・7segIF・clock4096 が 10.0 です。
 
 ## 資料
 
@@ -53,6 +53,7 @@ ver2
 - 設計編「【TB-04】4bitCPUの設計（addr 8bit ver）」: <https://tanuki-bayashin.hatenablog.com/entry/2026/11/03/164404>
 - 回路図とPCB設計編「【TB-04】4bitCPUの回路図とPCB設計(addr 8bit ver)」: <https://tanuki-bayashin.hatenablog.com/entry/2026/11/05/082909>
 - 完成編「【TB-04】4bitCPUの完成（addr 8bit ver）」: <https://tanuki-bayashin.hatenablog.com/entry/2026/11/07/110004>
+- デモ動画: <https://www.youtube.com/watch?v=xa86bRDYqcg>
 
 周辺機器
 - 「【TB-04用】7SEG表示装置（16進）の製作」: <https://tanuki-bayashin.hatenablog.com/entry/2026/08/18/172152>
