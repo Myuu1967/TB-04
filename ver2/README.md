@@ -152,6 +152,9 @@ ver2/
   tools/              ROM データ生成ツール（ALU / デコーダ / ブリングアップ用テスト ROM）と生成済み ROM
   ver2_decoder_truthtable.csv   デコーダ ROM の真理値表（gen_decoder_rom.py の入力）
   pico_codes/         Pico PIO 高速ロジックアナライザ（8ns 分解能）
+  IC_LIST.md          IC 68個の型式ごとの説明と使い方
+  tb04_ver2_block.svg / .png   ブロック図（tools/gen_block_diagram.py で生成）
+  tb04_ver2.jpg       実機の写真
 ```
 
 KiCAD は 10.0 で作成しています（9.0 では開けません）。
