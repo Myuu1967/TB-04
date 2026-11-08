@@ -12,7 +12,7 @@
 | 表示器 | LTS-6960HR（コモンアノード・赤・1桁） |
 | 電源 | 5V 単一（TB-04 の 74HC 系と共通） |
 | デコード方式 | MCU のルックアップテーブル（`0`〜`F` → セグメントパターン） |
-| コネクタ | J1（TB-04 OUT 入力）／J2（WCH-Link ＋ UART 兼用ヘッダ） |
+| コネクタ | J2（TB-04 OUT 入力）／J1（WCH-Link ＋ UART 兼用ヘッダ） |
 
 ## 外観と回路図
 
@@ -29,7 +29,7 @@
 
 ```
 peripherals/7segIF/
-  hardware/            回路図・基板（KiCAD, CC BY-SA 4.0）※完成時にコピー
+  hardware/            回路図・基板（KiCAD, CC BY-SA 4.0）
   firmware/
     main.c             通常版（0〜F をリアルタイム表示）
     main_dp_blink.c    お遊び版（DP を 0.5 秒周期で点滅）
@@ -39,7 +39,7 @@ peripherals/7segIF/
 
 ## 実配線
 
-- 入力（TB-04 OUT → J1）: `D0=PC0  D1=PC1  D2=PC2  D3=PC3`（PORTC[3:0]）
+- 入力（TB-04 OUT → J2）: `D0=PC0  D1=PC1  D2=PC2  D3=PC3`（PORTC[3:0]）
 - 出力（→ 7セグ, 各3.3K）: `a=PD0 b=PD1 c=PD2 d=PD3 e=PD4 f=PD5 g=PD6 DP=PD7`（PORTD[7:0]）
 - コモンアノードのため、セグメントは MCU ピン LOW(0) で点灯。
 
