@@ -8,6 +8,7 @@
 出力:
   test_rom.bin / test_rom.hex   … 4096バイト（16バンク）。T48 で 28C256 の先頭へ書く
   --json PATH                   … 期待値トレース（Word 資料の材料）
+  --demo                        … 展示用デモROM demo_rom.bin / .hex（DEMO_BANKS）
 
 期待値は sim/cpu.py で求める。実機はリセットでレジスタ（161の~MR）を0にするが、
 C/Z（74の CLR/PR は VDD 固定）・OUT（377）・RAM は初期化しないので、
@@ -283,6 +284,43 @@ BANKS = [
 
 
 # ---------------------------------------------------------------------
+# 展示用デモROM（--demo）。割当は ver2/DEVLOG 2026-11-08(3)。
+# 9 以降は新作ができるまで既存デモで埋める（後で差し替える）。
+# ---------------------------------------------------------------------
+def clear_out(p, ports=(1, 2, 3)):
+    """先頭に OUTI port,0 を足す（OUT はリセットで不定＝使わないポートの7セグを消す）。"""
+    q = Asm()
+    for port in ports:
+        q.OUTI(port, 0)
+    off = len(q.prog) * 2
+    q.labels = {k: v + off for k, v in p.labels.items()}
+    q.prog += p.prog
+    return q
+
+
+def demo(name, clear=True):
+    def fn():
+        import programs
+        p, _ = programs.PROGRAMS[name]()
+        return clear_out(p) if clear else p
+    return fn
+
+
+DEMO_BANKS = [
+    ('showcase', demo('showcase', clear=False), '4Hz で単語→1kHz でカウンタ'),
+    ('counter', demo('counter'), 'IN0=0 でダウン／非0 でアップ'),
+    ('led_flow', demo('led_flow'), 'IN0=0 で8コマ／非0 で4コマ'),
+    ('fibonacci', demo('fibonacci'), 'mod16・周期24'),
+    ('life_ca', demo('life_ca'), '周期15・IN0 の下位3bitでセル注入'),
+    ('pred_prey', demo('pred_prey'), 'OUT0 に草食・肉食を交互に'),
+    ('kakezan', demo('kakezan'), '4×4 の16積を出して停止'),
+    ('ramen_timer', demo('ramen_timer'), '1→3→点滅→F で停止'),
+    ('sec_count', demo('sec_count'), '1024Hz 専用・1秒ごとに+1'),
+    ('calc', demo('calc', clear=False), '8bit 加減算（IN2 がコマンド）'),
+] + [('showcase', demo('showcase', clear=False), '空き（後で差し替え）')] * 6
+
+
+# ---------------------------------------------------------------------
 def assemble(p):
     """Asm に NOPX/DATA の擬似命令を足して組み立てる。"""
     out = []
@@ -339,7 +377,21 @@ def merge(r0, r1):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--json')
+    ap.add_argument('--demo', action='store_true', help='展示用デモROM（demo_rom.bin/hex）を出す')
     args = ap.parse_args()
+    here = os.path.dirname(os.path.abspath(__file__))
+
+    if args.demo:
+        image = bytearray(BANK_SIZE * N_BANKS)
+        for n, (name, fn, look) in enumerate(DEMO_BANKS):
+            rom = assemble(fn())
+            assert len(rom) <= ROM_LIMIT, f'バンク{n} が 0xC0 を超えた（{len(rom):#x}）'
+            image[n * BANK_SIZE:n * BANK_SIZE + len(rom)] = bytes(rom)
+            print(f'バンク{n:2d} {name:<12} {len(rom):3d}バイト  {look}')
+        with open(os.path.join(here, 'demo_rom.bin'), 'wb') as f:
+            f.write(image)
+        write_intel_hex(image, os.path.join(here, 'demo_rom.hex'))
+        return
 
     image = bytearray(BANK_SIZE * N_BANKS)
     report = []
@@ -356,7 +408,6 @@ def main():
                        'size': len(rom), 'in_ports': in_ports, 'rows': rows})
         print(f'バンク{n:2d} {name:<18} {len(rom):3d}バイト  {len(rows):3d}命令')
 
-    here = os.path.dirname(os.path.abspath(__file__))
     with open(os.path.join(here, 'test_rom.bin'), 'wb') as f:
         f.write(image)
     write_intel_hex(image, os.path.join(here, 'test_rom.hex'))
