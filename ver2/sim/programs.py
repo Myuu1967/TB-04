@@ -535,6 +535,223 @@ def collatz():
     return p, 'コラッツ3n+1（16bit・DIPで初期値／0なら27・1に着いたら手数を表示）'
 
 
+def ecosystem():
+    """生態系ゲーム（ロトカ・ヴォルテラ型の個体数の振動に、キーで介入する）。
+
+    草食 x・肉食 y（8bit・16進2桁。上段 OUT2 OUT3＝草食／下段 OUT0 OUT1＝肉食）。1世代:
+      h  = x*y の上位バイト（＝x*y/256。y 回の足し算で求める）
+      x' = min(255, x + x/8) − 2h      （0以下＝草食の絶滅）
+      y' = min(255, y − y/8 + h)       （0＝肉食の絶滅）
+    放っておくと周期47世代のサイクル（草 8〜86・肉 7〜49。肉が少し遅れて追いかける）。
+    ÷8＝左へ1つずらして上位ニブル（はみ出した1ビットは ADDI x,0 で拾う）。
+    キー（IN3・世代の変わり目で読む＝表示が変わるまで押す）: bit0=草を植える(+16)
+      bit1=狩る(肉食−16。狩りすぎると絶滅) bit2/bit3=最初から。絶滅＝表示 0000・どれかのキーで最初から。
+    1世代は y 回のループ＝肉食が多いほど遅い。クロック目安＝2048Hz（1世代 0.1〜0.6秒）。
+    R1R2=x R3R4=y R5R6=h R7R0=作業 RAM 0xC0-C1＝y の退避
+    """
+    p = Asm()
+    p.label('start')
+    p.MOVI(1, 4); p.MOVI(2, 0); p.MOVI(3, 1); p.MOVI(4, 0)   # x=0x40 y=0x10
+    p.label('loop')
+    p.OUT(2, 1); p.OUT(3, 2); p.OUT(0, 3); p.OUT(1, 4)
+    p.IN(7, 3); p.JZ('gen')
+    p.label('kr')
+    p.IN(0, 3); p.JNZ('kr')
+    p.SHR(7); p.JC('plant'); p.SHR(7); p.JNC('start')       # bit1 でも bit0 でもなければ最初から
+    p.SEC(); p.SUBI(3, 1); p.JNC('dead'); p.JMP('loop')     # 狩る：y −16
+    p.label('plant')
+    p.CLC(); p.ADDI(1, 1); p.JNC('loop')                    # 草を植える：x +16
+    p.MOVI(1, 15); p.MOVI(2, 15); p.JMP('loop')
+    p.label('gen')
+    p.ST(0xC0, 3); p.ST(0xC1, 4)
+    p.MOVI(5, 0); p.MOVI(6, 0); p.MOVI(7, 0); p.MOVI(0, 0)
+    p.label('pl')                                           # P(R5R6R7R0) = x*y
+    p.SEC(); p.SUBI(4, 1); p.SUBI(3, 0); p.JNC('pd')
+    p.CLC(); p.ADD(0, 2); p.ADD(7, 1); p.ADDI(6, 0); p.ADDI(5, 0)
+    p.JMP('pl')
+    p.label('pd')
+    p.LD(3, 0xC0); p.LD(4, 0xC1)                            # h = R5R6
+    # y' = y − y/8 + h
+    p.MOV(7, 3); p.MOV(0, 4); p.CLC(); p.ADD(0, 0); p.ADD(7, 7)
+    p.MOVI(0, 0); p.ADDI(0, 0)                              # y/8 = R0R7
+    p.SEC(); p.SUB(4, 7); p.SUB(3, 0)
+    p.CLC(); p.ADD(4, 6); p.ADD(3, 5); p.JNC('y1')
+    p.MOVI(3, 15); p.MOVI(4, 15)
+    p.label('y1')
+    # x' = x + x/8 − 2h
+    p.MOV(7, 1); p.MOV(0, 2); p.CLC(); p.ADD(0, 0); p.ADD(7, 7)
+    p.MOVI(0, 0); p.ADDI(0, 0)                              # x/8 = R0R7
+    p.CLC(); p.ADD(2, 7); p.ADD(1, 0); p.JNC('x1')
+    p.MOVI(1, 15); p.MOVI(2, 15)
+    p.label('x1')
+    p.CLC(); p.ADD(6, 6); p.ADD(5, 5); p.JC('dead')         # 2h が 255 超＝確実に絶滅
+    p.SEC(); p.SUB(2, 6); p.SUB(1, 5); p.JNC('dead')
+    p.MOV(0, 1); p.OR(0, 2); p.JZ('dead')
+    p.MOV(0, 3); p.OR(0, 4); p.JNZ('loop')
+    p.label('dead')                                         # 絶滅＝0000：キーで最初から
+    for port in range(4):
+        p.OUTI(port, 0)
+    p.label('dk')
+    p.IN(0, 3); p.JZ('dk')
+    p.label('dr')
+    p.IN(0, 3); p.JNZ('dr'); p.JMP('start')
+    return p, '生態系ゲーム（草食/肉食の振動・IN3 bit0=草を植える bit1=狩る bit3=最初から）'
+
+
+def melody():
+    """音と光：きらきら星（著作権切れの旋律）。曲・音の長さ・テンポはすべてこの ROM が持つ。
+
+    OUT0＝音程（0=休符 1〜15=ド〜2オクターブ上のド・ハ長調の白鍵）。Pico は OUT0 を読んで
+    音（PWM）と色（NeoPixel）に変えるだけ（pico_codes/soundLight.py）。判断も記憶もしない。
+    音の終わりに OUT0 を一瞬 0 にする＝同じ音が続いても Pico が鳴らし直せる。
+    TB-04 が鳴らしている証拠＝クロックを変えるとテンポが変わる・マニュアルクロックで1音ずつ進む。
+    曲＝A B B A の4フレーズ（A＝ドドソソララソ ファファミミレレド／B＝ソソファファミミレ）。
+    クロック目安＝1024Hz（四分音符 約0.6秒）。RAM 0xC0＝待ちカウンタ
+    """
+    p = Asm()
+    for port in (1, 2, 3):
+        p.OUTI(port, 0)
+    p.label('song')
+    p.CALL('A'); p.CALL('B'); p.CALL('B'); p.CALL('A')
+    p.CALL('beat2')                               # 1曲ごとに少し休む（OUT0=0 のまま）
+    p.JMP('song')
+
+    def phrase(notes):
+        for n in notes:                           # 負の数＝2拍
+            p.OUTI(0, abs(n)); p.CALL('beat2' if n < 0 else 'beat')
+        p.RET()
+    p.label('A')
+    phrase((1, 1, 5, 5, 6, 6, -5, 4, 4, 3, 3, 2, 2, -1))
+    p.label('B')
+    phrase((5, 5, 4, 4, 3, 3, -2))
+
+    p.label('beat2')                              # 2拍＝1拍ぶん伸ばしてから beat
+    p.CALL('hold')
+    p.label('beat')
+    p.CALL('hold')
+    p.OUTI(0, 0)                                  # 音の区切り（次の OUTI までの数命令だけ 0）
+    p.RET()
+    p.label('hold')                               # 約150命令
+    p.STI(0xC0, 4)
+    p.label('h1')
+    p.MOVI(0, 0); p.CLC()
+    p.label('h0')
+    p.ADDI(0, 1); p.JNC('h0')
+    p.LD(0, 0xC0); p.SEC(); p.SUBI(0, 1); p.ST(0xC0, 0); p.JNZ('h1')
+    p.RET()
+    return p, '音と光：きらきら星（OUT0=音程 1〜15・0=休符 → Pico が音と色に変える）'
+
+
+# ---------------------------------------------------------------------
+# 計算機2本の共通部品（キー＝MM74C922：コード→IN0・DA→IN1 bit0＝DEVLOG 08-16(2)）
+# キーコード: 0-9=数字 A=＋ B=− C=× D=÷ E=＝/ENT F=C（コード＝値になるようにキーへ貼る）
+# 数は 8bit（0〜255）を R1R2（上位・下位）に持つ。表示＝10進3桁（OUT3 OUT0 OUT1）、
+# OUT2＝演算子（A/b/C/d）か E（255超・負・÷0・スタックの積みすぎ/空）。
+# ---------------------------------------------------------------------
+def _calc_main(p):
+    """main: X を10進3桁で表示 → キーを1つ読む（R7=コード）→ R0=コード-10・C/Z を立てて抜ける。"""
+    p.label('main')
+    p.MOV(5, 1); p.MOV(6, 2)
+    p.MOVI(3, 6); p.MOVI(4, 4); p.CALL('divr'); p.OUT(3, 0)      # 百
+    p.MOVI(3, 0); p.MOVI(4, 10); p.CALL('divr'); p.OUT(0, 0); p.OUT(1, 6)
+    p.label('key')
+    p.IN(0, 1); p.JZ('key'); p.IN(7, 0)
+    p.label('kr')
+    p.IN(0, 1); p.JNZ('kr')                       # 離すのを待つ
+    p.MOV(0, 7); p.SEC(); p.SUBI(0, 10)           # C=0 なら数字
+
+
+def _calc_ops(p, div=True):
+    """X(R1R2) = A(R3R4) op X。R0 = op コード（A=1010 B=1011 C=1100 D=1101）。"""
+    p.SHR(0); p.JC('odd'); p.SHR(0); p.JC('add')
+    p.MOVI(5, 0); p.MOVI(6, 0)                    # ×：A を X 回足す
+    p.label('ml')
+    p.SEC(); p.SUBI(2, 1); p.SUBI(1, 0); p.JNC('md')   # X-1（借り＝X は 0 だった）
+    p.CLC(); p.ADD(6, 4); p.ADD(5, 3); p.JC('err'); p.JMP('ml')
+    p.label('odd')
+    p.SHR(0); p.JNC('div' if div else 'err')      # ÷ が無い版では D は E
+    p.SEC(); p.SUB(4, 2); p.SUB(3, 1); p.JNC('err')   # −
+    p.MOV(5, 3); p.MOV(6, 4)
+    p.label('md')
+    p.MOV(1, 5); p.MOV(2, 6); p.JMP('main')
+    if div:
+        p.label('div')
+        p.MOV(0, 1); p.OR(0, 2); p.JZ('err')
+        p.MOV(5, 3); p.MOV(6, 4); p.MOV(3, 1); p.MOV(4, 2); p.CALL('divr')
+        p.MOV(1, 7); p.MOV(2, 0); p.JMP('main')
+    p.label('add')                                # ＋（あふれたら err へ落ちる）
+    p.CLC(); p.ADD(2, 4); p.ADD(1, 3); p.JNC('main')
+
+
+def _calc_tail(p):
+    p.label('err')
+    p.OUTI(2, 0xE); p.JMP('zero')
+    p.label('divr')                               # W(R5R6) ÷ N(R3R4) → 商 R7R0・余り W
+    p.MOVI(7, 0); p.MOVI(0, 0)
+    p.label('dl')
+    p.SEC(); p.SUB(6, 4); p.SUB(5, 3); p.JNC('dd')
+    p.ADDI(0, 0); p.ADDI(7, 0); p.JMP('dl')       # C=1 なので ADDI x,0 で +1
+    p.label('dd')
+    p.ADD(6, 4); p.ADD(5, 3); p.RET()             # 引きすぎを戻す
+
+
+def calc_normal():
+    """ふつうの計算機「数 演算子 数 ＝」。1キー1桁・四則・結果は 0〜255（10進3桁）。
+
+    ＝のあと結果に続けて「演算子 数 ＝」とつなげられる。数字キーは X をその数字に置き換える。
+    F(C)＝0 に戻す。E は 255超・負・÷0（商は切り捨て）。RAM 0xC0-C1＝A 0xC2＝演算子
+    """
+    p = Asm()
+    p.STI(0xC0, 0); p.STI(0xC1, 0); p.STI(0xC2, 0xA)   # 演算子の前に＝でも X のまま
+    p.label('clear')
+    p.OUTI(2, 0)
+    p.label('zero')
+    p.MOVI(1, 0); p.MOVI(2, 0)
+    _calc_main(p)
+    p.JNC('digit')
+    p.SUBI(0, 4); p.JZ('equal'); p.JC('clear')
+    p.ST(0xC0, 1); p.ST(0xC1, 2); p.ST(0xC2, 7); p.OUT(2, 7)   # 演算子：A を取っておく
+    p.JMP('zero')
+    p.label('digit')
+    p.MOVI(1, 0); p.MOV(2, 7); p.JMP('main')
+    p.label('equal')
+    p.OUTI(2, 0); p.LD(3, 0xC0); p.LD(4, 0xC1); p.LD(0, 0xC2)
+    _calc_ops(p)
+    _calc_tail(p)
+    return p, 'ふつうの計算機（1キー1桁・四則・0〜255／キー: 0-9 A+ B− C× D÷ E= FC）'
+
+
+def calc_rpn():
+    """逆ポーランド記法の計算機。ハードウェアスタック（PUSH/POP）をそのまま演算スタックに使う。
+
+    数字キー＝X を積んでから X をその数字に（1キー1桁。「3 4 ＋」で7）。E(ENT)＝X をもう1つ積む
+    （「7 ENT ×」で49）。A＋ B− C×＝積んだ数を下ろして X と計算。F(C)＝X を0に。
+    積めるのは3つまで（8段のうち2段×3＋表示の CALL 1段）。積みすぎ・空で演算は E。
+    ÷ は96命令に入らないので無し（D を押すと E）。RAM 0xC3＝積んだ数
+    """
+    p = Asm()
+    p.STI(0xC3, 0)
+    p.label('clear')
+    p.OUTI(2, 0)
+    p.label('zero')
+    p.MOVI(1, 0); p.MOVI(2, 0)
+    _calc_main(p)
+    p.JNC('digit')
+    p.SUBI(0, 4); p.JZ('digit'); p.JC('clear')   # E(ENT)は数字と同じく積む
+    p.OUT(2, 7)                                   # 演算：Y を下ろす（空なら E）
+    p.LD(0, 0xC3); p.SEC(); p.SUBI(0, 1); p.JNC('err'); p.ST(0xC3, 0)
+    p.POP(4); p.POP(3)
+    p.MOV(0, 7)
+    _calc_ops(p, div=False)
+    _calc_tail(p)
+    p.label('digit')                              # X を積む（3つまで）
+    p.LD(0, 0xC3); p.SEC(); p.SUBI(0, 3); p.JZ('err'); p.ADDI(0, 4); p.ST(0xC3, 0)
+    p.PUSH(1); p.PUSH(2)
+    p.MOV(0, 7); p.SEC(); p.SUBI(0, 14); p.JZ('main')   # ENT は複製だけ
+    p.MOVI(1, 0); p.MOV(2, 7); p.OUTI(2, 0); p.JMP('main')
+    return p, '逆ポーランド計算機（スタックで演算・1キー1桁・＋−×・3段／E=ENT FC）'
+
+
 PROGRAMS = {
     'counter': counter,
     'led_flow': led_flow,
@@ -551,4 +768,8 @@ PROGRAMS = {
     'kaprekar': kaprekar,
     'rule_ca': rule_ca,
     'collatz': collatz,
+    'calc_normal': calc_normal,
+    'calc_rpn': calc_rpn,
+    'ecosystem': ecosystem,
+    'melody': melody,
 }

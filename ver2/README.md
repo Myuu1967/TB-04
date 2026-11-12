@@ -153,7 +153,7 @@ ver2/
   sim/                Python による CPU モデル・アセンブラ・デモプログラム・テスト
   tools/              ROM データ生成ツール（ALU / デコーダ / ブリングアップ用テスト ROM）と生成済み ROM
   ver2_decoder_truthtable.csv   デコーダ ROM の真理値表（gen_decoder_rom.py の入力）
-  pico_codes/         Pico PIO 高速ロジックアナライザ（8ns 分解能）
+  pico_codes/         Pico PIO 高速ロジックアナライザ（8ns 分解能）・音と光デモの Pico 側
   IC_LIST.md          IC 68個の型式ごとの説明と使い方
   tb04_ver2_block.svg / .png   ブロック図（tools/gen_block_diagram.py で生成）
   tb04_ver2.jpg       実機の写真
@@ -192,7 +192,7 @@ python sim.py --prog counter --trace   # 1命令ごとに PC・SP・R0〜R3・C/
 python cpu_phase.py --prog countdown   # 4フェーズ（FCH1/FCH2/DCR/EXE）単位で実行
 ```
 
-デモ（`--prog`）は `counter`・`led_flow`・`fibonacci`・`ramen_timer`・`kakezan`・`life_ca`・`pred_prey`・`calc`・`sec_count`・`showcase`（展示デモ）です。プログラムは `programs.py` に Python のコードで書いています。
+デモ（`--prog`）は ver1 から移植した `counter`・`led_flow`・`fibonacci`・`ramen_timer`・`kakezan`・`life_ca`・`pred_prey` と、ver2 用の `calc`・`sec_count`・`showcase`（展示デモ）・`hanoi`・`ishitori`・`kaprekar`・`rule_ca`・`collatz`・`calc_normal`・`calc_rpn`・`ecosystem`・`melody` です。プログラムは `programs.py` に Python のコードで書いています（各デモの説明は関数の docstring）。
 
 `cpu.py`（命令単位）は、命令の実行結果（レジスタ・フラグ・RAM・OUT）が実機と一致します（テスト ROM の期待値をこのモデルで求め、実機は全バンク合格）。実機との違いは次のとおりです。
 
@@ -205,9 +205,25 @@ cd ver2/tools
 python gen_alu_rom.py       # alu_rom.bin / .hex（ALU ROM U603）
 python gen_decoder_rom.py   # decoder_romA/B/C.bin / .hex（デコーダ ROM U704/U703/U706）
 python gen_test_rom.py      # test_rom.bin / .hex（命令 ROM U604 用・16バンク）
+python gen_test_rom.py --demo   # demo_rom.bin / .hex（展示用デモ ROM・16バンク）
 ```
 
 テスト ROM は 1バンク＝256バイトで、制御板のロータリースイッチ `SW601` の位置がバンク番号になります。バンク 0〜14 は命令を依存順に1グループずつ確かめるテスト、バンク 15 は展示デモ（`showcase`）です。
+
+デモ ROM のバンクは次のとおりです（シミュレータで確認済み・実機は確認中）。
+
+| バンク | デモ | バンク | デモ |
+|---|---|---|---|
+| 0 | showcase（単語→10進4桁カウンタ） | 8 | ishitori（石取り・CPU は必勝法） |
+| 1 | counter | 9 | kaprekar（カプレカ数 6174） |
+| 2 | led_flow | 10 | rule_ca（16セルの Rule90/30） |
+| 3 | fibonacci | 11 | collatz（3n+1・16bit） |
+| 4 | life_ca | 12 | calc_normal（ふつうの計算機） |
+| 5 | pred_prey | 13 | calc_rpn（逆ポーランド記法の計算機） |
+| 6 | kakezan | 14 | ecosystem（生態系ゲーム） |
+| 7 | hanoi（ハノイの塔4枚・再帰） | 15 | melody（音と光・Pico が音源） |
+
+入力は、ゲーム（8・10・14）が IN3 のスイッチ、カプレカとコラッツが DIP（初期値）、計算機が 16キーのキーパッド（MM74C922：キーコード→IN0、押下→IN1 の bit0）です。キーパッドをつなぐときは IN0・IN1 の DIP を OFF にします。
 
 ## 高速ロジックアナライザ
 
