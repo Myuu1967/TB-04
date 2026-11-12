@@ -316,8 +316,14 @@ DEMO_BANKS = [
     ('kakezan', demo('kakezan'), '4×4 の16積を出して停止'),
     ('ramen_timer', demo('ramen_timer'), '1→3→点滅→F で停止'),
     ('sec_count', demo('sec_count'), '1024Hz 専用・1秒ごとに+1'),
+    ('hanoi', demo('hanoi', clear=False), '4枚・CALL/RET再帰・512Hz'),
+    ('ishitori', demo('ishitori', clear=False), 'IN3: 1個/2個/3個/新ゲーム・1024Hz'),
+    ('kaprekar', demo('kaprekar', clear=False), 'DIPで初期値→6174・1024Hz'),
+    ('rule_ca', demo('rule_ca', clear=False), 'Rule90/30・IN3 bit0=90 他=30・1024Hz'),
+    ('collatz', demo('collatz', clear=False), 'DIPで初期値(0なら27)・1024Hz'),
     ('calc', demo('calc', clear=False), '8bit 加減算（IN2 がコマンド）'),
-] + [('showcase', demo('showcase', clear=False), '空き（後で差し替え）')] * 6
+    ('showcase', demo('showcase', clear=False), '空き（後で差し替え）'),
+]
 
 
 # ---------------------------------------------------------------------
