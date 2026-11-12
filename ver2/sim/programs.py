@@ -227,23 +227,23 @@ def showcase():
 
 
 def hanoi():
-    """ハノイの塔4枚（CALL/RET の再帰）。棒＝OUT0・OUT1・OUT2、ビット＝円盤（bit3が最大）。
+    """ハノイの塔4枚（CALL/RET の再帰）。棒0・1・2＝OUT0・OUT1・OUT3（OUT2は常に0）。
 
-    OUT3＝手数（1〜F＝15手）。解き終えたら少し待って、逆向きにもう一度解く（くり返し）。
+    棒の表示は積み上げ式＝載っている枚数だけ bit0（いちばん下）から点ける（4枚=F 3枚=7 2枚=3 1枚=1）。
+    円盤の大きさは表示しない。解き終えたら少し待って、逆向きにもう一度解く（くり返し）。
     引数はスタックに積まない（スタックは戻り番地だけ・深さ＝枚数）:
       棒の番号はワンホット（1/2/4）で R1=移動元・R2=移動先・R3=作業用。
       再帰の前にレジスタを入れ替えてCALLし、戻ったら入れ替え直す。
       R4＝円盤のマスク。ROR で1段小さく、ROL で元に戻す（SHR だと1→0で情報が消える）。
-    移動＝(移動元|移動先) の棒に R4 を XOR（取る側は消え、置く側は点く）。
-    R0=作業 R5-R7=棒0-2 RAM 0xC0=手数 0xC1=待ちの外側カウンタ
+    移動＝移動元の棒を SHR（1枚減る）、移動先の棒を SEC＋ADD x,x（2x+1＝1枚増える）。
+    R0=作業 R5-R7=棒0-2 RAM 0xC1=待ちの外側カウンタ
     クロック目安＝512Hz（1手約1秒）。
     """
     p = Asm()
     p.MOVI(1, 1); p.MOVI(2, 4); p.MOVI(3, 2)     # 棒0→棒2（作業用は棒1）
     p.MOVI(5, 0xF); p.MOVI(6, 0); p.MOVI(7, 0)
-    p.OUT(0, 5); p.OUT(1, 6); p.OUT(2, 7)
+    p.OUT(0, 5); p.OUT(1, 6); p.OUTI(2, 0); p.OUT(3, 7)
     p.label('main')
-    p.STI(0xC0, 0); p.OUTI(3, 0)
     p.MOVI(4, 8)                                  # いちばん大きい円盤から
     p.CALL('delay')
     p.CALL('hanoi')
@@ -266,15 +266,20 @@ def hanoi():
     p.ROL(4)
     p.RET()
 
-    p.label('move')                               # 円盤 R4 を R1 から R2 へ
-    p.MOV(0, 1); p.OR(0, 2)
-    p.SHR(0); p.JNC('m1'); p.XOR(5, 4); p.OUT(0, 5)
-    p.label('m1')
-    p.SHR(0); p.JNC('m2'); p.XOR(6, 4); p.OUT(1, 6)
-    p.label('m2')
-    p.SHR(0); p.JNC('m3'); p.XOR(7, 4); p.OUT(2, 7)
-    p.label('m3')
-    p.LD(0, 0xC0); p.CLC(); p.ADDI(0, 1); p.ST(0xC0, 0); p.OUT(3, 0)
+    p.label('move')                               # 一番上の1枚を R1 から R2 へ
+    p.MOV(0, 1)                                   # 移動元：1枚減らす
+    p.SHR(0); p.JNC('s1'); p.SHR(5); p.OUT(0, 5); p.JMP('dst')
+    p.label('s1')
+    p.SHR(0); p.JNC('s2'); p.SHR(6); p.OUT(1, 6); p.JMP('dst')
+    p.label('s2')
+    p.SHR(7); p.OUT(3, 7)
+    p.label('dst')
+    p.MOV(0, 2)                                   # 移動先：1枚増やす（2x+1）
+    p.SHR(0); p.JNC('t1'); p.SEC(); p.ADD(5, 5); p.OUT(0, 5); p.JMP('delay')
+    p.label('t1')
+    p.SHR(0); p.JNC('t2'); p.SEC(); p.ADD(6, 6); p.OUT(1, 6); p.JMP('delay')
+    p.label('t2')
+    p.SEC(); p.ADD(7, 7); p.OUT(3, 7)
     # ↓そのまま delay へ落ちて RET する
 
     p.label('delay')                              # 約130命令（512Hzで約1秒）
