@@ -296,35 +296,35 @@ def hanoi():
 def ishitori():
     """石取りゲーム（1回に1〜3個・最後の1個を取ったら勝ち）。CPUは4の倍数を残す必勝法。
 
-    キー（IN3・押して離すと1回）: bit0=1個 bit1=2個 bit2=3個 bit3=新しいゲーム。
+    キーパッド（IN0＝コード・IN1 bit0＝DA。押して離すと1回）: 1/2/3＝その数だけ取る・F(C)＝新しいゲーム・
+    ほかのキーは無視。
     リセット後はどれかのキーで開始。石の数は 8〜15（キー待ちの間に回すカウンタで決まる）。
     8・12 で始まると人は必ず負け、それ以外は正しく取れば人が勝てる。
     表示: 下段 OUT0・OUT1＝残りの石（10進2桁）／上段 OUT2＝あなたが取った数・OUT3＝CPU。
     勝った側の上段が点滅し、どれかのキーで次のゲーム。残りより多くは取れない（無視）。
-    R1=石 R2=乱数カウンタ R3=キー R4=取る数 R0=作業 RAM 0xC1=待ちの外側カウンタ
+    R1=石 R2=乱数カウンタ R3=DA R4=キーコード（取る数） R0=作業 RAM 0xC1=待ちの外側カウンタ
     クロック目安＝1024Hz。
     """
     p = Asm()
     for port in range(4):
         p.OUTI(port, 0)
     p.label('w0')                                 # どれかのキーで開始
-    p.CLC(); p.ADDI(2, 1); p.IN(0, 3); p.JZ('w0')
+    p.CLC(); p.ADDI(2, 1); p.IN(0, 1); p.JZ('w0')
     p.label('new')
-    p.IN(0, 3); p.JNZ('new')                      # 離すのを待つ
+    p.IN(0, 1); p.JNZ('new')                      # 離すのを待つ
     p.OUTI(2, 0); p.OUTI(3, 0)
     p.MOVI(0, 7); p.MOV(1, 2); p.AND(1, 0)
     p.MOVI(0, 8); p.OR(1, 0)                      # 石 = 8〜15
     p.CALL('show')
 
     p.label('human')
-    p.CLC(); p.ADDI(2, 1); p.IN(3, 3); p.JZ('human')
+    p.CLC(); p.ADDI(2, 1); p.IN(0, 1); p.JZ('human')
     p.label('h2')
-    p.IN(0, 3); p.JNZ('h2')
-    p.MOVI(4, 1); p.SHR(3); p.JC('take')
-    p.MOVI(4, 2); p.SHR(3); p.JC('take')
-    p.MOVI(4, 3); p.SHR(3); p.JC('take')
-    p.JMP('new')                                  # bit3＝新しいゲーム
-    p.label('take')
+    p.IN(0, 1); p.JNZ('h2')
+    p.IN(4, 0)                                    # キーコード＝取る数
+    p.MOVI(0, 15); p.SEC(); p.CP(4, 0); p.JZ('new')   # F(C)＝新しいゲーム
+    p.MOV(0, 4); p.SEC(); p.SUBI(0, 1); p.JNC('human')   # 0 は無視
+    p.SUBI(0, 3); p.JC('human')                   # 4 以上は無視
     p.SEC(); p.CP(1, 4); p.JNC('human')           # 残りより多い＝無視
     p.SEC(); p.SUB(1, 4); p.OUT(2, 4); p.CALL('show')
     p.OR(1, 1); p.JZ('hwin')
@@ -349,41 +349,47 @@ def ishitori():
     p.label('lt10')
     p.OUTI(0, 0); p.OUT(1, 1); p.RET()
 
-    p.label('delay')                              # 約200命令。キーが押されたら抜ける（R3=キー）
+    p.label('delay')                              # 約200命令。キーが押されたら抜ける（R3=DA）
     p.STI(0xC1, 3)
     p.label('d1')
     p.MOVI(0, 0); p.CLC()
     p.label('d0')
-    p.IN(3, 3); p.JNZ('dret'); p.ADDI(0, 1); p.JNC('d0')
+    p.IN(3, 1); p.JNZ('dret'); p.ADDI(0, 1); p.JNC('d0')
     p.LD(0, 0xC1); p.SEC(); p.SUBI(0, 1); p.ST(0xC1, 0); p.JNZ('d1')
     p.label('dret')
     p.RET()
-    return p, '石取り（1〜3個・最後を取ったら勝ち・CPUは4の倍数を残す／IN3: 1個/2個/3個/新ゲーム）'
+    return p, '石取り（1〜3個・最後を取ったら勝ち・CPUは4の倍数を残す／キー 1/2/3＝取る数・F＝新ゲーム）'
 
 
 def kaprekar():
     """カプレカ数 6174。4桁を「大きい順−小さい順」でくり返すと7回以内に6174に着く。
 
-    初期値＝DIP（10進1桁＝4bit。IN2=千 IN3=百 IN0=十 IN1=一＝表示と同じ並び）。0〜9で設定する。
-    表示（上段 OUT2 OUT3／下段 OUT0 OUT1＝千 百／十 一）:
-      いまの数 → 大きい順に並べた数 → 引き算の結果 … 6174 で長めに止まり、DIPを読み直して最初から。
-    全桁が同じ数（1111等）は 0 になるので進まない（DIPの数を表示したまま待つ）。
+    入力＝キーパッド（IN0＝コード・IN1 bit0＝DA）。数字キー 0〜9 で右から1桁ずつ入れ（4桁打つ）、
+    A〜F（E＝「＝」を推奨）で計算を始める。表示＝上段 OUT2 OUT3／下段 OUT0 OUT1＝千 百／十 一。
+      いまの数 → 大きい順に並べた数 → 引き算の結果 … 6174 を表示したまま次の入力を待つ。
+    計算中はキーを押している間だけ待ちを飛ばす（早送り）。
+    全桁が同じ数（1111等）は 0 になるので進まない（入力待ちに戻る）。
     並べ替え＝比較交換5回の固定ネットワーク（配列不要）。CP は Cin を使うが、
       C=0 なら「>」・C=1 なら「≧」になるだけで、どちらでも並べ替えは正しい＝SEC 不要。
     引き算＝10進の桁ごと（借りが出たら +10。ADDI で C が立つので CLC で借りに戻す）。
     6174 の判定は千=6・百=1 の2桁で足りる（途中に出る値をすべて調べて確認）。
-    R4-R7＝千 百 十 一  R0-R3＝作業  RAM 0xC1＝待ちの外側カウンタ  クロック目安＝1024Hz。
+    待ちはキー（DA）で抜け、Z=0 で戻る（ふつうに終われば Z=1。RET はフラグを変えない）。
+    R4-R7＝千 百 十 一  R0-R2＝作業  クロック目安＝1024Hz。
     """
     p = Asm()
-    p.label('start')
-    p.IN(4, 2); p.IN(5, 3); p.IN(6, 0); p.IN(7, 1)
+    p.label('entry')                              # 入力待ち
+    p.CALL('show'); p.JZ('entry')                 # キーなしなら表示し直す
+    p.label('kr')
+    p.IN(0, 1); p.JNZ('kr')                       # 離すのを待つ
+    p.IN(0, 0); p.MOV(1, 0); p.SEC(); p.SUBI(1, 10); p.JC('loop')   # A〜F＝開始
+    p.MOV(4, 5); p.MOV(5, 6); p.MOV(6, 7); p.MOV(7, 0); p.JMP('entry')
     p.label('loop')
     p.CALL('show')
     for a, b in ((4, 5), (6, 7), (4, 6), (5, 7), (5, 6)):   # 大きい順に並べる
         p.CP(a, b); p.JC(f's{a}{b}')
         p.MOV(0, a); p.MOV(a, b); p.MOV(b, 0)
         p.label(f's{a}{b}')
-    p.SEC(); p.CP(4, 7); p.JZ('start')                       # 全桁同じ
+    p.SEC(); p.CP(4, 7); p.JZ('entry')                       # 全桁同じ
     p.CALL('show')
     # 大きい順(R4R5R6R7) − 小さい順(R7R6R5R4)
     p.MOV(1, 7); p.SEC(); p.SUB(1, 4); p.JC('b1')
@@ -399,20 +405,17 @@ def kaprekar():
     p.MOV(4, 0); p.MOV(5, 3); p.MOV(6, 2); p.MOV(7, 1)
     p.MOVI(0, 6); p.SEC(); p.CP(4, 0); p.JNZ('loop')         # 6174 か
     p.MOVI(0, 1); p.CP(5, 0); p.JNZ('loop')
-    p.CALL('show'); p.CALL('delay'); p.CALL('delay')
-    p.JMP('start')
+    p.JMP('entry')                                           # 6174 を出したまま入力待ち
 
-    p.label('show')                               # 4桁を出して約1秒待つ
+    p.label('show')                               # 4桁を出して約1秒待つ（キーで抜ける）
     p.OUT(2, 4); p.OUT(3, 5); p.OUT(0, 6); p.OUT(1, 7)
-    p.label('delay')                              # 約270命令（1024Hzで約1秒）
-    p.STI(0xC1, 7)
-    p.label('d1')
-    p.MOVI(0, 0); p.CLC()
-    p.label('d0')
-    p.ADDI(0, 1); p.JNC('d0')
-    p.LD(0, 0xC1); p.SEC(); p.SUBI(0, 1); p.ST(0xC1, 0); p.JNZ('d1')
+    p.MOVI(1, 4)
+    p.label('d0')                                 # 内側は R0 の桁あふれまで（初期値は問わない）
+    p.IN(2, 1); p.JNZ('dret'); p.ADDI(0, 1); p.JNC('d0')
+    p.SUBI(1, 1); p.JNZ('d0')                     # 抜けたとき C=1 なので SEC 不要
+    p.label('dret')
     p.RET()
-    return p, 'カプレカ数6174（DIPで初期値・大きい順−小さい順をくり返す）'
+    return p, 'カプレカ数6174（キーで4桁→A〜Fで開始・大きい順−小さい順をくり返す）'
 
 
 def rule_ca():
@@ -424,7 +427,8 @@ def rule_ca():
     左回転＝4ニブルを ADD の桁上げで連鎖させ、あふれを ADDI x,0 で最下位へ戻す（6命令）。
     右回転＝左回転を15回（この繰り返しが1世代の待ち時間も兼ねる。1024Hzで約0.8秒/世代）。
     Rule90 は単一セルから8世代で全部消える（16=2^4 の環の性質）→ 中央に種をまき直す。
-    キー（IN3・押して離す）: bit0=Rule90で最初から  それ以外=Rule30で最初から。リセット後は Rule90。
+    キーパッド（押して離す）: 8〜F＝Rule90で最初から（9 を押す）／0〜7＝Rule30で最初から（3 を押す）。
+    判定はコードの bit3（ADD x,x の桁上げ）。リセット後は Rule90。
     R0-R3＝作業（回転中のコピー） RAM 0xC2＝規則（0=90/1=30） 0xC4-C7＝世代 0xC8-CB＝左隣
     """
     p = Asm()
@@ -447,7 +451,7 @@ def rule_ca():
     p.MOVI(4, 14)
     p.label('rr')                                 # さらに14回＝合計15回＝右回転＝左隣
     rotl()
-    p.IN(5, 3); p.JNZ('key')
+    p.IN(5, 1); p.JNZ('key')                      # DA
     p.SEC(); p.SUBI(4, 1); p.JNZ('rr')
     for k in range(4):
         p.ST(0xC8 + k, k)                         # 左隣を退避
@@ -467,34 +471,36 @@ def rule_ca():
     for k in range(4):
         p.POP(0)                                  # 積んだ4個を捨てる
     p.label('kr')
-    p.IN(0, 3); p.JNZ('kr')                       # 離すのを待つ
-    p.STI(0xC2, 0); p.SHR(5); p.JC('seed')        # bit0 = Rule90
-    p.STI(0xC2, 1); p.JMP('seed')                 # ほか = Rule30
-    return p, '16セル1次元CA（Rule90/Rule30・環状／IN3 bit0=Rule90 他=Rule30）'
+    p.IN(0, 1); p.JNZ('kr')                       # 離すのを待つ
+    p.IN(5, 0)
+    p.STI(0xC2, 0); p.ADD(5, 5); p.JC('seed')     # bit3=1（8〜F）＝Rule90
+    p.STI(0xC2, 1); p.JMP('seed')                 # 0〜7＝Rule30
+    return p, '16セル1次元CA（Rule90/Rule30・環状／キー 9=Rule90 3=Rule30）'
 
 
 def collatz():
     """コラッツの 3n+1（16bit）。偶数なら ÷2、奇数なら 3n+1 をくり返すと 1 に着く。
 
-    初期値＝DIP の16進4桁（IN2 IN3 IN0 IN1＝上位→下位＝表示と同じ並び）。全部0なら27。
+    入力＝キーパッド（IN0＝コード・IN1 bit0＝DA）。キー 0〜F を押すたびに、その桁を右から入れた
+    新しい値で最初からやり直す（4桁打てば好きな値。決定キーは要らない）。リセット直後は 27。
     表示＝いまの値を16進4桁（上段 OUT2 OUT3／下段 OUT0 OUT1）。1に着いたら手数を16進で
-    表示して待ち、DIP を読み直して最初から。27 は 111手（006F）・最大 9232（2410）。
-    16bit をあふれたら EEEE を出して最初から。
+    表示して次のキーを待つ。27 は 111手（006F）・最大 9232（2410）。16bit をあふれたら EEEE。
+    0 を入れると 0 のまま回り続ける（キーでやり直す）。
     ÷2＝下の桁から SHR し、上の桁の最下位を下の桁の bit3 へ入れる。
       C=1 のとき ADDI x,7 は 7+Cin=8 を足す＝bit3 を立てる。
     3n+1＝n に n を2回足す（2回目は SEC で +1 を兼ねる）。桁上げは ADD の Cin で連鎖。
-    R4-R7＝n（R4が上位） R0-R3＝作業 RAM 0xC0-C1＝手数（下位・上位） 0xC3＝待ちカウンタ
+    待ちはキー（DA）で抜け、Z=0 で戻る（ふつうに終われば Z=1。RET はフラグを変えない）。
+    R4-R7＝n（R4が上位） R0-R3＝作業 RAM 0xC0-C1＝手数（下位・上位） 0xC5-C7＝入力の下3桁
     クロック目安＝1024Hz（1手約0.5秒）。
     """
     p = Asm()
-    p.label('start')
-    p.IN(4, 2); p.IN(5, 3); p.IN(6, 0); p.IN(7, 1)
-    p.MOV(0, 4); p.OR(0, 5); p.OR(0, 6); p.OR(0, 7); p.JNZ('go')
-    p.MOVI(6, 1); p.MOVI(7, 0xB)                  # 0 なら 27（0x001B）
-    p.label('go')
+    p.STI(0xC5, 0); p.STI(0xC6, 0); p.STI(0xC7, 1); p.MOVI(0, 0xB)   # リセット直後は 001B=27
+    p.label('newn')                               # n = 入力の下3桁 + キー（R0）
+    p.LD(4, 0xC5); p.LD(5, 0xC6); p.LD(6, 0xC7); p.MOV(7, 0)
+    p.ST(0xC5, 5); p.ST(0xC6, 6); p.ST(0xC7, 7)
     p.STI(0xC0, 0); p.STI(0xC1, 0)
     p.label('loop')
-    p.CALL('show')
+    p.CALL('show'); p.JNZ('key')                  # 待ちの間にキー＝やり直し
     p.MOV(0, 7); p.SHR(0); p.JC('odd')
     # 偶数：÷2
     for lo, hi in ((7, 6), (6, 5), (5, 4)):
@@ -513,31 +519,30 @@ def collatz():
     p.label('count')                              # 手数 +1（8bit）
     p.LD(0, 0xC0); p.CLC(); p.ADDI(0, 1); p.ST(0xC0, 0)
     p.LD(0, 0xC1); p.ADDI(0, 0); p.ST(0xC1, 0)
-    p.MOV(0, 7); p.SEC(); p.SUBI(0, 1)            # n == 1 か
+    p.MOVI(0, 1); p.XOR(0, 7)                     # n == 1 か
     p.OR(0, 4); p.OR(0, 5); p.OR(0, 6); p.JNZ('loop')
     p.CALL('show')
     p.OUTI(2, 0); p.OUTI(3, 0)                    # 手数を表示
     p.LD(0, 0xC1); p.OUT(0, 0); p.LD(0, 0xC0); p.OUT(1, 0)
     p.label('wait')
-    for _ in range(4):
-        p.CALL('delay')
-    p.JMP('start')
+    p.IN(0, 1); p.JZ('wait')
+    p.label('key')
+    p.IN(0, 1); p.JNZ('key')                      # 離すのを待つ
+    p.IN(0, 0); p.JMP('newn')
     p.label('over')                               # 16bit をあふれた
     for port in range(4):
         p.OUTI(port, 0xE)
     p.JMP('wait')
 
-    p.label('show')
+    p.label('show')                               # 4桁を出して約0.5秒待つ（キーで抜ける）
     p.OUT(2, 4); p.OUT(3, 5); p.OUT(0, 6); p.OUT(1, 7)
-    p.label('delay')                              # 約130命令（1024Hzで約0.5秒）
-    p.STI(0xC3, 4)
-    p.label('d1')
-    p.MOVI(0, 0); p.CLC()
-    p.label('d0')
-    p.ADDI(0, 1); p.JNC('d0')
-    p.LD(0, 0xC3); p.SEC(); p.SUBI(0, 1); p.ST(0xC3, 0); p.JNZ('d1')
+    p.MOVI(1, 2)
+    p.label('d0')                                 # 内側は R0 の桁あふれまで（初期値は問わない）
+    p.IN(2, 1); p.JNZ('dret'); p.ADDI(0, 1); p.JNC('d0')
+    p.SUBI(1, 1); p.JNZ('d0')                     # 抜けたとき C=1 なので SEC 不要
+    p.label('dret')
     p.RET()
-    return p, 'コラッツ3n+1（16bit・DIPで初期値／0なら27・1に着いたら手数を表示）'
+    return p, 'コラッツ3n+1（16bit・キーを押すたびに右から1桁入れてやり直す／リセット直後は27）'
 
 
 def ecosystem():
@@ -549,8 +554,10 @@ def ecosystem():
       y' = min(255, y − y/8 + h)       （0＝肉食の絶滅）
     放っておくと周期47世代のサイクル（草 8〜86・肉 7〜49。肉が少し遅れて追いかける）。
     ÷8＝左へ1つずらして上位ニブル（はみ出した1ビットは ADDI x,0 で拾う）。
-    キー（IN3・世代の変わり目で読む＝表示が変わるまで押す）: bit0=草を植える(+16)
-      bit1=狩る(肉食−16。狩りすぎると絶滅) bit2/bit3=最初から。絶滅＝表示 0000・どれかのキーで最初から。
+    キーパッド（世代の変わり目で読む＝表示が変わるまで押す）: 1＝草を植える(+16)
+      2＝狩る(肉食−16。狩りすぎると絶滅) 0＝最初から（判定はコードの bit0→植える・bit1→狩る・
+      どちらも0→最初から）。絶滅＝表示 0000・どれかのキーで最初から。
+    植えて 255 を超えたら FF にして（表示を飛ばして）そのまま次の世代へ進む。
     1世代は y 回のループ＝肉食が多いほど遅い。クロック目安＝2048Hz（1世代 0.1〜0.6秒）。
     R1R2=x R3R4=y R5R6=h R7R0=作業 RAM 0xC0-C1＝y の退避
     """
@@ -559,14 +566,15 @@ def ecosystem():
     p.MOVI(1, 4); p.MOVI(2, 0); p.MOVI(3, 1); p.MOVI(4, 0)   # x=0x40 y=0x10
     p.label('loop')
     p.OUT(2, 1); p.OUT(3, 2); p.OUT(0, 3); p.OUT(1, 4)
-    p.IN(7, 3); p.JZ('gen')
+    p.IN(7, 1); p.JZ('gen')                                 # DA
     p.label('kr')
-    p.IN(0, 3); p.JNZ('kr')
+    p.IN(0, 1); p.JNZ('kr')
+    p.IN(7, 0)
     p.SHR(7); p.JC('plant'); p.SHR(7); p.JNC('start')       # bit1 でも bit0 でもなければ最初から
     p.SEC(); p.SUBI(3, 1); p.JNC('dead'); p.JMP('loop')     # 狩る：y −16
     p.label('plant')
     p.CLC(); p.ADDI(1, 1); p.JNC('loop')                    # 草を植える：x +16
-    p.MOVI(1, 15); p.MOVI(2, 15); p.JMP('loop')
+    p.MOVI(1, 15); p.MOVI(2, 15)                            # あふれ＝FF でそのまま次の世代へ
     p.label('gen')
     p.ST(0xC0, 3); p.ST(0xC1, 4)
     p.MOVI(5, 0); p.MOVI(6, 0); p.MOVI(7, 0); p.MOVI(0, 0)
@@ -597,10 +605,10 @@ def ecosystem():
     for port in range(4):
         p.OUTI(port, 0)
     p.label('dk')
-    p.IN(0, 3); p.JZ('dk')
+    p.IN(0, 1); p.JZ('dk')
     p.label('dr')
-    p.IN(0, 3); p.JNZ('dr'); p.JMP('start')
-    return p, '生態系ゲーム（草食/肉食の振動・IN3 bit0=草を植える bit1=狩る bit3=最初から）'
+    p.IN(0, 1); p.JNZ('dr'); p.JMP('start')
+    return p, '生態系ゲーム（草食/肉食の振動・キー 1=草を植える 2=狩る 0=最初から）'
 
 
 def melody():

@@ -315,13 +315,13 @@ DEMO_BANKS = [
     ('pred_prey', demo('pred_prey'), 'OUT0 に草食・肉食を交互に'),
     ('kakezan', demo('kakezan'), '4×4 の16積を出して停止'),
     ('hanoi', demo('hanoi', clear=False), '4枚・CALL/RET再帰・512Hz'),
-    ('ishitori', demo('ishitori', clear=False), 'IN3: 1個/2個/3個/新ゲーム・1024Hz'),
-    ('kaprekar', demo('kaprekar', clear=False), 'DIPで初期値→6174・1024Hz'),
-    ('rule_ca', demo('rule_ca', clear=False), 'Rule90/30・IN3 bit0=90 他=30・1024Hz'),
-    ('collatz', demo('collatz', clear=False), 'DIPで初期値(0なら27)・1024Hz'),
+    ('ishitori', demo('ishitori', clear=False), 'キー 1/2/3＝取る・F＝新ゲーム・1024Hz'),
+    ('kaprekar', demo('kaprekar', clear=False), 'キーで4桁→A〜Fで開始→6174・1024Hz'),
+    ('rule_ca', demo('rule_ca', clear=False), 'Rule90/30・キー 9=90 3=30・1024Hz'),
+    ('collatz', demo('collatz', clear=False), 'キーで右から1桁ずつ・起動時27・1024Hz'),
     ('calc_normal', demo('calc_normal', clear=False), 'キーパッド(IN0/IN1)・四則・1キー1桁'),
     ('calc_rpn', demo('calc_rpn', clear=False), 'キーパッド・逆ポーランド・＋−×'),
-    ('ecosystem', demo('ecosystem', clear=False), 'IN3: 草を植える/狩る・2048Hz'),
+    ('ecosystem', demo('ecosystem', clear=False), 'キー 1=植える 2=狩る 0=最初から・2048Hz'),
     ('melody', demo('melody', clear=False), 'OUT0→Pico で音と光・1024Hz'),
 ]
 # 外したもの（programs.py には残る）: ramen_timer・sec_count（何分も見ないと分からない時間もの。
